@@ -18,8 +18,6 @@
       <%= render partial: "hero", locals: {section_id: section_id, s: s} %>
     <% when "footer" %>
       <%= render partial: "footer", locals: {section_id: section_id, s: s} %>
-    <% when "info" %>
-      <%= render partial: "info", locals: {section_id: section_id, s: s, second_wo_background: second_wo_background } %>
     <% when "categories" %>
       <%= render partial: "categories", locals: {section_id: section_id, s: s, second_wo_background: second_wo_background} %>
     <% when "locations" %>
@@ -76,7 +74,6 @@
 <body onload="BrowserDetectVideoAutoplay()">
 
   <% if topbar[:enabled] %>
-  <div id="topbar-placeholder" class="topbar-placeholder"> </div>
   <% end %>
 
   <%= yield :sections %>

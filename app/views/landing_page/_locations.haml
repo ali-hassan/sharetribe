@@ -5,7 +5,7 @@
 
 %section.locations__section{id: section_id, style: "#{bg_styles[:background_image_style]} #{bg_styles[:background_color_style]}", class: "locations__section--#{bg_styles[:section_style_modifier]}"}
   .locations__content
-    %h1.locations__title= s["title"]
+    %h2.title_locations= s["title"]
     .locations__paragraph--markdown
       = render_markdown(s["paragraph"])
     .locations__locations

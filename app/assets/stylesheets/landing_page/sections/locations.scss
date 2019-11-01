@@ -33,9 +33,9 @@ $locations__mobile-gutter: 12px;
 }
 
 .locations__content {
-  margin: 0 auto;
-  text-align: center;
-
+  margin-left: 5%;
+  color: black;
+  font-family: 'Champagne & Limosine' !important;
   // mobile
   width: 100%;
 
@@ -366,7 +366,6 @@ $locations__mobile-gutter: 12px;
 
 .locations__section--zebra {
   @extend .locations__section--blank;
-  background-color: #F6F6F6;
 }
 
 .locations__section--background-color, .locations__section--background-image--light, .locations__section--background-image--dark {
