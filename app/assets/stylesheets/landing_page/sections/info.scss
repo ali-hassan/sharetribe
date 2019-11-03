@@ -145,6 +145,7 @@ $content-padding: 36px;
 
 .info__button--ghost {
   @extend .info__button;
+  background-color: #fff !important;
 }
 
 .info__button--inverted {

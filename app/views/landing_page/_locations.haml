@@ -23,19 +23,19 @@
     }
 
 %section.locations__section{:id => section_id}
-  .locations__content.location-settings
-    %h1.loctaion-headings{:style => "font-size: 36px;"}= s["title"]
-    %h3.loctaion-headings{:style => "font-size: 20px;"}= s["small_title"]
+  .locations__content{style: 'margin-right: 15%; margin-left: 15%;'}
+    %h1.loctaion-headings{:style => "font-size: 36px; font-weight: 600; margin-bottom: 10px;"}= s["title"]
+    %h3.loctaion-headings{:style => "font-size: 20px; margin-bottom: 30px;"}= s["small_title"]
     .locations__paragraph--markdown
       = render_markdown(s["paragraph"])
-    .locations__locations
+    .locations__locations{style: 'display: flex; justify-content: space-between; padding: 0px;'}
       - num_of_locations = s["locations"].length
       - s["locations"].each do |location|
         - loc = location["location"]
         - path = loc.is_a?(Hash) ? loc["value"] : loc
-        %div{:class => "locations__location--#{num_of_locations}"}
+        %div{:class => "locations__location--#{num_of_locations}", style: 'padding: 0px;'}
           %a{:href => "#{path}"}
             %div{:class => "#{section_id}__locations__location-content locations__location-content", :style => "background-image: url(#{location["background_image"]["src"]})"}
               %h3.locations__location-title= location["title"]
 
-    %a{:href => "/s", :style => "float: left;margin-left: 57px;font-size: 21px;text-decoration: underline;color: black;"} Explore more studios around the world
+    %a{:href => "/s", :style => "float: left;font-size: 21px;text-decoration: underline;color: black;"} Explore more studios around the world

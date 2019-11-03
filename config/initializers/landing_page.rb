@@ -65,7 +65,16 @@ module CustomLandingPage
                 "listing": { "type": "listing", "id": 2 }
             },
             {
+                "listing": { "type": "listing", "id": 3 }
+            },
+            {
                 "listing": { "type": "listing", "id": 4 }
+            },
+            {
+                "listing": { "type": "listing", "id": 5 }
+            },
+            {
+                "listing": { "type": "listing", "id": 6 }
             }
                        
         ]

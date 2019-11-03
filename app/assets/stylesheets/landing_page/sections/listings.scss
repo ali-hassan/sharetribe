@@ -14,9 +14,16 @@ $listings__tablet-gutter: 16px;
 
   background-color: #FFFFFF;
 }
+
+.listings__content > h1 h2 h3 p span {
+  font-family: 'Champagne & Limosine' !important;
+  color: black !important;
+}
+
 .listing-headings {
   text-align: -webkit-left;
-  padding-left: 55px;
+  font-family: 'Champagne & Limosine' !important;
+  color: black !important;
 }
 .listings__content {
   margin: 0 auto;
@@ -24,14 +31,8 @@ $listings__tablet-gutter: 16px;
 
   // mobile
   width: 100%;
-
-  @media #{$mobile-landscape}, #{$tablet} {
-    width: 100%;
-  }
-
-  @media #{$desktop} {
-    max-width: 1114px + $listings__desktop-gutter;
-  }
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .listings__title {
@@ -46,9 +47,34 @@ $listings__tablet-gutter: 16px;
   }
 }
 
+.listings_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.listing_image {
+  margin-bottom: 10px;
+}
+
+.listing_verified {
+  color: #c4a03e;
+  display: inline-block;
+  margin: 0;
+  padding: 3px 8px 4px;
+  float: left;
+}
+
+.listing_text {
+  margin-left: 20px;
+}
+
+.listing_text > span {
+  color: grey;
+  font-size: 20px;
+}
+
 .listings__listings {
-  @include prefix-val(display, flex);
-  @include prefix-prop(flex-direction, column);
 
   // mobile
   padding: 0px $dimension-mobile-margin;

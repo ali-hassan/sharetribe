@@ -22,6 +22,7 @@ $tablet--hero: "(min-width: 480px) and (max-width: 767px)";
   @include prefix-val(display, flex);
   @include prefix-prop(align-items, center);
   @include dimensions__section--paddings;
+  min-height: unset !important;
 }
 
 .hero__section--light {
@@ -86,6 +87,7 @@ $tablet--hero: "(min-width: 480px) and (max-width: 767px)";
 
 .hero__content {
   margin: 0 auto;
+  margin-top: -6vh !important;
   padding: $dimension-mobile-margin;
   @include viewport-unit(margin-top, -4.44vh); /* -50px, when content height is 900px, 80vh */
 }

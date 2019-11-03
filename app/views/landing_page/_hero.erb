@@ -58,33 +58,27 @@
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-3"></div>
-  <div class="col-6 loctaion-headings" style="padding-left: 300px;"><h1 style="font-size:38px; font-weight: bold;">Discover & Book Music Studio</h1></div>
-  <div class="col-3"></div>
-</div>
-<section id="<%= section_id %>" class="<%= section_style_class %>" style=" margin-top: 20px;   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 62%;">
-  <div class="hero__content">
-    <div class="hero__content-container" style="float: left;
-        width: 500px;">
-      <h1 class="hero__title" style="color: white"><%= "The largest & most trusted online community to rent music studios." %></h1>
-      <button class="" href="/s">
-        <a class="info__button--ghost info__contacts_us__4__info__button--ghost" href="/s">Get Started</a>
-      </button>
-      <% search_mode = s["variation"]["value"] %>
-      <% case search_mode %>
-      <% when "keyword_search", "location_search", "keyword_and_location_search" %>
+<div class="row" style="margin-left: 15%;margin-right: 15%;">
+  <h1 style="font-size:38px; font-weight: bold;">Discover & Book Music Studio</h1>
+  <section id="<%= section_id %>" class="<%= section_style_class %>" style=" margin-top: 20px;display: block;">
+    <div class="hero__content">
+      <div class="hero__content-container" style="width: 500px;">
+        <h1 class="hero__title" style="color: white"><%= "The largest & most trusted online community to rent music studios." %></h1>
+        <button class="" href="/s" style="background: transparent !important; border: none;">
+          <a class="info__button--ghost info__contacts_us__4__info__button--ghost" href="/s">Get Started</a>
+        </button>
+        <% search_mode = s["variation"]["value"] %>
+        <% case search_mode %>
+        <% when "keyword_search", "location_search", "keyword_and_location_search" %>
 
 
-      <% when "private" %>
+        <% when "private" %>
 
-        <a class="hero__signup-button" href="<%= s["signup_path"]["value"] %>"><%= s["signup_button"]["value"] %></a>
+          <a class="hero__signup-button" href="<%= s["signup_path"]["value"] %>"><%= s["signup_button"]["value"] %></a>
 
-      <% end %>
+        <% end %>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
