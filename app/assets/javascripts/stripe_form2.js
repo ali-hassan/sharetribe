@@ -189,10 +189,10 @@ window.ST.stripe_form_i18n = window.ST.stripe_form_i18n || {
     $("#stripe_account_form_address_country").change(function(){
       var showElement = function (el, show) {
         if (show) {
-          $(el).find('input, select').prop('disabled', false);
+          $(el).find('input').prop('disabled', false);
           $(el).show();
         } else {
-          $(el).find('input, select').prop('disabled', true);
+          $(el).find('input').prop('disabled', true);
           $(el).hide();
         }
       };
@@ -231,16 +231,9 @@ window.ST.stripe_form_i18n = window.ST.stripe_form_i18n || {
         var data = prepareData(options),
           verificationEl = $('#stripe_account_form_document'),
           verify = verificationEl.length > 0,
-          additionalVerificationEl = $('#stripe_account_form_additional_document'),
-          additionalVerify = additionalVerificationEl.length > 0,
-          fileElement,
-          additionalFileElement;
-
+          fileElement;
         if (verify) {
           fileElement = verificationEl[0].files[0];
-        }
-        if (additionalVerify) {
-          additionalFileElement = additionalVerificationEl[0].files[0];
         }
         stripeToken({
           data: data,
@@ -253,8 +246,7 @@ window.ST.stripe_form_i18n = window.ST.stripe_form_i18n || {
           },
           verify: verify,
           fileElement: fileElement,
-          additionalFileElement: additionalFileElement,
-          fileCallback: function(fileData, additionalFileData) {
+          fileCallback: function(fileData) {
             var verification = {
               verification: {
                 document: {
@@ -262,11 +254,6 @@ window.ST.stripe_form_i18n = window.ST.stripe_form_i18n || {
                 }
               }
             };
-            if (additionalFileData) {
-              verification.verification.additional_document = {
-                front: additionalFileData.id
-              };
-            }
             $.extend(data.individual, verification);
           }
         });
@@ -351,21 +338,20 @@ function () {
   var _ref = _asyncToGenerator(
   /*#__PURE__*/
   regeneratorRuntime.mark(function _callee(options) {
-    var fileForm, additionalFileForm, additionalFileData, fileResult, fileData, additionalFileResult, result;
+    var fileForm, fileResult, fileData, result;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
             if (!options.verify) {
-              _context.next = 22;
+              _context.next = 11;
               break;
             }
 
             fileForm = new FormData();
-            additionalFileForm = new FormData(), additionalFileData = null;
             fileForm.append('file', options.fileElement);
             fileForm.append('purpose', 'identity_document');
-            _context.next = 7;
+            _context.next = 6;
             return fetch('https://uploads.stripe.com/v1/files', {
               method: 'POST',
               headers: {
@@ -374,48 +360,23 @@ function () {
               body: fileForm
             });
 
-          case 7:
+          case 6:
             fileResult = _context.sent;
-            _context.next = 10;
+            _context.next = 9;
             return fileResult.json();
 
-          case 10:
+          case 9:
             fileData = _context.sent;
 
-            if (!options.additionalFileElement) {
-              _context.next = 20;
-              break;
-            }
-
-            additionalFileForm.append('file', options.additionalFileElement);
-            additionalFileForm.append('purpose', 'identity_document');
-            _context.next = 16;
-            return fetch('https://uploads.stripe.com/v1/files', {
-              method: 'POST',
-              headers: {
-                'Authorization': 'Bearer ' + stripeApi._apiKey
-              },
-              body: additionalFileForm
-            });
-
-          case 16:
-            additionalFileResult = _context.sent;
-            _context.next = 19;
-            return additionalFileResult.json();
-
-          case 19:
-            additionalFileData = _context.sent;
-
-          case 20:
             if (fileData.id) {
-              options.fileCallback(fileData, additionalFileData);
+              options.fileCallback(fileData);
             }
 
-          case 22:
-            _context.next = 24;
+          case 11:
+            _context.next = 13;
             return stripeApi.createToken('account', omitNullDeep(options.data));
 
-          case 24:
+          case 13:
             result = _context.sent;
 
             if (result.token) {
@@ -426,7 +387,7 @@ function () {
               options.error(result.error);
             }
 
-          case 27:
+          case 16:
           case "end":
             return _context.stop();
         }

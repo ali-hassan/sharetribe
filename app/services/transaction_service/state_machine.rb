@@ -6,9 +6,7 @@ module TransactionService
 
   TransitionMetadata= EntityUtils.define_builder(
     [:paypal_pending_reason, :symbol],
-    [:paypal_payment_status, :symbol],
-    [:user_id, :string],
-    [:executed_by_admin, :bool]
+    [:paypal_payment_status, :symbol]
   )
 
   module StateMachine
@@ -59,7 +57,7 @@ module TransactionService
         preauthorized(transaction, payment_type)
       when :paid
         paid(transaction)
-      when :rejected, :payment_intent_action_expired
+      when :rejected
         rejected(transaction)
       end
     end

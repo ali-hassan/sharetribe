@@ -125,7 +125,7 @@ class StripeService::API::StripeApiWrapper
           email: account_info[:email],
           account_token: account_info[:token]
         }
-        if ['US', 'EE', 'GR', 'LV', 'LT', 'PL', 'SK', 'SI'].include?(account_info[:address_country])
+        if account_info[:address_country] == 'US'
           data[:requested_capabilities] = ['card_payments']
           data[:business_profile] = {
             mcc: DEFAULT_MCC,
@@ -215,6 +215,20 @@ class StripeService::API::StripeApiWrapper
       APP_CONFIG.stripe_charges_mode.to_sym
     end
 
+    def send_verification(community:, account_id:, personal_id_number:, file_path:)
+      with_stripe_payment_config(community) do |payment_settings|
+        document = Stripe::FileUpload.create({
+            purpose: 'identity_document',
+            file: File.new(file_path)
+          },
+          { stripe_account: account_id})
+        account = Stripe::Account.retrieve(account_id)
+        account.legal_entity.verification.document = document.id
+        account.legal_entity.personal_id_number = personal_id_number
+        account.save
+      end
+    end
+
     def get_seller_account(community:, account_id:)
       with_stripe_payment_config(community) do |payment_settings|
         Stripe::Account.retrieve(account_id)
@@ -283,44 +297,6 @@ class StripeService::API::StripeApiWrapper
       with_stripe_payment_config(community) do |payment_settings|
         account = Stripe::Account.retrieve(account_id)
         account.delete
-      end
-    end
-
-    def create_payment_intent(community:, seller_account_id:, payment_method_id:, amount:, currency:, fee:, description:, metadata:)
-      with_stripe_payment_config(community) do |payment_settings|
-        Stripe::PaymentIntent.create(
-          capture_method: 'manual',
-          payment_method: payment_method_id,
-          amount: amount,
-          currency: currency,
-          confirmation_method: 'manual',
-          confirm: true,
-          on_behalf_of: seller_account_id,
-          transfer_data: {
-            destination: seller_account_id,
-            amount: amount - fee
-          },
-          description: description,
-          metadata: metadata
-        )
-      end
-    end
-
-    def confirm_payment_intent(community:, payment_intent_id:)
-      with_stripe_payment_config(community) do |payment_settings|
-        Stripe::PaymentIntent.new(payment_intent_id).confirm
-      end
-    end
-
-    def capture_payment_intent(community:, payment_intent_id:)
-      with_stripe_payment_config(community) do |payment_settings|
-        Stripe::PaymentIntent.new(payment_intent_id).capture
-      end
-    end
-
-    def cancel_payment_intent(community:, payment_intent_id:)
-      with_stripe_payment_config(community) do |payment_settings|
-        Stripe::PaymentIntent.new(payment_intent_id).cancel
       end
     end
   end

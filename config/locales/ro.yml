@@ -100,8 +100,6 @@ ro:
         transaction_agreement_checkbox_label_description: "Acest text va fi afisat alaturi de o caseta de verificare in pasul de checkout. Utilizatorul trebuie sa bifeze caseta de verificare pentru a putea continua tranzactia. Un exemplu al acestei etichete poate fi \"Prin apasarea acestui buton confirm tranzatia\""
         transaction_agreement_text_header: "Textul de confirmare a tranzactiei"
         transaction_agreement_description: "Acesta este continutul Termenilor si Conditiilor de tranzactionare pe care utilizatorii trebuie sa il accepte. Continutul este afisat la apasarea butonului %{read_more} aplasat langa caseta de verificare a confirmarii tranzactiei."
-        terms_privacy_policy_and_static_content: ~
-        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "Editați aspectul marketplace-ului \"%{community_name}\""
         community_logo: Logo
@@ -124,8 +122,6 @@ ro:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: "Fotografia de pe copertă este afișată în pagina de pornire pentru utilizatorii care nu sunt conectați."
         cover_photo_instructions_text_with_dimensions: "Fotografia va fi redimensionată la rezoluţia %{width}x%{height} pixeli, iar imaginile mai mari vor fi tăiate la mijloc. %{see_how_it_looks_like}."
-        we_have_you_covered: ~
-        cover_photo_ready_made: ~
         small_cover_photo_visibility: "Fotografia cu copertă mică este afișată în toate paginile, cu excepția paginii de pornire pentru utilizatorii care nu sunt conectați."
         small_cover_photo_instructions_text_with_dimensions: "Fotografia va fi redimensionată la rezoluţia %{width}x%{height} pixeli, iar imaginile mai mari vor fi tăiate la mijloc."
         main_content_width: "Când alegeți fotografii de copertă, rețineți că conținutul principal al paginii este cel mult %{main_width} pixeli. Amintiți-vă, de asemenea, să verificați modul în care imaginea de pe copertă arată pe ecranele mai mici (de exemplu, utilizând o fereastră mai îngustă a browserului)."
@@ -229,7 +225,6 @@ ro:
         require_verification_to_post_listings: ~
         allow_free_conversations: ~
         search_preferences: ~
-        search_and_location_preferences: ~
         default_search_type: ~
         keyword_search: ~
         keyword_and_location_search: "Caută dupa locație sau nume"
@@ -238,7 +233,6 @@ ro:
         km: Km
         miles: Mile
         show_only_nearby: "Arată-mi listările din jurul meu"
-        allow_users_to_add_location: ~
         listing_preferences: "Preferinte de listare"
         transaction_preferences: ~
         show_listing_publishing_date: "Afișeaza data publicării înregistrării pe pagina de înscriere"
@@ -267,7 +261,6 @@ ro:
         delete_this_marketplace: ~
         payment_preferences: ~
         pre_approved_listings: ~
-        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: Utilizatori
         email: Email
@@ -329,7 +322,6 @@ ro:
         twitter_handle_placeholder: "nume utilizator"
         invalid_twitter_handle: ~
         facebook_connect: "Login Facebook"
-        facebook_developers_dashboard: ~
         facebook_connect_info_text: ~
         facebook_connect_info_text_with_instructions: ~
         facebook_instructions_link_text: ~
@@ -342,7 +334,6 @@ ro:
         add_another_image: ~
         google_connect: "Conectare cu Google"
         google_instructions_link_text: ~
-        google_developers_console: ~
         google_connect_info_text_with_instructions: ~
         google_connect_info_text: ~
         enable_google_login: ~
@@ -350,7 +341,6 @@ ro:
         google_connect_secret: ~
         linkedin_connect: ~
         linkedin_instructions_link_text: ~
-        linkedin_developers_dashboard: ~
         linkedin_connect_info_text_with_instructions: ~
         linkedin_connect_info_text: ~
         enable_linkedin_login: ~
@@ -464,8 +454,6 @@ ro:
           canceled: ~
           preauthorized: ~
           rejected: ~
-          payment_intent_requires_action: ~
-          payment_intent_action_expired: ~
         headers:
           conversation: "Firul conversației"
           listing: Listarea
@@ -511,9 +499,6 @@ ro:
             canceled: ~
             initiated: ~
             pending_ext: ~
-            payment_intent_requires_action: ~
-            payment_intent_action_expired: ~
-            payment_intent_failed: ~
         not_available: Indisponibil
       conversations:
         conversations: ~
@@ -569,9 +554,6 @@ ro:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
-          unskip: ~
-          if_you_unskip_the_review: ~
-          they_will_not_be_notified_automatically: ~
       invitations:
         invitations: Invitatii
         used:
@@ -652,159 +634,6 @@ ro:
         contact_us: ~
         you_can_now_use_a_custom_domain: ~
         would_you_like_to_change_domain: ~
-      landing_pages:
-        landing_pages: ~
-        info_1: ~
-        info_2: ~
-        info_2_preview_text: ~
-        info_2_details_text: ~
-        info_2_design_text: ~
-        info_3: ~
-        info_4: ~
-        editor_title: ~
-        editor_info: ~
-        preview: ~
-        set_live: ~
-        headers:
-          section_id: ~
-          section_type: ~
-          version: ~
-          released: ~
-        add_new_version: ~
-        new_version: ~
-        edit_version: ~
-        add_new_section: ~
-        select_section_type: ~
-        form:
-          version: ~
-          save: ~
-        sections:
-          identifier: ~
-          kind: ~
-          variation: ~
-          new: ~
-          edit: ~
-          remove_section_confirmation: ~
-          info_single_column: ~
-          info_multi_column_2: ~
-          info_multi_column_3: ~
-          listings: ~
-          categories: ~
-          hero: ~
-          locations: ~
-          video: ~
-          new_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-          edit_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-    landing_page_versions:
-      sections:
-        hero:
-          hero_title: ~
-          hero_description: ~
-        footer:
-          footer_title: ~
-          footer_style: ~
-          style_dark: ~
-          style_light: ~
-          style_marketplace_color: ~
-          style_logo: ~
-        cta_button:
-          cta_button: ~
-          cta_enabled: ~
-          cta_text: ~
-          cta_url: ~
-        background_image_overlay:
-          background_image: ~
-          background_image_info: ~
-          add_another_image: ~
-          current_image: ~
-          file_not_selected: ~
-          background_image_overlay: ~
-          background_image_overlay_info: ~
-          overlay_dark: ~
-          overlay_light: ~
-          overlay_transparent: ~
-        background_style:
-          background_style: ~
-          style_image: ~
-          style_color: ~
-          style_none: ~
-        background_color:
-          background_color: ~
-          background_color_info: ~
-        categories:
-          add: ~
-          category: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_categories: ~
-          need_at_most_7_categories: ~
-        category:
-          add_another_image: ~
-          category: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          select_category: ~
-        locations:
-          add: ~
-          location: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_locations: ~
-          need_at_most_7_locations: ~
-        location:
-          add_another_image: ~
-          location: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          title: ~
-          title_placeholder: ~
-          url: ~
-          url_placeholder: ~
-        multi_column:
-          main_title: ~
-          column_header: ~
-          column_title: ~
-          column_icon_info: ~
-          column_icon: ~
-          column_paragraph: ~
-          column_button: ~
-          column_button_text: ~
-          column_button_url: ~
-        listings:
-          you_need_to_add_the_listing_ids: ~
-        video:
-          text: ~
-          youtube_video_id: ~
-          autoplay: ~
-          autoplay_no: ~
-          autoplay_muted: ~
-          info: ~
     custom_fields:
       edit:
         edit_listing_field: "Editați câmpul %{field_name}"
@@ -817,7 +646,6 @@ ro:
       edit_location:
         edit_location_field: ~
         this_field_is_required: "Acest câmp este obligatoriu"
-        the_location_feature_can_be_enabled: ~
       edit_expiration:
         edit_expiration_field: ~
         enable: ~
@@ -860,7 +688,7 @@ ro:
         checkbox_group: "Bifați caseta de verificare"
         date: Dată
         file: ~
-        location: Oras
+        location: ~
     person_custom_fields:
       saving_failed: ~
       index:
@@ -923,7 +751,6 @@ ro:
       emails_title: Emailuri
       subscription: Abonament
       preview: "Previzualizeaza site"
-      whats_new: ~
     listing_shapes:
       availability_title: Disponibilitate
       read_more: ~
@@ -1110,31 +937,12 @@ ro:
       request: Solicita
       inquiry: ~
       share_for_free: "Partajare gratuita"
-      event_w_online_payment: ~
-      event_wo_online_payment: ~
       default_action_button_labels:
         sell: Cumparati
         rent: Inchiriati
         request: Oferiti
         offer: Cereti
         inquiry: "Persoana de contact"
-        book: ~
-    community_transactions:
-      show:
-        transaction_for: ~
-        status: ~
-        next_step: ~
-        waiting_for_provider_accept_or_reject: ~
-        waiting_for_fulfill_and_complete: ~
-        buyer: ~
-        provider: ~
-        buyer_pays: ~
-        marketplace_collects: ~
-        buyer_service_fee_label: ~
-        service_fee_label: ~
-        provider_receives: ~
-        admin_info_text: ~
-        manage_reviews: ~
   common:
     edit_page: "Editați pagină"
     default_community_slogan: "Platforma de intermediere online a comunitatii"
@@ -1224,20 +1032,20 @@ ro:
       total_value: ~
       total_value_paypal: ~
       total_value_stripe: ~
-      paypal_fee: ~
-      paypal_fee_info: "* Exclude %{link}"
+      paypal_fee_info: "* Exclude <a id='%{fee_info_link_id}' href='#'>Comisionul de procesare PayPal</a>"
+      payment_fee_info: "* Exclude <a id='%{fee_info_link_id}' href='#'>comision de procesare</a>"
       shipping_price_label: "Trimite:"
       stripe-fee_label: "Comision procesare plati"
     confirm:
-      confirm_description: "Te rugam sa confirmi returnarea produsului si finalizarea comenzii apasand butonul \"Am returnat produsul\". Apoi puteti oferi o recenzie catre cealalta persoana."
-      cancel_description: "Daca comanda dvs. nu a fost finalizata o puteti marca ca fiind 'disputata'. Totusi, puteti oferi recenzie catre cealalta parte si puteti descrie ce s-a intamplat."
+      confirm_description: "Daca comanda dvs. a fost finalizata ar trebui sa o confirmati ca fiind completa. Apoi puteti oferi feedback catre cealalta persoana."
+      cancel_description: "Daca comanda dvs. nu a fost finalizata o puteti marca ca fiind 'disputata'. Totusi, puteti oferi feedback catre cealalta parte si puteti descrie ce s-a intamplat."
       cancel_payed_description: "Dacă cererea dumneavoastră a fost acceptată, dar aveţi îndoieli, puteţi anula în continuare cererea înainte de plată."
       canceling_payed_transaction: "Anulare tranzacție"
-      confirm: "Am returnat produsul"
+      confirm: "Marcheaza finalizată"
       cancel: Disputa
       continue: Continuați
-      give_feedback_to: "Oferiti o recenzie pentru %{person_link}"
-      do_not_give_feedback: "Omiteti recenzia"
+      give_feedback_to: "Oferiti feedback catre %{person_link}"
+      do_not_give_feedback: "Omiteti feedback"
     details:
       day: zi
       days: zile
@@ -1268,7 +1076,7 @@ ro:
       accepted_offer: "acceptat oferta"
       rejected_request: "a refuzat cererea, a anulat plata"
       rejected_offer: "respins oferta"
-      confirmed_request: "a marcat comanda ca fiind finalizata"
+      confirmed_request: "a marcat comanda ca fiind completă"
       confirmed_offer: "a marcat oferta ca finalizat"
       canceled_request: "a anulat comanda"
       canceled_offer: "anulat oferta"
@@ -1312,7 +1120,7 @@ ro:
       cancel_payed_transaction: Anulare
       feedback_given: "Feedback oferit"
       feedback_skipped: "Feedback omis"
-      give_feedback: "Oferiti o recenzie"
+      give_feedback: "Oferiti feedback"
       offer_accepted: "Oferă acceptată"
       offer_rejected: "Ofertă respinsă"
       offer_canceled: Anulat
@@ -1329,14 +1137,14 @@ ro:
           verify: "Nu puteti accepta aceasta tranzactie pentru ca nu v-ati verificat contul PayPal. Accesati %{paypal_url} pentru a va verifica contul."
           intl: "Nu am putut procesa plata prin PayPal deoarece contul dvs. de PayPal nu are un mecanism de retragere. Accesati link-ul %{paypal_url} si conectati-va pentru a putea accepta sau rejecta manual plata."
       waiting_for_current_user_to_deliver_listing: "Asteptam sa livrezi comanda pentru %{listing_title}"
-      waiting_for_listing_author_to_deliver_listing: "Asteptam ca %{listing_author_name} sa livreze comanda pentru %{listing_title}"
+      waiting_for_listing_author_to_deliver_listing: "Il asteptam pe %{listing_author_name} sa livreze comanda pentru %{listing_title}"
       request_accepted: "Cerere acceptată"
       request_rejected: Refuzat
       request_confirmed: Finalizat
       request_canceled: Anulat
       request_paid: "Plata a fost facuta cu succes"
       request_preauthorized: "Plata autorizata"
-      skip_feedback: "Omiteti recenzia"
+      skip_feedback: "Omiteti feedback"
       waiting_for_listing_author_to_accept_offer: "Aşteptare pentru %{listing_author_name} pentru a accepta oferta"
       waiting_for_listing_author_to_accept_request: "Asteapta ca %{listing_author_name} să accepte solicitarea. Imediat ce %{listing_author_name} acceptă, suma iti va fi debitata."
       waiting_for_you_to_accept_request: "Te asteapta sa accepti solicitarea"
@@ -1344,7 +1152,7 @@ ro:
       waiting_confirmation_from_you: "Te asteptam ca sa marchezi comanda ca fiind completa"
       waiting_payment_from_requester: "Aşteptare pentru %{requester_name} să plătească"
       waiting_payment_from_you: "Vă aștept să plătiți"
-      waiting_feedback_from_you: "Asteptam sa oferiti o recenzie"
+      waiting_feedback_from_you: "Asteptam sa oferiti feedback"
       pending_external_inbox:
         paypal:
           multicurrency: "Te rugam sa confirmi plata prin PayPal"
@@ -1360,9 +1168,9 @@ ro:
       reject_request: "Nu de data asta"
       accept_preauthorized_offer: "Accepta oferta"
       accept_preauthorized_request: "Acceptă cererea"
-      reject_preauthorized_offer: "Refuza cererea"
+      reject_preauthorized_offer: "Nu de data aceasta"
       reject_preauthorized_request: "Nu de data aceasta"
-      confirm: "Am returnat produsul"
+      confirm: "Marcheaza finalizată"
       cancel: Disputa
   feedback:
     feedback_subject: "Feedback nou de la %{service_name}"
@@ -1404,7 +1212,7 @@ ro:
       create_own: "Vrei sa-ti creezi propriul marketplace similar cu %{service_name}? %{learn_more}."
       learn_more: "Vezi mai mult"
     confirm_reminder:
-      you_have_not_yet_confirmed_or_canceled_request: "Inca nu ati finalizat sau nu ati anulat comanda %{request_link}. Daca comanda a fost finalizata ar trebui sa confirmati acest lucru. Apoi puteti oferi o recenzie catre %{other_party_given_name}."
+      you_have_not_yet_confirmed_or_canceled_request: "Inca nu ati finalizat sau nu ati anulat comanda %{request_link}. Daca comanda a fost finalizata ar trebui sa confirmati acest lucru. Dupa asta puteti oferi feedback catre %{other_party_given_name}."
       remember_to_confirm_request: "Nu uitați să confirmați sau să revocați o solicitare"
       if_will_not_happen_you_should_cancel: "Dacă credeți că această comandă nu va fi finalizată dintr-un motiv sau altul, puteți %{cancel_it_link}."
       cancel_it_link_text: anulați-l
@@ -1416,24 +1224,23 @@ ro:
       payment_settings_link: "setări plăți"
     transaction_confirmed:
       here_is_a_message_from: "Iată un mesaj de la %{other_party_given_name}:"
-      request_marked_as_confirmed: "Comanda finalizata - nu uitati sa oferiti o recenzie."
+      request_marked_as_confirmed: "Comanda finalizata - nu uitati sa oferiti feedback."
       request_marked_as_canceled: "Comanda anulata"
-      has_marked_request_as_confirmed: "%{other_party_full_name} a marcat comanda pentru %{request} ca fiind finalizata. Poti oferi acum o recenzie pentru %{other_party_given_name}."
+      has_marked_request_as_confirmed: "%{other_party_full_name} a bifat comanda pentru %{request} ca fiind finalizata. Puteti oferi acum feedback catre %{other_party_given_name}."
       has_marked_request_as_canceled: "%{other_party_full_name} a anulat comanda pentru %{request}. Totusi, puteti oferi feedback catre %{other_party_given_name}."
-      giving_feedback_is_good_idea: "Feedback-ul este intotdeauna o idee buna. Daca totul a decurs bine comunitatea ar trebui sa stie ca %{other_party_given_name} este de incredere. Daca au fost probleme este bine sa mentionezi si aceste aspecte."
-      give_feedback_to: "Oferiti o recenzie pentru %{other_party_given_name}"
+      giving_feedback_is_good_idea: "Feedback-ul este intotdeauna o idee buna. Daca totul a decurs bine comunitatea ar trebui sa stie ca %{other_party_given_name} este de incredere. Daca au fost probleme este bine sa mentionati si aceste aspecte."
+      give_feedback_to: "Oferiti feedback catre %{other_party_given_name}"
       stripe:
         has_marked_request_as_confirmed: ~
-      team_title: ~
     transaction_automatically_confirmed:
-      subject: "Comanda a fost finalizata automat - nu uitati sa oferiti o recenzie"
+      subject: "Comanda a fost finalizata automat - nu uitati sa oferiti feedback"
       we_have_marked_request_as_confirmed: ~
     booking_transaction_automatically_confirmed:
-      subject: "Comanda a fost finalizata automat - nu uitati sa oferiti o recenzie"
+      subject: "Comanda a fost finalizata automat - nu uitati sa oferiti feedback"
       we_have_marked_request_as_confirmed: "Am marcat comanda despre '%{request}' finalizată. Solicitarea a fost completată automat, deoarece a trecut o zi de la încheierea perioadei de rezervare."
     automatically_confirmed_footer:
-      giving_feedback_is_good_idea: "Puteti acum sa oferiti o recenzie pentru %{other_party_given_name}. Feedback-ul este intotdeauna o idee buna. Daca totul a decurs bine comunitatea ar trebui sa stie ca %{other_party_given_name} este de incredere. Daca au fost probleme este bine sa mentionati si aceste aspecte."
-      give_feedback_to: "Oferiti o recenzie pentru %{other_party_given_name}"
+      giving_feedback_is_good_idea: "Puteti acum sa oferiti feedback catre %{other_party_given_name}.Feedback-ul este intotdeauna o idee buna. Daca totul a decurs bine comunitatea ar trebui sa stie ca %{other_party_given_name} este de incredere. Daca au fost probleme este bine sa mentionati si aceste aspecte."
+      give_feedback_to: "Oferiti feedback catre %{other_party_given_name}"
       show_thread: "Arată conversația"
     confirmation_instructions:
       confirmation_instructions_signature: "Toate cele bune, <br/> Echipa %{service_name}"
@@ -1483,7 +1290,7 @@ ro:
       has_sent_you_a_message_in_kassi: "%{sender} ti-a trimis un mesaj in %{service_name}"
       you_have_a_new_message: "Un nou mesaj in %{service_name} de la %{sender_name}"
     new_payment:
-      new_payment: "Ai primit o nouă plată"
+      new_payment: "Aţi primit o nouă plată"
       price_per_unit_type: "Pret pe %{unit_type}"
       quantity: "Cantitate:"
       you_have_received_new_payment: "Ai incasat <b>%{payment_sum}</b> pentru <b>%{listing_title}</b> de la %{payer_full_name}. Ai aici chitanţa:"
@@ -1528,7 +1335,7 @@ ro:
       you_will_get: "Total:"
     receipt_to_payer:
       receipt_of_payment: "Primirea plății"
-      you_have_made_new_payment: "Ai plătit <b>%{payment_sum}</b> pentru <b>%{listing_title}</b> catre %{recipient_full_name}. Aici este dovada plății."
+      you_have_made_new_payment: "Ai plătit <b>%{payment_sum}</b> pentru <b>%{listing_title}</b> la %{recipient_full_name}. Aici este chitanța plății."
       product: Produs
       price_per_unit_type: "Pret pe %{unit_type}"
       duration: Durata
@@ -1569,18 +1376,18 @@ ro:
       text_version_text: "Poti oferi ceva de care altii au nevoie? Sau ai nevoie de ceva ce altii pot oferi? Adauga o oferta sau o cerere sau verifica toata cererea si oferta aici %{url}"
     reset_password_instructions:
       change_my_password: "Modifica-mi parola"
-      reset_password_instructions: "<p>Ai indicat ca ai uitat parola sau numele de utilizator pentru serviciul %{service_name}.</p><p>Daca trebuie sa resetezi parola, fa click pe link-ul%{password_reset_link}</p><br/><p>Daca nu ai cerut asta, ignora acest email. Parola ta nu se va schimba pana nu accesezi link-ul de mai sus si pana cand nu creezi una noua.</p>"
+      reset_password_instructions: "<p>Ai indicat ca ai uitat parola sau numele de utilizator pentru serviciul %{service_name}.</p><p>Numele de utilizator este %{username}</p><p>Daca trebuie sa resetezi parola, fa click pe link-ul%{password_reset_link}</p><br/><p>Daca nu ai cerut asta, ignora acest email. Parola ta nu se va schimba pana nu accesezi link-ul de mai sus si pana cand nu creezi una noua.</p>"
     testimonial_reminder:
-      remember_to_give_feedback_to: "Memento: nu uitati sa oferiti o recenzie pentru %{name}"
-      you_have_not_given_feedback_yet: "Inca nu ati oferit recenzie pentru %{name} cu privire la tranzactia %{event}. Nu uitati sa oferiti feedback despre modul in care %{given_name} a colaborat in tranzactie."
+      remember_to_give_feedback_to: "Memento: nu uitati sa oferiti feedback pentru %{name}"
+      you_have_not_given_feedback_yet: "Inca nu ati oferit feedback pentru %{name} cu privire la tranzactia %{event}. Nu uitati sa oferiti feedback despre modul in care %{given_name} a colaborat in tranzactie."
     transaction_preauthorized:
       subject: "%{requester} este interesat si a autorizat plata pentru %{listing_title} publicat pe %{service_name}"
       transaction_requested_by_user: "Avem vesti bune! %{requester} este interesat de \"%{listing_title}\" si a autorizat o plata pentru acest produs."
       you_have_time_to_accept: "Trebuie sa accepti sau sa refuzi plata in termen de %{payment_expires_in}."
       if_you_do_accept: "Daca accepti cererea in acest termen, vei primi banii imediat in cont."
       if_you_do_accept_stripe: ~
-      if_you_do_not_accept: "Daca refuzi cererea sau daca nu raspunzi in termenul mentionat, tranzactia va fi anulata automat. %{requester} nu va plati, iar tu nu vei incasa nicio suma."
-      click_here_to_reply: "Apasa aici pentru a raspunde cererii"
+      if_you_do_not_accept: "Daca refuzi cererea sau daca nu raspunzi in termenul mentionat, tranzactia va fi anulata automat, %{requester} nu va plati iar tu nu vei incasa nicio suma."
+      click_here_to_reply: "Apasati aici pentru a raspunde solicitării"
     transaction_preauthorized_reminder:
       subject: "Nu uitați să acceptați solicitarea din %{requester} despre înregistrarea %{listing_title}"
       remember_to_accept: "Nu uitați să acceptați solicitarea din %{requester} despre înregistrarea \"%{listing_title}\". %{requester} a plătit deja pentru înregistrare. Trebuie să acceptați solicitarea pentru a primi plata."
@@ -1598,7 +1405,6 @@ ro:
       you_are_receiving_this_because: "Ați primit această notificare deoarece il / o urmariti pe %{author_name}."
       view_listing: "Vedeti listarea"
     new_member_notification:
-      subject: ~
       new_member_has_joined: ~
       this_is_automatic_message: ~
       person_name: ~
@@ -1621,14 +1427,6 @@ ro:
       subject: ~
       there_is_a_edited_listing_to_review: ~
       review_the_listing: ~
-    new_transaction:
-      subject: ~
-      there_is_a_new_transaction: ~
-      a_new_transaction: ~
-      listing: ~
-      sum: ~
-      starter: ~
-      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: ~
@@ -1699,9 +1497,6 @@ ro:
       on_or_after: "trebuie sa fie pe sau dupa %{restriction}"
       positive_number: "Adaugă un număr:"
       from_must_be_less_than_till: ~
-      section_with_this_id_already_exists: ~
-      listing_with_this_id_does_not_exist: ~
-      presence: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} a agreat sa imprumute %{listing_title} catre %{requester_name} %{time_ago}."
@@ -1864,7 +1659,7 @@ ro:
       search: Cauta
       signup: "Cont nou"
       search_placeholder: "Ce anume cauți ?"
-      search_location_placeholder: Oras
+      search_location_placeholder: ~
     listings:
       no_listing_image: "Fara poza"
   layouts:
@@ -1885,7 +1680,7 @@ ro:
       dont_use_to_contact_support: "Esti administratorul %{service_name}. Acest formular va fi folosit de catre utilizatori pentru a te contacta pe tine. Nu poti folosi acest formular pentru a contacta Sharetribe. In schimb, poti sa contactezi Sharetribe prin widgetul de suport din partea dreapta-jos a panoului de administrator."
       feedback_forum: "forum de feedback"
       feedback_handle: Feedback
-      give_feedback: Contact
+      give_feedback: contactați-ne
       or_check_our: "...sau verifica a noastra"
       send_feedback_to_admin: "Trimiteti mesaj"
       to_see_what_others_have_suggested: "pentru a vedea ceea ce altii au sugerat si pentru a vota acele idei."
@@ -1925,23 +1720,6 @@ ro:
       messages: Mesaje
     logged_in_notifications_icon:
       notifications: Notificări
-    markdown_help:
-      title: ~
-      description: ~
-      formatting: ~
-      result: ~
-      h1: ~
-      h2: ~
-      h3: ~
-      italic: ~
-      bold: ~
-      underline: ~
-      strikethrough: ~
-      inline_link: ~
-      list: ~
-      one: ~
-      two: ~
-      three: ~
     mobile_logged_in:
       admin: Admin
       go_to_your_profile_page: Profil
@@ -1975,7 +1753,7 @@ ro:
       feedback_considered_spam: "Feedback-ul nu a fost salvat, datorita formatarii. Incercati inca o data sau folositi forumul de feedback."
       feedback_not_saved: "Feedback-ul nu a putut fi trimis."
       feedback_saved: "Multumim pentru mesaj! Vom reveni cu un raspuns la dvs. in cel mai scurt timp posibil."
-      feedback_sent_to: "Feedback trimis pentru %{target_person}"
+      feedback_sent_to: "Feedback trimis lui %{target_person}"
       feedback_skipped: "Feedback omis"
       invitation_cannot_be_sent: "Invitatia nu a putut fi trimisa"
       invitation_cannot_unsubscribe: "Nu te putem dezabona de la email-urile de invitatie"
@@ -2036,7 +1814,7 @@ ro:
       this_content_is_not_available_in_this_community: "Acest conținut nu este disponibil."
       unknown_error: "Eroare necunoscuta. Utilizati pagina \"Contactati-ne\" pentru a trimite detaliile despre ceea ce s-a intamplat."
       update_error: "A apărut o eroare la actualizarea informațiilor tale, te rugăm să mai încerci odata"
-      you_are_not_allowed_to_give_feedback_on_this_transaction: "Nu sunteti autorizat sa oferiti recenzie pentru aceasta tranzactie"
+      you_are_not_allowed_to_give_feedback_on_this_transaction: "Nu sunteti autorizat sa oferiti feedback pentru aceasta tranzactie"
       you_are_not_authorized_to_do_this: "Nu ești autorizat să faci asta"
       you_are_not_authorized_to_view_this_content: "Nu ești autorizat să vezi acest conținut"
       listing_closed: "Listarea sa închis"
@@ -2142,7 +1920,6 @@ ro:
       description:
         detailed_description: "Descriere detaliată"
         youtube_info: "Daca descrierea ta contine link-uri catre YouTube, video-urile vor fi afisate la finalul descrierii."
-        youtube_info_markdown: ~
       destination:
         destination: Destinație
       form_content:
@@ -2178,7 +1955,7 @@ ro:
         accepted_formats: ~
         images_not_uploaded_confirm: ~
       location:
-        location: Oras
+        location: Locație
       price:
         price: Preț
         per: per
@@ -2197,7 +1974,7 @@ ro:
         shipping_price_additional: ~
         pickup: Recepție
       origin:
-        location: Oras
+        location: Locație
         origin: origine
       send_button:
         save_listing: "Publicati listarea"
@@ -2306,7 +2083,6 @@ ro:
       month: "Numar de luni:"
       unit: ~
       custom: ~
-      person: ~
     quantity_placeholder: Cantitate
     please_comment: Comenteaza
     reply_link:
@@ -2316,7 +2092,7 @@ ro:
       add_profile_picture: "Adaugati o poza de profil"
       comments: "Discutie publica"
       contact_by_phone: "Contactati prin telefon:"
-      contact: "Verifica Disponibilitatea"
+      contact: Contact
       favor_offer: "Oferta serviciu"
       favor_request: "Cerere serviciu"
       inquiry: ~
@@ -2358,7 +2134,6 @@ ro:
       week: saptamana
       month: lună
       unit: ~
-      person: ~
     verification_required:
       verification_required: "Verificare necesară"
   listing_conversations:
@@ -2524,6 +2299,8 @@ ro:
       sign_up: "Creati un cont nou pe %{service_name}"
       terms: "Termeni de utilizare"
       privacy: "Politica de Confidențialitate"
+      username_is_in_use: "Acest nume de utilizator este deja folosit"
+      username_is_invalid: "Numele de utilizator nu este valid. Caracterele permise sunt litere, numere si \"underscore\""
       visible_only_to_you: "vizibil numai pentru dvs. și echipa %{service_name}"
       visible_to_everybody: "vizibil tuturor"
       create_account_with_provider: "Inscrie-te cu %{provider}"
@@ -2696,8 +2473,6 @@ ro:
       image_is_processing: "Aveti rabdare. Procesam poza dvs. de profil . Va fi gata in cateva minute"
       shown_in_your_public_profile: ~
       editing_profile_of: "Acum editezi profilul %{name}"
-      format_markdown_link: ~
-      format_markdown: ~
     save_information: "Salveaza informatia"
   shipping_address:
     shipping_address: ~
@@ -2725,14 +2500,14 @@ ro:
     new:
       as_expected: "Conform asteptarilor"
       exceeded_expectations: "Mult peste asteptari"
-      give_feedback_to: "Oferiti o recenzie pentru %{person}"
+      give_feedback_to: "Oferiti feedback catre %{person}"
       grade: "Care este parerea ta generala?"
       less_than_expected: "Sub asteptari"
-      send_feedback: "Trimite recenzia"
+      send_feedback: "Trimiteti feedback"
       slightly_better_than_expected: "Putin peste asteptari"
       slightly_less_than_expected: "Putin sub asteptari"
       textual_feedback: "Cum au decurs lucrurile?"
-      this_will_be_shown_in_profile: "Recenzia pe care o oferiti va fi publicata pe pagina de profil a utilizatorului %{person}. Astfel si alti utilizatori pot vedea daca %{person} este de incredere."
+      this_will_be_shown_in_profile: "Feedback-ul pe care il oferiti va fi vizibil in pagina de profil a persoanei %{person} si pentru alti membrii. Ii ajuta sa evalueze daca persoana %{person} este de incredere."
       positive: Pozitiv
       negative: Negativ
       default_textual_feedback: "Totul a decurs fara probleme. Multumim!"
@@ -3029,7 +2804,6 @@ ro:
       document: ~
       send_verification: ~
       need_verification: ~
-      additional_document: ~
     form_pin:
       social_insurance_number: ~
       social_security_number: ~
@@ -3060,40 +2834,3 @@ ro:
       category_description: ~
       profile_title: ~
       profile_description: ~
-  activemodel:
-    attributes:
-      landing_page_version/section/base:
-        id: ~
-        title: ~
-        paragraph: ~
-        button_color: ~
-        button_color_hover: ~
-        button_title: ~
-        button_path: ~
-        button_path_string: ~
-        background_image: ~
-        background_image_variation: ~
-        background_color: ~
-        background_color_string: ~
-        icon_color: ~
-      landing_page_version/section/listings:
-        listing_1_id: ~
-        listing_2_id: ~
-        listing_3_id: ~
-      landing_page_version/section/video:
-        text: ~
-        youtube_video_id: ~
-  canada_states:
-    AB: Alberta
-    BC: "British Columbia"
-    MB: Manitoba
-    NB: "New Brunswick"
-    NL: "Newfoundland and Labrador"
-    NS: "Nova Scotia"
-    NT: "Northwest Territories"
-    NU: Nunavut
-    "ON": Ontario
-    PE: "Prince Edward Island"
-    QC: Quebec
-    SK: Saskatchewan
-    YT: "Yukon Territory"

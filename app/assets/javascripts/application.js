@@ -78,8 +78,6 @@
 //= require admin/transactions.js
 //= require admin/testimonials.js
 //= require admin/domains.js
-//= require admin/landing_page_editor.js
-//= require admin/landing_page_section_editor.js
 //= require payment_math
 //= require dropdown
 //= require jquery.nouislider
@@ -101,5 +99,4 @@
 //= require stripe_form2
 //= require analytics
 //= require social-insurance-number
-//= require stripe_payment
 //= require_self

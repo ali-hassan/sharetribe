@@ -5,7 +5,6 @@
 
 <section id="<%= section_id %>" class="info__section--<%= bg_styles[:section_style_modifier] %>" style="<%= bg_styles[:background_image_style] %> <%= bg_styles[:background_color_style] %>">
   <div class="info__content--<%= bg_styles[:variation_modifier] %>">
-    <h1 class="info__title--<%= bg_styles[:variation_modifier] %>"><%= s["title"] %></h1>
     <% case s["variation"] %>
     <% when "single_column" %>
 
@@ -34,11 +33,7 @@
             <div class="info__column-text-content">
               <% if c["icon"] %>
                 <div class="info__column-icon <%= section_id %>__info__column-icon">
-                  <% if CUSTOM_ICONS.include?(c["icon"]) %>
-                    <%= render template: "custom_icons/#{c["icon"]}" %>
-                  <% else %>
-                    <%= render partial: "icon", locals: { icon: c["icon"] } %>
-                  <% end %>
+                  <%= render partial: "icon", locals: { icon: c["icon"] } %>
                 </div>
               <% end %>
               <h2 class="info__column-title"><%= c["title"] %></h2>
@@ -48,13 +43,17 @@
               </div>
             </div>
 
-            <% if c['button_title'].present? || c['button_path'] && c['button_path']['value'].present? %>
+            <% if c["button_title"] %>
               <a class="info__button<%= bg_styles[:button_modifier] %> <%= section_id %>__info__button<%= bg_styles[:button_modifier] %>" href="<%= c['button_path']['value'] %>"><%= c["button_title"]%></a>
             <% end %>
           </div>
         <% end %>
       </div>
-
+      <br>
+      <br>
+      <br>
+      <h1 class="info__title--<%= bg_styles[:variation_modifier] %>"><%= s["title"] %></h1>
+      <br>
       <% if s["button_title"] %>
         <div class="info__button-container">
           <a class="info__button<%= bg_styles[:button_modifier] %> <%= section_id %>__info__button<%= bg_styles[:button_modifier] %>" href="<%= s['button_path']['value'] %>"><%= s["button_title"]%></a>

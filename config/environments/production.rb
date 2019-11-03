@@ -147,6 +147,4 @@ Rails.application.configure do
 
   # We don't need schema dumps in this environment
   config.active_record.dump_schema_after_migration = false
-
-  config.active_storage.service = :amazon
 end

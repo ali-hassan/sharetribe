@@ -90,8 +90,6 @@ th-TH:
         transaction_agreement_checkbox_label_description: "ข้อความนี้จะปรากฎถัดจากช่องทำเครื่องหมายในแบบฟอร์มการชำระเงิน ผู้ใช้จำเป็นต้อง ทำเครื่องหมายในกล่อง เพื่อที่จะดำเนินการกับการทำธุรกรรม เช่นป้ายตัวอย่างบอกว่า \"โดยการคลิกที่กล่องนี้ ฉันขอยอมรับข้อตกลง\" เป็นต้น"
         transaction_agreement_text_header: ข้อความข้อตกลง
         transaction_agreement_description: "นี่คือเนื้อหาของข้อตกลงอย่างเป็นทางการที่ผู้ใช้จำเป็นต้องยอมรับ เนื้อหาข้อตกลงจะปรากฏขึ้นเมื่อผู้ใช้คลิกที่ลิงค์ \"%{read_more}\" ข้างฉลากข้อตกลง"
-        terms_privacy_policy_and_static_content: ~
-        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "แก้ไขรูปลักษณ์และความรู้สึกของตลาด \"%{community_name}\""
         community_logo: โลโก้
@@ -114,8 +112,6 @@ th-TH:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: รูปภาพหน้าปกจะแสดงในหน้าแรกสำหรับผู้ใช้ที่ยังไม่ได้ล็อคอิน
         cover_photo_instructions_text_with_dimensions: "ขนาดโลโก้จะถูกย่อขนาดเหลือ %{width} x %{height} px ภาพที่มีขนาดสูงกว่าจะถูกตัดจากตรงกลาง %{see_how_it_looks_like}"
-        we_have_you_covered: ~
-        cover_photo_ready_made: ~
         small_cover_photo_visibility: "ภาพปกขนาดเล็กจะถูกแสดงในหน้าเว็บทั้งหมด ยกเว้นในหน้าแรกสำหรับผู้ใช้ที่ยังไม่ได้ล็อคอิน"
         small_cover_photo_instructions_text_with_dimensions: "รูปภาพจะถูกย่อขนาดเหลือ %{width} x %{height} px ภาพที่มีขนาดสูงกว่าจะถูกตัดจากตรงกลาง "
         main_content_width: "เมื่อเลือกภาพปก โปรดทราบว่าความกว้างสูงสุดของเนื้อหาหลักคือ%{main_width} px  อย่าลืมตรวจสอบว่าภาพปกของคุณจะมีลักษณะใดบนหน้าจอขนาดเล็ก (เช่น โดยใช้ หน้าต่างเบราว์เซอร์ที่แคบขึ้น)"
@@ -219,7 +215,6 @@ th-TH:
         require_verification_to_post_listings: อนุญาตให้เฉพาะผู้ใช้ที่ได้รับการตรวจสอบแล้วจากผู้ดูแลระบบในการโพสต์รายการใหม่
         allow_free_conversations: ~
         search_preferences: ~
-        search_and_location_preferences: ~
         default_search_type: ~
         keyword_search: ~
         keyword_and_location_search: ~
@@ -228,7 +223,6 @@ th-TH:
         km: ~
         miles: ~
         show_only_nearby: ~
-        allow_users_to_add_location: ~
         listing_preferences: การกำหนดค่ารายการ
         transaction_preferences: การตั้งค่าการสั่งซื้อสินค้า
         show_listing_publishing_date: แสดงวันที่เผยแพร่รายการในหน้ารายการ
@@ -257,7 +251,6 @@ th-TH:
         delete_this_marketplace: ลบตลาดนี้
         payment_preferences: ~
         pre_approved_listings: ~
-        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: จัดการผู้ใช้
         email: อีเมล์
@@ -319,7 +312,6 @@ th-TH:
         twitter_handle_placeholder: ชื่อผู้ใช้
         invalid_twitter_handle: "การจัดการ Twitter ควรมีตัวเลขและอักษรมากที่สุด 15 ตัว (อักษร A-Z เลข 0-9)"
         facebook_connect: Facebook
-        facebook_developers_dashboard: ~
         facebook_connect_info_text: "ในการเปิดการใช้งานเข้าสู่ระบบ Facebook กรุณาสร้างแบบฟอร์มสำหรับตลาดของคุณใน <a href='https://developers.facebook.com/'>แดชบอร์ดนักพัฒนา Facebook</a> เพิ่ม ID และรหัสลับของแอพลิเคชันโดยอัตโนมัติได้ที่นี่"
         facebook_connect_info_text_with_instructions: "ในการเปิดการใช้งานเข้าสู่ระบบ Facebook กรุณาสร้างแบบฟอร์มสำหรับตลาดของคุณใน <a href='https://developers.facebook.com/'>แดชบอร์ดนักพัฒนา Facebook</a> เพิ่ม ID และรหัสลับของแอพลิเคชันโดยอัตโนมัติได้ที่นี่ %{instructions_link}"
         facebook_instructions_link_text: "ดูคำแนะนำสำหรับการกำหนดค่าเข้าสู่ระบบด้วย Facebook Connect"
@@ -332,7 +324,6 @@ th-TH:
         add_another_image: ~
         google_connect: ~
         google_instructions_link_text: ~
-        google_developers_console: ~
         google_connect_info_text_with_instructions: ~
         google_connect_info_text: ~
         enable_google_login: ~
@@ -340,7 +331,6 @@ th-TH:
         google_connect_secret: ~
         linkedin_connect: ~
         linkedin_instructions_link_text: ~
-        linkedin_developers_dashboard: ~
         linkedin_connect_info_text_with_instructions: ~
         linkedin_connect_info_text: ~
         enable_linkedin_login: ~
@@ -454,8 +444,6 @@ th-TH:
           canceled: ~
           preauthorized: ~
           rejected: ~
-          payment_intent_requires_action: ~
-          payment_intent_action_expired: ~
         headers:
           conversation: บทสนทนา
           listing: รายการ
@@ -501,9 +489,6 @@ th-TH:
             canceled: ~
             initiated: ~
             pending_ext: ~
-            payment_intent_requires_action: ~
-            payment_intent_action_expired: ~
-            payment_intent_failed: ~
         not_available: ไม่พบข้อมูล
       conversations:
         conversations: ~
@@ -559,9 +544,6 @@ th-TH:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
-          unskip: ~
-          if_you_unskip_the_review: ~
-          they_will_not_be_notified_automatically: ~
       invitations:
         invitations: ~
         used:
@@ -642,159 +624,6 @@ th-TH:
         contact_us: ~
         you_can_now_use_a_custom_domain: ~
         would_you_like_to_change_domain: ~
-      landing_pages:
-        landing_pages: ~
-        info_1: ~
-        info_2: ~
-        info_2_preview_text: ~
-        info_2_details_text: ~
-        info_2_design_text: ~
-        info_3: ~
-        info_4: ~
-        editor_title: ~
-        editor_info: ~
-        preview: ~
-        set_live: ~
-        headers:
-          section_id: ~
-          section_type: ~
-          version: ~
-          released: ~
-        add_new_version: ~
-        new_version: ~
-        edit_version: ~
-        add_new_section: ~
-        select_section_type: ~
-        form:
-          version: ~
-          save: ~
-        sections:
-          identifier: ~
-          kind: ~
-          variation: ~
-          new: ~
-          edit: ~
-          remove_section_confirmation: ~
-          info_single_column: ~
-          info_multi_column_2: ~
-          info_multi_column_3: ~
-          listings: ~
-          categories: ~
-          hero: ~
-          locations: ~
-          video: ~
-          new_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-          edit_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-    landing_page_versions:
-      sections:
-        hero:
-          hero_title: ~
-          hero_description: ~
-        footer:
-          footer_title: ~
-          footer_style: ~
-          style_dark: ~
-          style_light: ~
-          style_marketplace_color: ~
-          style_logo: ~
-        cta_button:
-          cta_button: ~
-          cta_enabled: ~
-          cta_text: ~
-          cta_url: ~
-        background_image_overlay:
-          background_image: ~
-          background_image_info: ~
-          add_another_image: ~
-          current_image: ~
-          file_not_selected: ~
-          background_image_overlay: ~
-          background_image_overlay_info: ~
-          overlay_dark: ~
-          overlay_light: ~
-          overlay_transparent: ~
-        background_style:
-          background_style: ~
-          style_image: ~
-          style_color: ~
-          style_none: ~
-        background_color:
-          background_color: ~
-          background_color_info: ~
-        categories:
-          add: ~
-          category: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_categories: ~
-          need_at_most_7_categories: ~
-        category:
-          add_another_image: ~
-          category: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          select_category: ~
-        locations:
-          add: ~
-          location: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_locations: ~
-          need_at_most_7_locations: ~
-        location:
-          add_another_image: ~
-          location: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          title: ~
-          title_placeholder: ~
-          url: ~
-          url_placeholder: ~
-        multi_column:
-          main_title: ~
-          column_header: ~
-          column_title: ~
-          column_icon_info: ~
-          column_icon: ~
-          column_paragraph: ~
-          column_button: ~
-          column_button_text: ~
-          column_button_url: ~
-        listings:
-          you_need_to_add_the_listing_ids: ~
-        video:
-          text: ~
-          youtube_video_id: ~
-          autoplay: ~
-          autoplay_no: ~
-          autoplay_muted: ~
-          info: ~
     custom_fields:
       edit:
         edit_listing_field: "แก้ไขข้อมูลรายการ '%{field_name}'"
@@ -807,7 +636,6 @@ th-TH:
       edit_location:
         edit_location_field: แก้ไขข้อมูลตำแหน่ง
         this_field_is_required: ข้อมูลนี้จำเป็น
-        the_location_feature_can_be_enabled: ~
       edit_expiration:
         edit_expiration_field: ~
         enable: ~
@@ -913,7 +741,6 @@ th-TH:
       emails_title: อีเมล์
       subscription: ~
       preview: ~
-      whats_new: ~
     listing_shapes:
       availability_title: ~
       read_more: อ่านเพิ่มเติมเกี่ยวกับการจัดการความพร้อมใช้งานโดยอัตโนมัติ
@@ -1108,31 +935,12 @@ th-TH:
       request: ต้องการ
       inquiry: ประกาศ
       share_for_free: แบ่งปันฟรี
-      event_w_online_payment: ~
-      event_wo_online_payment: ~
       default_action_button_labels:
         sell: ซื้อ
         rent: เช่า
         request: เสนอ
         offer: คำขอ
         inquiry: ติดต่อ
-        book: ~
-    community_transactions:
-      show:
-        transaction_for: ~
-        status: ~
-        next_step: ~
-        waiting_for_provider_accept_or_reject: ~
-        waiting_for_fulfill_and_complete: ~
-        buyer: ~
-        provider: ~
-        buyer_pays: ~
-        marketplace_collects: ~
-        buyer_service_fee_label: ~
-        service_fee_label: ~
-        provider_receives: ~
-        admin_info_text: ~
-        manage_reviews: ~
   common:
     edit_page: แก้ไขหน้านี้
     default_community_slogan: ตลาดชุมชน
@@ -1220,8 +1028,8 @@ th-TH:
       total_value: "%{seller_gets}*"
       total_value_paypal: ~
       total_value_stripe: ~
-      paypal_fee: ~
-      paypal_fee_info: "*ไม่รวม %{link}"
+      paypal_fee_info: "*ไม่รวม <a id='%{fee_info_link_id}' href='#'>ค่าธรรมเนียมการชำระเงินของ PayPal</a>"
+      payment_fee_info: ~
       shipping_price_label: จัดส่ง
       stripe-fee_label: ~
     confirm:
@@ -1420,7 +1228,6 @@ th-TH:
       give_feedback_to: "ให้ความคิดเห็นแก่%{other_party_given_name}"
       stripe:
         has_marked_request_as_confirmed: "%{other_party_full_name} ได้ทำเครื่องหมายการสั่งซื้อเกี่ยวกับ%{request}เสร็จสมบูรณ์แล้ว การชำระเงินได้ถูกปล่อยเข้าธนาคารคุณแล้ว ขณะนี้คุณสามารถให้ความคิดเห็นไปยัง%{other_party_given_name}ได้"
-      team_title: ~
     transaction_automatically_confirmed:
       subject: "การสั่งซื้อเสร็จสมบูรณ์โดยอัตโนมัติ - อย่าลืมที่จะให้ความคิดเห็น"
       we_have_marked_request_as_confirmed: "เราได้ทำเครื่องหมายในการสั่งซื้อ '%{request}' เสร็จแล้ว การสั่งซื้อเสร็จสมบูรณ์โดยอัตโนมัติเนื่องจากผ่านมาแล้ว %{days_passed} วันนับตั้งแต่คำขอได้รับการยอมรับ"
@@ -1565,7 +1372,7 @@ th-TH:
       text_version_text: "คุณจะสามารถแบ่งปันบางสิ่งที่คนอื่นอาจต้องการได้หรือไม่? หรือคุณอาจต้องการบางสิ่งที่คนอื่นอาจมี? กรุณาเพิ่มข้อเสนอ หรือคำขอ หรือตรวจดูทุกอย่างที่คนอื่น ๆ กำลังนำเสนอ หรือกำลังร้องขอได้ที่ %{url}"
     reset_password_instructions:
       change_my_password: เปลี่ยนรหัสผ่านของฉัน
-      reset_password_instructions: "<p>คุณได้ชี้ให้เห็นว่าคุณลืมทั้งรหัสผ่านหรือชื่อผู้ใช้ของคุณ ในบริการ %{service_name}</p><p>หากคุณจำเป็นต้องรีเซ็ตรหัสผ่านของคุณ กรุณาคลิกที่ลิงค์ต่อไปนี้: %{password_reset_link}</p><br/><p>หากคุณไม่ได้ร้องขอ โปรดอย่าสนใจอีเมล์นี้ รหัสผ่านของคุณจะไม่เปลี่ยน จนกว่าคุณจะเข้าถึงการเชื่อมโยงดังกล่าวข้างบน และสร้างรหัสผ่านขึ้นมาใหม่</p>"
+      reset_password_instructions: "<p>คุณได้ชี้ให้เห็นว่าคุณลืมทั้งรหัสผ่านหรือชื่อผู้ใช้ของคุณ ในบริการ %{service_name}</p><p>ชื่อผู้ใช้ของคุณคือ: %{username}</p><p>หากคุณจำเป็นต้องรีเซ็ตรหัสผ่านของคุณ กรุณาคลิกที่ลิงค์ต่อไปนี้: %{password_reset_link}</p><br/><p>หากคุณไม่ได้ร้องขอ โปรดอย่าสนใจอีเมล์นี้ รหัสผ่านของคุณจะไม่เปลี่ยน จนกว่าคุณจะเข้าถึงการเชื่อมโยงดังกล่าวข้างบน และสร้างรหัสผ่านขึ้นมาใหม่</p>"
     testimonial_reminder:
       remember_to_give_feedback_to: "เตือนความจำ: อย่าลืมที่จะให้ข้อเสนอแนะไปยัง %{name}"
       you_have_not_given_feedback_yet: "คุณยังไม่ได้ให้ข้อเสนอแนะไปยัง %{name} เกี่ยวกับ %{event} อย่าลืมให้ข้อเสนอแนะ เกี่ยวกับการที่ %{given_name} ได้ดำเนินการในกรณีดังกล่าว"
@@ -1594,7 +1401,6 @@ th-TH:
       you_are_receiving_this_because: "คุณได้รับการแจ้งเตือนนี้เพราะคุณกำลังติดตาม %{author_name}"
       view_listing: แสดงรายการ
     new_member_notification:
-      subject: ~
       new_member_has_joined: ~
       this_is_automatic_message: ~
       person_name: ~
@@ -1617,14 +1423,6 @@ th-TH:
       subject: ~
       there_is_a_edited_listing_to_review: ~
       review_the_listing: ~
-    new_transaction:
-      subject: ~
-      there_is_a_new_transaction: ~
-      a_new_transaction: ~
-      listing: ~
-      sum: ~
-      starter: ~
-      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: ~
@@ -1695,9 +1493,6 @@ th-TH:
       on_or_after: "ต้องเป็นเท่ากับหรือหลัง %{restriction}"
       positive_number: ใส่หมายเลข
       from_must_be_less_than_till: ~
-      section_with_this_id_already_exists: ~
-      listing_with_this_id_does_not_exist: ~
-      presence: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} ได้ตกลงที่จะให้ %{requester_name} ยืม เมื่อ%{time_ago}"
@@ -1921,23 +1716,6 @@ th-TH:
       messages: ข้อความ
     logged_in_notifications_icon:
       notifications: แจ้งเตือน
-    markdown_help:
-      title: ~
-      description: ~
-      formatting: ~
-      result: ~
-      h1: ~
-      h2: ~
-      h3: ~
-      italic: ~
-      bold: ~
-      underline: ~
-      strikethrough: ~
-      inline_link: ~
-      list: ~
-      one: ~
-      two: ~
-      three: ~
     mobile_logged_in:
       admin: ผู้ดูแล
       go_to_your_profile_page: โปรไฟล์
@@ -2138,7 +1916,6 @@ th-TH:
       description:
         detailed_description: คำอธิบายโดยละเอียด
         youtube_info: "หากคำอธิบายของคุณ มีลิงค์ YouTube ด้วย วิดีโอของ YouTube จะปรากฎที่ด้านล่างคำอธิบายค่ะ"
-        youtube_info_markdown: ~
       destination:
         destination: จุดหมายปลายทาง
       form_content:
@@ -2302,7 +2079,6 @@ th-TH:
       month: "จำนวนเดือน:"
       unit: ~
       custom: "ปริมาณ:"
-      person: ~
     quantity_placeholder: ปริมาณ
     please_comment: ข้อคิดเห็น
     reply_link:
@@ -2354,7 +2130,6 @@ th-TH:
       week: สัปดาห์
       month: เดือน
       unit: ~
-      person: ~
     verification_required:
       verification_required: ต้องได้รับการยืนยัน
   listing_conversations:
@@ -2518,6 +2293,8 @@ th-TH:
       sign_up: "สร้างบัญชีใหม่ใน %{service_name}"
       terms: ข้อกำหนดการใช้งาน
       privacy: ~
+      username_is_in_use: ชื่อผู้ใช้ได้ถูกใช้ไปแล้ว
+      username_is_invalid: "ชื่อผู้ใช้ไม่ถูกต้อง ตัวอักษร ตัวเลข และเส้นใต้เท่านั้นที่สามารถใช้ได้"
       visible_only_to_you: "ปรากฎให้เห็นเฉพาะกับคุณ และแอดมิน %{service_name}"
       visible_to_everybody: ปรากฎให้เห็นกับทุกคน
       create_account_with_provider: ~
@@ -2690,8 +2467,6 @@ th-TH:
       image_is_processing: "โปรดรอซักครู เรากำลังประมวลผลรูปโปรไฟล์ของคุณ จะพร้อมภายใน 1-2 นาที"
       shown_in_your_public_profile: ~
       editing_profile_of: ~
-      format_markdown_link: ~
-      format_markdown: ~
     save_information: บันทึกข้อมูล
   shipping_address:
     shipping_address: ที่อยู่ในการจัดส่ง
@@ -3004,7 +2779,6 @@ th-TH:
       document: ~
       send_verification: ~
       need_verification: ~
-      additional_document: ~
     form_pin:
       social_insurance_number: ~
       social_security_number: ~
@@ -3035,40 +2809,3 @@ th-TH:
       category_description: ~
       profile_title: ~
       profile_description: ~
-  activemodel:
-    attributes:
-      landing_page_version/section/base:
-        id: ~
-        title: ~
-        paragraph: ~
-        button_color: ~
-        button_color_hover: ~
-        button_title: ~
-        button_path: ~
-        button_path_string: ~
-        background_image: ~
-        background_image_variation: ~
-        background_color: ~
-        background_color_string: ~
-        icon_color: ~
-      landing_page_version/section/listings:
-        listing_1_id: ~
-        listing_2_id: ~
-        listing_3_id: ~
-      landing_page_version/section/video:
-        text: ~
-        youtube_video_id: ~
-  canada_states:
-    AB: Alberta
-    BC: "British Columbia"
-    MB: Manitoba
-    NB: "New Brunswick"
-    NL: "Newfoundland and Labrador"
-    NS: "Nova Scotia"
-    NT: "Northwest Territories"
-    NU: Nunavut
-    "ON": Ontario
-    PE: "Prince Edward Island"
-    QC: Quebec
-    SK: Saskatchewan
-    YT: "Yukon Territory"

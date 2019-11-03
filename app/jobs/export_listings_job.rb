@@ -1,7 +1,6 @@
 require 'csv'
 class ExportListingsJob < Struct.new(:current_user_id, :community_id, :export_task_id)
   include DelayedAirbrakeNotification
-  include ListingsHelper
 
   # This before hook should be included in all Jobs to make sure that the service_name is
   # correct as it's stored in the thread and the same thread handles many different communities
@@ -48,15 +47,12 @@ class ExportListingsJob < Struct.new(:current_user_id, :community_id, :export_ta
     out << %w{
       listing_id
       listing_title
-      user_id
+      author_id
       created_at
       updated_at
       status
       category
       order_type
-      price
-      currency
-      pricing_unit
       main_image_url
     }.to_csv(force_quotes: true)
     listings.each do |listing|
@@ -64,14 +60,11 @@ class ExportListingsJob < Struct.new(:current_user_id, :community_id, :export_ta
         listing.id,
         listing.title,
         listing.author_id,
-        listing.created_at && I18n.l(listing.created_at, format: '%Y-%m-%d %H:%M:%S'),
-        listing.updated_at && I18n.l(listing.updated_at, format: '%Y-%m-%d %H:%M:%S'),
+        listing.created_at.to_s(:iso8601),
+        listing.updated_at.to_s(:iso8601),
         status_title(listing, locale),
         category_title(listing.category_id, categories),
         I18n.t(listing.shape_name_tr_key, locale: locale),
-        listing.price.present? && listing.price > 0 ? listing.price.to_s : 0,
-        listing.price.present? && listing.price > 0 ? listing.price.currency.to_s : "",
-        price_quantity_per_unit(listing, locale),
         main_image_url(listing)
       ].to_csv(force_quotes: true)
     end

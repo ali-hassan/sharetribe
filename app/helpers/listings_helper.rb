@@ -99,18 +99,18 @@ module ListingsHelper
     end
   end
 
-  def price_quantity_per_unit(listing, locale = I18n.locale)
+  def price_quantity_per_unit(listing)
     quantity =
-      if listing[:unit_type].present?
-        ListingViewUtils.translate_unit(listing[:unit_type], listing[:unit_tr_key], locale: locale)
-      elsif listing[:quantity].present?
-        listing[:quantity]
+      if listing.unit_type.present?
+        ListingViewUtils.translate_unit(listing.unit_type, listing.unit_tr_key)
+      elsif listing.quantity.present?
+        listing.quantity
       else
         nil
       end
 
     if quantity
-      I18n.t("listings.show.price.per_quantity_unit", quantity_unit: quantity, locale: locale)
+      t("listings.show.price.per_quantity_unit", quantity_unit: quantity)
     else
       ""
     end

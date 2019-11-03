@@ -80,8 +80,6 @@ ar:
         transaction_agreement_checkbox_label_description: ~
         transaction_agreement_text_header: "محتوى الاتفاق"
         transaction_agreement_description: ~
-        terms_privacy_policy_and_static_content: ~
-        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "‎%{community_name}‎ تحرير مظهر السوق الإلكتروني"
         community_logo: الشعار
@@ -104,8 +102,6 @@ ar:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: "صورة الغطاء تظهر في الصفحة الرئيسية للمستخدمين الغير مسجلين."
         cover_photo_instructions_text_with_dimensions: ~
-        we_have_you_covered: ~
-        cover_photo_ready_made: ~
         small_cover_photo_visibility: "صورة الغطاء المصغرة تظهر في كل الصفحات ما عدا الصفحة الرئيسية للمستخدمين المسجلين"
         small_cover_photo_instructions_text_with_dimensions: ~
         main_content_width: ~
@@ -209,7 +205,6 @@ ar:
         require_verification_to_post_listings: "السماح فقط للمشتركين المؤكدين من المشرف بإضافة إعلانات"
         allow_free_conversations: ~
         search_preferences: "تفضيلات البحث"
-        search_and_location_preferences: ~
         default_search_type: "‎%{select_search_type}‎ :نوع البحث"
         keyword_search: "بحث بالكلمة"
         keyword_and_location_search: "طرق البحث بالكلمة والموقع"
@@ -218,7 +213,6 @@ ar:
         km: كلم
         miles: ميل
         show_only_nearby: "أظهر فقط الإعلانات القريبة عند البحث بواسطة الموقع"
-        allow_users_to_add_location: ~
         listing_preferences: "تفضيلات الإعلان"
         transaction_preferences: "تفضيلات الطلب"
         show_listing_publishing_date: ~
@@ -247,7 +241,6 @@ ar:
         delete_this_marketplace: ~
         payment_preferences: "نظام الدفع"
         pre_approved_listings: ~
-        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: "إدارة المستخدمين"
         email: "بريد إلكتروني"
@@ -309,7 +302,6 @@ ar:
         twitter_handle_placeholder: "اسم المستخدم"
         invalid_twitter_handle: ~
         facebook_connect: فيسبوك
-        facebook_developers_dashboard: ~
         facebook_connect_info_text: ~
         facebook_connect_info_text_with_instructions: ~
         facebook_instructions_link_text: ~
@@ -322,7 +314,6 @@ ar:
         add_another_image: ~
         google_connect: ~
         google_instructions_link_text: ~
-        google_developers_console: ~
         google_connect_info_text_with_instructions: ~
         google_connect_info_text: ~
         enable_google_login: ~
@@ -330,7 +321,6 @@ ar:
         google_connect_secret: ~
         linkedin_connect: ~
         linkedin_instructions_link_text: ~
-        linkedin_developers_dashboard: ~
         linkedin_connect_info_text_with_instructions: ~
         linkedin_connect_info_text: ~
         enable_linkedin_login: ~
@@ -444,8 +434,6 @@ ar:
           canceled: ~
           preauthorized: ~
           rejected: ~
-          payment_intent_requires_action: ~
-          payment_intent_action_expired: ~
         headers:
           conversation: ~
           listing: إعلان
@@ -491,9 +479,6 @@ ar:
             canceled: ملغي
             initiated: "انتظار دفع سترب"
             pending_ext: "انتظار دفع سترب"
-            payment_intent_requires_action: ~
-            payment_intent_action_expired: ~
-            payment_intent_failed: ~
         not_available: "غير متوفر"
       conversations:
         conversations: "أظهر المحادثات"
@@ -549,9 +534,6 @@ ar:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
-          unskip: ~
-          if_you_unskip_the_review: ~
-          they_will_not_be_notified_automatically: ~
       invitations:
         invitations: ~
         used:
@@ -632,159 +614,6 @@ ar:
         contact_us: ~
         you_can_now_use_a_custom_domain: ~
         would_you_like_to_change_domain: ~
-      landing_pages:
-        landing_pages: ~
-        info_1: ~
-        info_2: ~
-        info_2_preview_text: ~
-        info_2_details_text: ~
-        info_2_design_text: ~
-        info_3: ~
-        info_4: ~
-        editor_title: ~
-        editor_info: ~
-        preview: ~
-        set_live: ~
-        headers:
-          section_id: ~
-          section_type: ~
-          version: ~
-          released: ~
-        add_new_version: ~
-        new_version: ~
-        edit_version: ~
-        add_new_section: ~
-        select_section_type: ~
-        form:
-          version: ~
-          save: ~
-        sections:
-          identifier: ~
-          kind: ~
-          variation: ~
-          new: ~
-          edit: ~
-          remove_section_confirmation: ~
-          info_single_column: ~
-          info_multi_column_2: ~
-          info_multi_column_3: ~
-          listings: ~
-          categories: ~
-          hero: ~
-          locations: ~
-          video: ~
-          new_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-          edit_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-    landing_page_versions:
-      sections:
-        hero:
-          hero_title: ~
-          hero_description: ~
-        footer:
-          footer_title: ~
-          footer_style: ~
-          style_dark: ~
-          style_light: ~
-          style_marketplace_color: ~
-          style_logo: ~
-        cta_button:
-          cta_button: ~
-          cta_enabled: ~
-          cta_text: ~
-          cta_url: ~
-        background_image_overlay:
-          background_image: ~
-          background_image_info: ~
-          add_another_image: ~
-          current_image: ~
-          file_not_selected: ~
-          background_image_overlay: ~
-          background_image_overlay_info: ~
-          overlay_dark: ~
-          overlay_light: ~
-          overlay_transparent: ~
-        background_style:
-          background_style: ~
-          style_image: ~
-          style_color: ~
-          style_none: ~
-        background_color:
-          background_color: ~
-          background_color_info: ~
-        categories:
-          add: ~
-          category: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_categories: ~
-          need_at_most_7_categories: ~
-        category:
-          add_another_image: ~
-          category: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          select_category: ~
-        locations:
-          add: ~
-          location: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_locations: ~
-          need_at_most_7_locations: ~
-        location:
-          add_another_image: ~
-          location: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          title: ~
-          title_placeholder: ~
-          url: ~
-          url_placeholder: ~
-        multi_column:
-          main_title: ~
-          column_header: ~
-          column_title: ~
-          column_icon_info: ~
-          column_icon: ~
-          column_paragraph: ~
-          column_button: ~
-          column_button_text: ~
-          column_button_url: ~
-        listings:
-          you_need_to_add_the_listing_ids: ~
-        video:
-          text: ~
-          youtube_video_id: ~
-          autoplay: ~
-          autoplay_no: ~
-          autoplay_muted: ~
-          info: ~
     custom_fields:
       edit:
         edit_listing_field: "‎%{field_name}‎ تعديل حقل الإعلان"
@@ -797,7 +626,6 @@ ar:
       edit_location:
         edit_location_field: "تحرير حقل الإعلان \"الموقع\""
         this_field_is_required: "هذا الحقل إجباري"
-        the_location_feature_can_be_enabled: ~
       edit_expiration:
         edit_expiration_field: "تحرير حقل الإعلان \"تاريخ الانتهاء\""
         enable: "تفعيل تاريخ الانتهاء"
@@ -903,7 +731,6 @@ ar:
       emails_title: "عناوين بريدية"
       subscription: الإشتراك
       preview: "معاينة الموقع"
-      whats_new: ~
     listing_shapes:
       availability_title: الإتاحة
       read_more: ~
@@ -1104,31 +931,12 @@ ar:
       request: طلب
       inquiry: تصريح
       share_for_free: "المشاركة مجانا"
-      event_w_online_payment: ~
-      event_wo_online_payment: ~
       default_action_button_labels:
         sell: شراء
         rent: تأجير
         request: عرض
         offer: طلب
         inquiry: اتصال
-        book: ~
-    community_transactions:
-      show:
-        transaction_for: ~
-        status: ~
-        next_step: ~
-        waiting_for_provider_accept_or_reject: ~
-        waiting_for_fulfill_and_complete: ~
-        buyer: ~
-        provider: ~
-        buyer_pays: ~
-        marketplace_collects: ~
-        buyer_service_fee_label: ~
-        service_fee_label: ~
-        provider_receives: ~
-        admin_info_text: ~
-        manage_reviews: ~
   common:
     edit_page: "حرر الصفحة"
     default_community_slogan: "سوق اجتماعي"
@@ -1216,8 +1024,8 @@ ar:
       total_value: "*‎%{seller_gets}‎"
       total_value_paypal: ~
       total_value_stripe: ~
-      paypal_fee: ~
       paypal_fee_info: ~
+      payment_fee_info: ~
       shipping_price_label: "الشحن:"
       stripe-fee_label: ~
     confirm:
@@ -1419,7 +1227,6 @@ ar:
       give_feedback_to: "‎%{other_party_given_name}‎ أعط رأيك في"
       stripe:
         has_marked_request_as_confirmed: ~
-      team_title: ~
     transaction_automatically_confirmed:
       subject: "تم إكمال الطلب تلقائيا - تذكر بإعطاء رأيك"
       we_have_marked_request_as_confirmed: ~
@@ -1597,7 +1404,6 @@ ar:
       you_are_receiving_this_because: "‎%{author_name}‎ لقد استقبلت إشعارا لأنك تتابع"
       view_listing: "أظهر الإعلان"
     new_member_notification:
-      subject: ~
       new_member_has_joined: ".قد يكون ما زال عليه تأكيد البريد الإلكتروني الخاص به ‎%{community}‎ تسجيل مشترك جديد في"
       this_is_automatic_message: "‎%{community}‎ رسالة تلقائية مرسلة من قبل"
       person_name: "الإسم:"
@@ -1620,14 +1426,6 @@ ar:
       subject: ~
       there_is_a_edited_listing_to_review: ~
       review_the_listing: ~
-    new_transaction:
-      subject: ~
-      there_is_a_new_transaction: ~
-      a_new_transaction: ~
-      listing: ~
-      sum: ~
-      starter: ~
-      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: "فشل في الحجز بسبب خطأ غير معروف. يرجى المحاولة مرة أخرى. لم يتم احتساب أي تكلفة عليك."
@@ -1698,9 +1496,6 @@ ar:
       on_or_after: "‎%{restriction}‎ يجب أن يكون عند أو بعد"
       positive_number: "أدخل رقم."
       from_must_be_less_than_till: ~
-      section_with_this_id_already_exists: ~
-      listing_with_this_id_does_not_exist: ~
-      presence: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "‎%{time_ago}‎ ‎%{listing_title}‎ ‎%{requester_name}‎ وافق على إعارة ‎%{offerer_name}‎"
@@ -1924,23 +1719,6 @@ ar:
       messages: الرسائل
     logged_in_notifications_icon:
       notifications: الإشعارات
-    markdown_help:
-      title: ~
-      description: ~
-      formatting: ~
-      result: ~
-      h1: ~
-      h2: ~
-      h3: ~
-      italic: ~
-      bold: ~
-      underline: ~
-      strikethrough: ~
-      inline_link: ~
-      list: ~
-      one: ~
-      two: ~
-      three: ~
     mobile_logged_in:
       admin: المشرف
       go_to_your_profile_page: "الملف الشخصي"
@@ -2141,7 +1919,6 @@ ar:
       description:
         detailed_description: "شرح مفصل"
         youtube_info: "إذا كان شرحك يحتوي على رابط فيديو من اليوتيوب، سوف يظهر مقطع الفيديو في آخر الشرح."
-        youtube_info_markdown: ~
       destination:
         destination: "مكان الوصول"
       form_content:
@@ -2305,7 +2082,6 @@ ar:
       month: "عدد الأشهر"
       unit: ~
       custom: "الكمية:"
-      person: ~
     quantity_placeholder: الكمية
     please_comment: تعليق
     reply_link:
@@ -2357,7 +2133,6 @@ ar:
       week: أسبوع
       month: شهر
       unit: ~
-      person: ~
     verification_required:
       verification_required: "يحتاج إلى تأكيد"
   listing_conversations:
@@ -2521,6 +2296,8 @@ ar:
       sign_up: "‎%{service_name}‎ قم بإنشاء حساب جديد في"
       terms: "شروط الاستخدام"
       privacy: ~
+      username_is_in_use: "اسم المستخدم هذا موجود"
+      username_is_invalid: "اسم المستخدم غير صحيح، الرموز المسموحة هي الأحرف، الأرقام والشرطة السفلية"
       visible_only_to_you: "‎%{service_name}‎ مرئية فقط لك ولمشرفي"
       visible_to_everybody: "مرئية للكل"
       create_account_with_provider: ~
@@ -2693,8 +2470,6 @@ ar:
       image_is_processing: ~
       shown_in_your_public_profile: ~
       editing_profile_of: ~
-      format_markdown_link: ~
-      format_markdown: ~
     save_information: "حفظ المعلومات"
   shipping_address:
     shipping_address: "عنوان الشحن"
@@ -3038,7 +2813,6 @@ ar:
       document: ~
       send_verification: ~
       need_verification: ~
-      additional_document: ~
     form_pin:
       social_insurance_number: ~
       social_security_number: ~
@@ -3069,40 +2843,3 @@ ar:
       category_description: ~
       profile_title: ~
       profile_description: ~
-  activemodel:
-    attributes:
-      landing_page_version/section/base:
-        id: ~
-        title: ~
-        paragraph: ~
-        button_color: ~
-        button_color_hover: ~
-        button_title: ~
-        button_path: ~
-        button_path_string: ~
-        background_image: ~
-        background_image_variation: ~
-        background_color: ~
-        background_color_string: ~
-        icon_color: ~
-      landing_page_version/section/listings:
-        listing_1_id: ~
-        listing_2_id: ~
-        listing_3_id: ~
-      landing_page_version/section/video:
-        text: ~
-        youtube_video_id: ~
-  canada_states:
-    AB: Alberta
-    BC: "British Columbia"
-    MB: Manitoba
-    NB: "New Brunswick"
-    NL: "Newfoundland and Labrador"
-    NS: "Nova Scotia"
-    NT: "Northwest Territories"
-    NU: Nunavut
-    "ON": Ontario
-    PE: "Prince Edward Island"
-    QC: Quebec
-    SK: Saskatchewan
-    YT: "Yukon Territory"

@@ -95,8 +95,6 @@ pt-BR:
         transaction_agreement_checkbox_label_description: "Este texto será exibido próximo à caixa de seleção no formulário de finalização da compra. O usuário precisa marcar a caixa para prosseguir com a transação. Uma legenda de exemplo seria algo como \"Ao clicar nesta caixa aceito o contrato.\""
         transaction_agreement_text_header: "Texto de acordo"
         transaction_agreement_description: "Este é o conteúdo do acordo vigente que o usuário deve aceitar. O conteúdo do mesmo é exibido quando o usuário clica no link \"%{read_more}\" ao lado da legenda do acordo."
-        terms_privacy_policy_and_static_content: ~
-        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "Editar o visual do mercado virtual da %{community_name}."
         community_logo: "Logo principal"
@@ -119,8 +117,6 @@ pt-BR:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: "Foto da capa apresentada na página inicial para usuários não conectados."
         cover_photo_instructions_text_with_dimensions: "A foto será redimensionada para %{width} x %{height} pixel e imagens mais altas serão cortadas no meio. %{see_how_it_looks_like}"
-        we_have_you_covered: ~
-        cover_photo_ready_made: ~
         small_cover_photo_visibility: "Foto pequena da capa mostrado para usuários não conectados."
         small_cover_photo_instructions_text_with_dimensions: "A foto será redimensionada para %{width} x %{height} pixel e imagens mais altas serão cortadas no meio."
         main_content_width: "Ao escolher fotos de capa, por favor, note que o conteúdo principal da página é %{main_width} pixels de largura, no máximo. Lembre-se de verificar também como a sua foto da capa parece nas telas menores (por exemplo, usando uma janela do navegador mais estreita)."
@@ -224,7 +220,6 @@ pt-BR:
         require_verification_to_post_listings: "Somente usuários verificados por administrador pode postar novos anúncios"
         allow_free_conversations: ~
         search_preferences: "Preferências de Busca"
-        search_and_location_preferences: ~
         default_search_type: "Tipo de Busca: %{select_search_type}"
         keyword_search: "Palavra-Chave da Busca"
         keyword_and_location_search: "Busca por palavras chave e localização"
@@ -233,7 +228,6 @@ pt-BR:
         km: km
         miles: milhas
         show_only_nearby: "Mostrar apenas anúncios próximos com a busca de localização"
-        allow_users_to_add_location: ~
         listing_preferences: "Preferências de anúncios"
         transaction_preferences: "Transação - preferências"
         show_listing_publishing_date: "Data de publicação de exibição da lista na página de anúncio"
@@ -262,7 +256,6 @@ pt-BR:
         delete_this_marketplace: "Exclua este mercado virtual"
         payment_preferences: ~
         pre_approved_listings: ~
-        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: "Gerenciar usuários"
         email: E-mail
@@ -324,7 +317,6 @@ pt-BR:
         twitter_handle_placeholder: "nome de usuário"
         invalid_twitter_handle: "O nome Twitter deve conter no máximo 15 caracteres alfanuméricos (letras A-Z e números 0-9)."
         facebook_connect: Facebook
-        facebook_developers_dashboard: ~
         facebook_connect_info_text: "A fim de permitir conectar-se via Facebook, crie um aplicativo para o seu mercado virtual no <a href='https://developers.facebook.com/'>painel de desenvolvedores do Facebook</a>. Adicione aqui o ID gerado e a chave secreta do aplicativo."
         facebook_connect_info_text_with_instructions: "A fim de permitir a conexão via Facebook, crie um aplicativo para o seu mercado virtual no <a href='https://developers.facebook.com/'>painel de desenvolvedores do Facebook</a>. Adicione aqui o ID gerado e a chave secreta do aplicativo. %{instructions_link}"
         facebook_instructions_link_text: "Veja as instruções para configurar o \"Facebook Connect\"."
@@ -337,7 +329,6 @@ pt-BR:
         add_another_image: ~
         google_connect: ~
         google_instructions_link_text: ~
-        google_developers_console: ~
         google_connect_info_text_with_instructions: ~
         google_connect_info_text: ~
         enable_google_login: ~
@@ -345,7 +336,6 @@ pt-BR:
         google_connect_secret: ~
         linkedin_connect: ~
         linkedin_instructions_link_text: ~
-        linkedin_developers_dashboard: ~
         linkedin_connect_info_text_with_instructions: ~
         linkedin_connect_info_text: ~
         enable_linkedin_login: ~
@@ -459,8 +449,6 @@ pt-BR:
           canceled: ~
           preauthorized: ~
           rejected: ~
-          payment_intent_requires_action: ~
-          payment_intent_action_expired: ~
         headers:
           conversation: "Criou a conversa"
           listing: Anúncio
@@ -506,9 +494,6 @@ pt-BR:
             canceled: ~
             initiated: ~
             pending_ext: ~
-            payment_intent_requires_action: ~
-            payment_intent_action_expired: ~
-            payment_intent_failed: ~
         not_available: Indisponível
       conversations:
         conversations: ~
@@ -564,9 +549,6 @@ pt-BR:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
-          unskip: ~
-          if_you_unskip_the_review: ~
-          they_will_not_be_notified_automatically: ~
       invitations:
         invitations: ~
         used:
@@ -647,159 +629,6 @@ pt-BR:
         contact_us: ~
         you_can_now_use_a_custom_domain: ~
         would_you_like_to_change_domain: ~
-      landing_pages:
-        landing_pages: ~
-        info_1: ~
-        info_2: ~
-        info_2_preview_text: ~
-        info_2_details_text: ~
-        info_2_design_text: ~
-        info_3: ~
-        info_4: ~
-        editor_title: ~
-        editor_info: ~
-        preview: ~
-        set_live: ~
-        headers:
-          section_id: ~
-          section_type: ~
-          version: ~
-          released: ~
-        add_new_version: ~
-        new_version: ~
-        edit_version: ~
-        add_new_section: ~
-        select_section_type: ~
-        form:
-          version: ~
-          save: ~
-        sections:
-          identifier: ~
-          kind: ~
-          variation: ~
-          new: ~
-          edit: ~
-          remove_section_confirmation: ~
-          info_single_column: ~
-          info_multi_column_2: ~
-          info_multi_column_3: ~
-          listings: ~
-          categories: ~
-          hero: ~
-          locations: ~
-          video: ~
-          new_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-          edit_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-    landing_page_versions:
-      sections:
-        hero:
-          hero_title: ~
-          hero_description: ~
-        footer:
-          footer_title: ~
-          footer_style: ~
-          style_dark: ~
-          style_light: ~
-          style_marketplace_color: ~
-          style_logo: ~
-        cta_button:
-          cta_button: ~
-          cta_enabled: ~
-          cta_text: ~
-          cta_url: ~
-        background_image_overlay:
-          background_image: ~
-          background_image_info: ~
-          add_another_image: ~
-          current_image: ~
-          file_not_selected: ~
-          background_image_overlay: ~
-          background_image_overlay_info: ~
-          overlay_dark: ~
-          overlay_light: ~
-          overlay_transparent: ~
-        background_style:
-          background_style: ~
-          style_image: ~
-          style_color: ~
-          style_none: ~
-        background_color:
-          background_color: ~
-          background_color_info: ~
-        categories:
-          add: ~
-          category: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_categories: ~
-          need_at_most_7_categories: ~
-        category:
-          add_another_image: ~
-          category: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          select_category: ~
-        locations:
-          add: ~
-          location: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_locations: ~
-          need_at_most_7_locations: ~
-        location:
-          add_another_image: ~
-          location: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          title: ~
-          title_placeholder: ~
-          url: ~
-          url_placeholder: ~
-        multi_column:
-          main_title: ~
-          column_header: ~
-          column_title: ~
-          column_icon_info: ~
-          column_icon: ~
-          column_paragraph: ~
-          column_button: ~
-          column_button_text: ~
-          column_button_url: ~
-        listings:
-          you_need_to_add_the_listing_ids: ~
-        video:
-          text: ~
-          youtube_video_id: ~
-          autoplay: ~
-          autoplay_no: ~
-          autoplay_muted: ~
-          info: ~
     custom_fields:
       edit:
         edit_listing_field: "Alterar anúncio '%{field_name}'"
@@ -812,7 +641,6 @@ pt-BR:
       edit_location:
         edit_location_field: "Editar campo 'Lugar'"
         this_field_is_required: "Este campo é obrigatório"
-        the_location_feature_can_be_enabled: ~
       edit_expiration:
         edit_expiration_field: ~
         enable: ~
@@ -918,7 +746,6 @@ pt-BR:
       emails_title: E-mails
       subscription: Assinatura
       preview: "Visualização do site"
-      whats_new: ~
     listing_shapes:
       availability_title: Disponibilidade
       read_more: "Leia mais sobre o gerenciamento automático de disponibilidade."
@@ -1041,7 +868,7 @@ pt-BR:
       connect_a_payment_provider: ~
       contact_support: ~
       no_payments_link_text: ~
-      your_country: "seu país"
+      your_country: ~
       you_cannot_use_online_payments: ~
       which_to_choose: ~
       you_can_use_stripe_or_paypal: ~
@@ -1117,31 +944,12 @@ pt-BR:
       request: Solicitando
       inquiry: Inquérito
       share_for_free: Gratuito
-      event_w_online_payment: ~
-      event_wo_online_payment: ~
       default_action_button_labels:
         sell: Comprar
         rent: Alugar
         request: Propor
         offer: Requisição
         inquiry: Contato
-        book: ~
-    community_transactions:
-      show:
-        transaction_for: ~
-        status: ~
-        next_step: ~
-        waiting_for_provider_accept_or_reject: ~
-        waiting_for_fulfill_and_complete: ~
-        buyer: ~
-        provider: ~
-        buyer_pays: ~
-        marketplace_collects: ~
-        buyer_service_fee_label: ~
-        service_fee_label: ~
-        provider_receives: ~
-        admin_info_text: ~
-        manage_reviews: ~
   common:
     edit_page: "Editar página"
     default_community_slogan: "Mercado Virtual Comunitário"
@@ -1229,8 +1037,8 @@ pt-BR:
       total_value: "%{seller_gets}*"
       total_value_paypal: ~
       total_value_stripe: ~
-      paypal_fee: ~
-      paypal_fee_info: "* Exclui %{link}"
+      paypal_fee_info: "* Exclui <a id='%{fee_info_link_id}' href='#'> pagamento da taxa de processamento do PayPal</a>"
+      payment_fee_info: ~
       shipping_price_label: "Envio:"
       stripe-fee_label: "Taxa de processamento do pagamento"
     confirm:
@@ -1429,7 +1237,6 @@ pt-BR:
       give_feedback_to: "Dar uma opinião sobre %{other_party_given_name}"
       stripe:
         has_marked_request_as_confirmed: ~
-      team_title: ~
     transaction_automatically_confirmed:
       subject: "Pedido concluído automaticamente - lembre-se de dar feedback"
       we_have_marked_request_as_confirmed: "Marcamos o pedido '%{request}' concluído. O pedido foi concluído automaticamente porque %{days_passed} dias se passaram desde que foi aceito."
@@ -1574,7 +1381,7 @@ pt-BR:
       text_version_text: "Você poderia compartilhar algo que outros precisam? Ou você precisa de algo que outros já possuem? Adicionar uma oferta, um pedido ou verificar tudo o que outros estão oferecendo ou pedindo a %{url}"
     reset_password_instructions:
       change_my_password: "Alterar minha senha"
-      reset_password_instructions: "<p>Você informou que esqueceu sua senha no serviço %{service_name}.</p><p>Se você precisa redefinir sua senha, clique no link seguinte: %{password_reset_link}</p><br/><p>Se você não fez essa solicitação, por favor ignore este e-mail. Sua senha não mudará até que acesse o link acima e crie uma nova.</p>"
+      reset_password_instructions: "<p>Você informou que esqueceu sua senha ou nome de usuário no serviço %{service_name}.</p><p>Seu nome de usuário é: %{username}</p><p>Se você precisa redefinir sua senha, clique no link seguinte: %{password_reset_link}</p><br/><p>Se você não fez essa solicitação, por favor ignore este e-mail. Sua senha não mudará até que acesse o link acima e crie uma nova.</p>"
     testimonial_reminder:
       remember_to_give_feedback_to: "Lembrete: avaliar %{name}"
       you_have_not_given_feedback_yet: "Você ainda avaliou %{name} sobre %{event}. Lembre de avaliar como foi o evento de %{given_name}."
@@ -1603,7 +1410,6 @@ pt-BR:
       you_are_receiving_this_because: "Você recebeu esta notificação porque você segue %{author_name}."
       view_listing: "Ver anúncio"
     new_member_notification:
-      subject: ~
       new_member_has_joined: "Um novo membro se juntou ao %{community}. Eles ainda precisam confirmar o seu endereço de e-mail."
       this_is_automatic_message: "Esta é uma mensagem automática enviada para os administradores do(a) %{community}."
       person_name: "Nome:"
@@ -1626,14 +1432,6 @@ pt-BR:
       subject: ~
       there_is_a_edited_listing_to_review: ~
       review_the_listing: ~
-    new_transaction:
-      subject: ~
-      there_is_a_new_transaction: ~
-      a_new_transaction: ~
-      listing: ~
-      sum: ~
-      starter: ~
-      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: "Falha na reserva devido a um erro inesperado. Por favor, tente novamente mais tarde. Você não foi cobrado."
@@ -1704,9 +1502,6 @@ pt-BR:
       on_or_after: "deve ser igual ou depois %{restriction}"
       positive_number: "Insira um número."
       from_must_be_less_than_till: ~
-      section_with_this_id_already_exists: ~
-      listing_with_this_id_does_not_exist: ~
-      presence: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} aceitou emprestar %{listing_title} à %{requester_name} %{time_ago}"
@@ -1744,7 +1539,7 @@ pt-BR:
     create_new_marketplace: "Criar um novo mercado virtual"
     contact_us: Contato
     profile: Perfil
-    manage_listings: "Meus anúncios"
+    manage_listings: "Gerenciar anúncios"
     invite: "Convidar novos membros"
     login: Entrar
     signup: "Criar conta"
@@ -1930,23 +1725,6 @@ pt-BR:
       messages: Mensagens
     logged_in_notifications_icon:
       notifications: Notificações
-    markdown_help:
-      title: ~
-      description: ~
-      formatting: ~
-      result: ~
-      h1: ~
-      h2: ~
-      h3: ~
-      italic: ~
-      bold: ~
-      underline: ~
-      strikethrough: ~
-      inline_link: ~
-      list: ~
-      one: ~
-      two: ~
-      three: ~
     mobile_logged_in:
       admin: Administrador
       go_to_your_profile_page: Perfil
@@ -2128,7 +1906,7 @@ pt-BR:
       listing_is_rejected: ~
       approve_listing: ~
       reject_listing: ~
-      delete_listing: "Apagar anúncio"
+      delete_listing: ~
     map:
       open_in_google_maps: "Abrir no Google Maps"
     error:
@@ -2151,7 +1929,6 @@ pt-BR:
       description:
         detailed_description: "Descrição detalhada"
         youtube_info: "Se a sua descrição contiver links para o YouTube os vídeos serão mostrados abaixo da descrição."
-        youtube_info_markdown: ~
       destination:
         destination: Destino
       form_content:
@@ -2315,7 +2092,6 @@ pt-BR:
       month: "Número de meses:"
       unit: ~
       custom: "Quantidade:"
-      person: ~
     quantity_placeholder: Quantidade
     please_comment: Comentar
     reply_link:
@@ -2367,7 +2143,6 @@ pt-BR:
       week: semana
       month: mês
       unit: ~
-      person: ~
     verification_required:
       verification_required: "Verificação necessária"
   listing_conversations:
@@ -2534,6 +2309,8 @@ pt-BR:
       sign_up: "Criar uma conta no %{service_name}"
       terms: "termos de uso"
       privacy: privacidade
+      username_is_in_use: "Este nome de usuário já está em uso."
+      username_is_invalid: "Nome de usuário é inválido. Os caracteres permitidos são letras, números e sublinhado."
       visible_only_to_you: "visível apenas para você e para o administrador do mercado virtual"
       visible_to_everybody: "visível para todos"
       create_account_with_provider: ~
@@ -2706,8 +2483,6 @@ pt-BR:
       image_is_processing: "Seu imagem de perfil está sendo preparada. Por favor, atualize a página daqui a pouco."
       shown_in_your_public_profile: "(mostrado no seu perfil público)"
       editing_profile_of: ~
-      format_markdown_link: ~
-      format_markdown: ~
     save_information: "Salvar informações"
   shipping_address:
     shipping_address: "Endereço para envio"
@@ -2914,14 +2689,14 @@ pt-BR:
       user: Usuário
       inbox: "Caixa de Entrada"
       profile: Perfil
-      manage_listings: "Meus anúncios"
+      manage_listings: "Gerenciar anúncios"
       settings: Configurações
       logout: Sair
       login: Login
       signup: "Criar conta"
       admin_dashboard: "Painel de administração"
       language: Idioma
-      listings: "Meus anúncios"
+      listings: ~
     utils:
       km: km
       mi: mi
@@ -3042,7 +2817,6 @@ pt-BR:
       document: ~
       send_verification: ~
       need_verification: ~
-      additional_document: ~
     form_pin:
       social_insurance_number: ~
       social_security_number: ~
@@ -3073,40 +2847,3 @@ pt-BR:
       category_description: ~
       profile_title: ~
       profile_description: ~
-  activemodel:
-    attributes:
-      landing_page_version/section/base:
-        id: ~
-        title: ~
-        paragraph: ~
-        button_color: ~
-        button_color_hover: ~
-        button_title: ~
-        button_path: ~
-        button_path_string: ~
-        background_image: ~
-        background_image_variation: ~
-        background_color: ~
-        background_color_string: ~
-        icon_color: ~
-      landing_page_version/section/listings:
-        listing_1_id: ~
-        listing_2_id: ~
-        listing_3_id: ~
-      landing_page_version/section/video:
-        text: ~
-        youtube_video_id: ~
-  canada_states:
-    AB: Alberta
-    BC: "British Columbia"
-    MB: Manitoba
-    NB: "New Brunswick"
-    NL: "Newfoundland and Labrador"
-    NS: "Nova Scotia"
-    NT: "Northwest Territories"
-    NU: Nunavut
-    "ON": Ontario
-    PE: "Prince Edward Island"
-    QC: Quebec
-    SK: Saskatchewan
-    YT: "Yukon Territory"

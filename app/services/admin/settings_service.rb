@@ -28,9 +28,7 @@ class Admin::SettingsService
       :default_min_days_between_community_updates,
       :email_admins_about_new_members,
       :pre_approved_listings,
-      :allow_free_conversations,
-      :email_admins_about_new_transactions,
-      :show_location
+      :allow_free_conversations
     )
   end
 
@@ -53,9 +51,6 @@ class Admin::SettingsService
         main_search: params[:main_search],
         distance_unit: params[:distance_unit],
         limit_search_distance: params[:limit_distance].present?)
-    end
-    if ActiveModel::Type::Boolean::FALSE_VALUES.include?(params[:community][:show_location])
-      community.configuration.update(main_search: :keyword)
     end
   end
 end

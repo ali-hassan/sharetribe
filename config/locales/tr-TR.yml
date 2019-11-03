@@ -90,8 +90,6 @@ tr-TR:
         transaction_agreement_checkbox_label_description: "Bu metin ödeme formunda onay kutucuğunun yanında gösterilecek. Kullanıcının işlemi gerçekleştirebilmek için kutucuğu onaylaması gerekecek. Örnek bir başlık olarak: \"Bu kutuyu işaretleyerek sözleşmeyi kabul ettiğimi beyan ederim.\""
         transaction_agreement_text_header: "Sözleşme metni"
         transaction_agreement_description: "Bu, kullanıcının kabul etmesi gereken asıl sözleşmenin içeriğidir. Anlaşma içeriği kullanıcı sözleşme başlığının yanındaki \"%{read_more}\" linkine tıkladığında görüntülenecektir."
-        terms_privacy_policy_and_static_content: ~
-        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "%{community_name} pazar görünümü ve özelliklerini düzenle"
         community_logo: "Masaüstü logosu"
@@ -116,8 +114,6 @@ tr-TR:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: "Kapak fotoğrafı ana sayfada giriş yapmamış kullanıcılara gösterilecektir."
         cover_photo_instructions_text_with_dimensions: "Görsel %{width}x%{height} piksel boyutlarında küçültülecek ve uzun görseller ortadan kesilecektir. %{see_how_it_looks_like}."
-        we_have_you_covered: ~
-        cover_photo_ready_made: ~
         small_cover_photo_visibility: "Küçük kapak fotoğrafı ana sayfadaki giriş yapmamış kullanıcılar hariç bütün sayfalarda gösterilir."
         small_cover_photo_instructions_text_with_dimensions: "Görsel %{width}x%{height} piksel boyutlarında küçültülecek ve uzun görseller ortadan kesilecektir."
         main_content_width: "Kapak fotoğrafı seçerken, ana sayfa içeriğinin azami %{main_width} piksel olduğunu unutmayın. Aynı zamanda kapak fotoğrafınızın küçük ekranlarda nasıl görüntülendiğini kontrol edin (örneğin; dar bir tarayıcı penceresi)."
@@ -221,7 +217,6 @@ tr-TR:
         require_verification_to_post_listings: "Sadece yönetici onaylı kullanıcılar yeni ilan ekleyebilir"
         allow_free_conversations: ~
         search_preferences: "Arama seçenekleri"
-        search_and_location_preferences: ~
         default_search_type: ~
         keyword_search: "Anahtar kelime arama"
         keyword_and_location_search: "Anahtar kelime ve lokasyon araması"
@@ -230,7 +225,6 @@ tr-TR:
         km: km
         miles: mil
         show_only_nearby: "Konum arama ile yalnızca yakındaki ilanları göster"
-        allow_users_to_add_location: ~
         listing_preferences: "Listeleme tercihleri"
         transaction_preferences: "İşlem tercihleri"
         show_listing_publishing_date: "Listeleme sayfasında listelemenin gönderilme tarihini göster"
@@ -259,7 +253,6 @@ tr-TR:
         delete_this_marketplace: "Bu pazarı sil"
         payment_preferences: ~
         pre_approved_listings: ~
-        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: "Kullanıcıları yönet"
         email: E-posta
@@ -321,7 +314,6 @@ tr-TR:
         twitter_handle_placeholder: "kullanıcı adı"
         invalid_twitter_handle: "Twitter aracı maksimum 15 alfanumerik karakter içerebilir (A-Z harfler ve 0-9 rakamlar)."
         facebook_connect: Facebook
-        facebook_developers_dashboard: ~
         facebook_connect_info_text: "Facebook'la giriş yapmayı etkinleştirebilmek için, <a href='https://developers.facebook.com/'>Facebook geliştiricileri panosunda</a> pazar yeriniz için bir uygulama oluşturun. Uygulamanın oluşturduğu kimlik ve gizli anahtarı buraya ekleyin."
         facebook_connect_info_text_with_instructions: "Facebook ile giriş yapılabilmesi için pazarınız adına<a href='https://developers.facebook.com/'>Facebook Programcılar sayfasındaki panelden</a>başvuru yapın. Oluşturulan ID numarası ve gizli anahtarı ekleyin.%{instructions_link}"
         facebook_instructions_link_text: "Facebook'a bağlanma talimatlarına bakın."
@@ -334,7 +326,6 @@ tr-TR:
         add_another_image: ~
         google_connect: ~
         google_instructions_link_text: ~
-        google_developers_console: ~
         google_connect_info_text_with_instructions: ~
         google_connect_info_text: ~
         enable_google_login: ~
@@ -342,7 +333,6 @@ tr-TR:
         google_connect_secret: ~
         linkedin_connect: ~
         linkedin_instructions_link_text: ~
-        linkedin_developers_dashboard: ~
         linkedin_connect_info_text_with_instructions: ~
         linkedin_connect_info_text: ~
         enable_linkedin_login: ~
@@ -456,8 +446,6 @@ tr-TR:
           canceled: ~
           preauthorized: ~
           rejected: ~
-          payment_intent_requires_action: ~
-          payment_intent_action_expired: ~
         headers:
           conversation: "Konuşma başlığı"
           listing: Listeleme
@@ -503,9 +491,6 @@ tr-TR:
             canceled: ~
             initiated: ~
             pending_ext: ~
-            payment_intent_requires_action: ~
-            payment_intent_action_expired: ~
-            payment_intent_failed: ~
         not_available: "Mevcut değil"
       conversations:
         conversations: ~
@@ -561,9 +546,6 @@ tr-TR:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
-          unskip: ~
-          if_you_unskip_the_review: ~
-          they_will_not_be_notified_automatically: ~
       invitations:
         invitations: ~
         used:
@@ -644,159 +626,6 @@ tr-TR:
         contact_us: ~
         you_can_now_use_a_custom_domain: ~
         would_you_like_to_change_domain: ~
-      landing_pages:
-        landing_pages: ~
-        info_1: ~
-        info_2: ~
-        info_2_preview_text: ~
-        info_2_details_text: ~
-        info_2_design_text: ~
-        info_3: ~
-        info_4: ~
-        editor_title: ~
-        editor_info: ~
-        preview: ~
-        set_live: ~
-        headers:
-          section_id: ~
-          section_type: ~
-          version: ~
-          released: ~
-        add_new_version: ~
-        new_version: ~
-        edit_version: ~
-        add_new_section: ~
-        select_section_type: ~
-        form:
-          version: ~
-          save: ~
-        sections:
-          identifier: ~
-          kind: ~
-          variation: ~
-          new: ~
-          edit: ~
-          remove_section_confirmation: ~
-          info_single_column: ~
-          info_multi_column_2: ~
-          info_multi_column_3: ~
-          listings: ~
-          categories: ~
-          hero: ~
-          locations: ~
-          video: ~
-          new_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-          edit_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-    landing_page_versions:
-      sections:
-        hero:
-          hero_title: ~
-          hero_description: ~
-        footer:
-          footer_title: ~
-          footer_style: ~
-          style_dark: ~
-          style_light: ~
-          style_marketplace_color: ~
-          style_logo: ~
-        cta_button:
-          cta_button: ~
-          cta_enabled: ~
-          cta_text: ~
-          cta_url: ~
-        background_image_overlay:
-          background_image: ~
-          background_image_info: ~
-          add_another_image: ~
-          current_image: ~
-          file_not_selected: ~
-          background_image_overlay: ~
-          background_image_overlay_info: ~
-          overlay_dark: ~
-          overlay_light: ~
-          overlay_transparent: ~
-        background_style:
-          background_style: ~
-          style_image: ~
-          style_color: ~
-          style_none: ~
-        background_color:
-          background_color: ~
-          background_color_info: ~
-        categories:
-          add: ~
-          category: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_categories: ~
-          need_at_most_7_categories: ~
-        category:
-          add_another_image: ~
-          category: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          select_category: ~
-        locations:
-          add: ~
-          location: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_locations: ~
-          need_at_most_7_locations: ~
-        location:
-          add_another_image: ~
-          location: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          title: ~
-          title_placeholder: ~
-          url: ~
-          url_placeholder: ~
-        multi_column:
-          main_title: ~
-          column_header: ~
-          column_title: ~
-          column_icon_info: ~
-          column_icon: ~
-          column_paragraph: ~
-          column_button: ~
-          column_button_text: ~
-          column_button_url: ~
-        listings:
-          you_need_to_add_the_listing_ids: ~
-        video:
-          text: ~
-          youtube_video_id: ~
-          autoplay: ~
-          autoplay_no: ~
-          autoplay_muted: ~
-          info: ~
     custom_fields:
       edit:
         edit_listing_field: "'%{field_name}' listeleme alanını düzenle"
@@ -809,7 +638,6 @@ tr-TR:
       edit_location:
         edit_location_field: "Konum alanını düzenle"
         this_field_is_required: "Bu alan zorunludur"
-        the_location_feature_can_be_enabled: ~
       edit_expiration:
         edit_expiration_field: ~
         enable: ~
@@ -915,7 +743,6 @@ tr-TR:
       emails_title: E-postalar
       subscription: Üyelik
       preview: ~
-      whats_new: ~
     listing_shapes:
       availability_title: ~
       read_more: "Otomatik kullanılabilirlik yönetimi hakkında daha fazla bilgi edinin"
@@ -1102,31 +929,12 @@ tr-TR:
       request: "Talep etmek"
       inquiry: Sorgulama
       share_for_free: "Bedelsiz paylaşım"
-      event_w_online_payment: ~
-      event_wo_online_payment: ~
       default_action_button_labels:
         sell: "Satın al"
         rent: Kirala
         request: Teklif
         offer: Talep
         inquiry: İletişim
-        book: ~
-    community_transactions:
-      show:
-        transaction_for: ~
-        status: ~
-        next_step: ~
-        waiting_for_provider_accept_or_reject: ~
-        waiting_for_fulfill_and_complete: ~
-        buyer: ~
-        provider: ~
-        buyer_pays: ~
-        marketplace_collects: ~
-        buyer_service_fee_label: ~
-        service_fee_label: ~
-        provider_receives: ~
-        admin_info_text: ~
-        manage_reviews: ~
   common:
     edit_page: "Sayfayı düzenle"
     default_community_slogan: "Topluluk pazarı"
@@ -1215,8 +1023,8 @@ tr-TR:
       total_value: "%{seller_gets}"
       total_value_paypal: ~
       total_value_stripe: ~
-      paypal_fee: ~
-      paypal_fee_info: "* %{link} dahil değildir."
+      paypal_fee_info: "* <a id='%{fee_info_link_id}' href='#'>PayPal işlem ücreti</a> dahil değildir."
+      payment_fee_info: ~
       shipping_price_label: "Kargo:"
       stripe-fee_label: ~
     confirm:
@@ -1415,7 +1223,6 @@ tr-TR:
       give_feedback_to: "%{other_party_given_name} üyesin geri bildirim bırakın."
       stripe:
         has_marked_request_as_confirmed: ~
-      team_title: ~
     transaction_automatically_confirmed:
       subject: "Talep otomatik olarak tamamlandı - geri bildirim bırakmayı unutmayın"
       we_have_marked_request_as_confirmed: "'%{request}' hakkındaki talebi tamamlandı olarak işaretledik. Talebin kabulünün üzerinden %{days_passed} gün geçtiği için, talep otomatik olarak tamamlandı."
@@ -1560,7 +1367,7 @@ tr-TR:
       text_version_text: "Başkalarının isteyebileceği bir şeylere mi sahipsiniz? Ya da başkalarının sahip olabileceği bir şeylere mi ihtiyacınız var? Bir teklif ya da talep ekleyin veya diğer kullanıcıların teklif ve taleplerini görüntülemek için %{url} adresine gidin."
     reset_password_instructions:
       change_my_password: "Parolamı değiştir"
-      reset_password_instructions: ~
+      reset_password_instructions: "%{service_name} şifre ya da kullanıcı adınızı unuttuğunuzu belirttiniz. Kullanıcı adınız: %{username} Şifrenizi sıfırlamak istiyorsanız, linke tıklayın: %{password_reset_link} Eğer böyle bir şey talep etmediyseniz, bu e-postayı görmezden gelin. Aşağıdaki linke tıklayıp yeni bir şifre oluşturmadan, geçerli şifreniz değişmeyecektir."
     testimonial_reminder:
       remember_to_give_feedback_to: "Hatırlatma: Lütfen %{name} kullanıcına geri bildirim vermeyi unutmayınız"
       you_have_not_given_feedback_yet: "%{name} kullanıcısına %{event} hakkında geri bildirim vermediniz. %{given_name} kullanıcısının bu konuda nasıl bir performans sergilediğine ilişkin geri bildirim vermeyi unutmayınız."
@@ -1589,7 +1396,6 @@ tr-TR:
       you_are_receiving_this_because: "Bu bildiriyi %{author_name}'i takip ettiğiniz için aldınız."
       view_listing: "Listelemeyi görüntüle"
     new_member_notification:
-      subject: ~
       new_member_has_joined: "%{community} topluluğuna yeni bir üye katıldı. Hala e-posta adreslerini doğrulamaları gerekebilir."
       this_is_automatic_message: "Bu mesaj %{community} yöneticilerine otomatik olarak gönderilmiştir."
       person_name: Ad
@@ -1612,14 +1418,6 @@ tr-TR:
       subject: ~
       there_is_a_edited_listing_to_review: ~
       review_the_listing: ~
-    new_transaction:
-      subject: ~
-      there_is_a_new_transaction: ~
-      a_new_transaction: ~
-      listing: ~
-      sum: ~
-      starter: ~
-      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: ~
@@ -1690,9 +1488,6 @@ tr-TR:
       on_or_after: "%{restriction} içinde ya da sonrasında olmalı"
       positive_number: "Rakam giriniz"
       from_must_be_less_than_till: ~
-      section_with_this_id_already_exists: ~
-      listing_with_this_id_does_not_exist: ~
-      presence: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} %{time_ago}%{listing_title}'ı %{requester_name} üyesine ödünç vermeyi kabul etti."
@@ -1916,23 +1711,6 @@ tr-TR:
       messages: Mesajlar
     logged_in_notifications_icon:
       notifications: Bildirimler
-    markdown_help:
-      title: ~
-      description: ~
-      formatting: ~
-      result: ~
-      h1: ~
-      h2: ~
-      h3: ~
-      italic: ~
-      bold: ~
-      underline: ~
-      strikethrough: ~
-      inline_link: ~
-      list: ~
-      one: ~
-      two: ~
-      three: ~
     mobile_logged_in:
       admin: Yönetici
       go_to_your_profile_page: Profil
@@ -2133,7 +1911,6 @@ tr-TR:
       description:
         detailed_description: "Ayrıntılı bilgi"
         youtube_info: "Açıklama alanında Youtube linkleri kullanırsanız videolarınız metnin alt kısmında görüntülenecektir."
-        youtube_info_markdown: ~
       destination:
         destination: Hedef
       form_content:
@@ -2297,7 +2074,6 @@ tr-TR:
       month: "Ay sayısı:"
       unit: ~
       custom: Miktar
-      person: ~
     quantity_placeholder: Adet
     please_comment: Yorum
     reply_link:
@@ -2349,7 +2125,6 @@ tr-TR:
       week: hafta
       month: ay
       unit: ~
-      person: ~
     verification_required:
       verification_required: "Doğrulama gerekli"
   listing_conversations:
@@ -2513,6 +2288,8 @@ tr-TR:
       sign_up: "Yeni %{service_name} hesabı oluştur."
       terms: "Kullanım Koşulları"
       privacy: ~
+      username_is_in_use: "Bu kullanıcı adı kullanımdadır."
+      username_is_invalid: "Kullanıcı adı geçersiz. Kullanıcı adı harf, rakam ve altçizgiden oluşabilir."
       visible_only_to_you: "yalnızca siz ve pazaryeri yöneticisi görebilir"
       visible_to_everybody: "herkes görebilir"
       create_account_with_provider: ~
@@ -2685,8 +2462,6 @@ tr-TR:
       image_is_processing: "Profil fotoğrafınız hazırlanıyor. Lütfen birazdan sayfayı tekrar yükleyiniz..."
       shown_in_your_public_profile: "(herkese açık profilinizde gösterilir)"
       editing_profile_of: ~
-      format_markdown_link: ~
-      format_markdown: ~
     save_information: "Bu bilgiyi kaydet"
   shipping_address:
     shipping_address: "Gönderim Adresi"
@@ -3007,7 +2782,6 @@ tr-TR:
       document: ~
       send_verification: ~
       need_verification: ~
-      additional_document: ~
     form_pin:
       social_insurance_number: ~
       social_security_number: ~
@@ -3038,40 +2812,3 @@ tr-TR:
       category_description: ~
       profile_title: ~
       profile_description: ~
-  activemodel:
-    attributes:
-      landing_page_version/section/base:
-        id: ~
-        title: ~
-        paragraph: ~
-        button_color: ~
-        button_color_hover: ~
-        button_title: ~
-        button_path: ~
-        button_path_string: ~
-        background_image: ~
-        background_image_variation: ~
-        background_color: ~
-        background_color_string: ~
-        icon_color: ~
-      landing_page_version/section/listings:
-        listing_1_id: ~
-        listing_2_id: ~
-        listing_3_id: ~
-      landing_page_version/section/video:
-        text: ~
-        youtube_video_id: ~
-  canada_states:
-    AB: Alberta
-    BC: "British Columbia"
-    MB: Manitoba
-    NB: "New Brunswick"
-    NL: "Newfoundland and Labrador"
-    NS: "Nova Scotia"
-    NT: "Northwest Territories"
-    NU: Nunavut
-    "ON": Ontario
-    PE: "Prince Edward Island"
-    QC: Quebec
-    SK: Saskatchewan
-    YT: "Yukon Territory"

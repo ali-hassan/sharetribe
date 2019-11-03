@@ -7,7 +7,8 @@
 <section id="<%= section_id %>" class="listings__section listings__section--<%= bg_styles[:section_style_modifier] %>" style="<%= bg_styles[:background_image_style] %> <%= bg_styles[:background_color_style] %>">
 
   <div class="listings__content">
-    <h1 class="listings__title"><%= s["title"] %></h1>
+    <h1 class="listing-headings" style="font-size: 36px;"><%= s["title"] %></h1>
+    <h3 class="listing-headings" style="font-size: 20px;"><%= s["small_title"] %></h3>
 
     <div class="listings__paragraph--markdown">
       <%= render_markdown_array(s["paragraph"]) %>
@@ -59,8 +60,29 @@
       <% end %>
     </div>
 
-    <% if s["button_title"] %>
-      <a class="listings__button<%= bg_styles[:button_modifier] %> <%= section_id %>__listings__button<%= bg_styles[:button_modifier] %>" href="<%= s['button_path']['value'] %>"><%= s["button_title"]%></a>
-    <% end %>
+    <a style="float: left;
+        margin-left: 57px;
+        font-size: 21px;
+        text-decoration: underline;
+        color: black;" href="/s">See all of the premium verified studios</a>
   </div>
 </section>
+<div class="row" style="color: black; font-size: 30px; padding-left: 165px;">As Seen On</div>
+<div class="topbar-placeholder">
+  <div class="s006">
+    <div>
+      <div class="row" style="padding-left: 165px;">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <img src="landing_page/hyperbeast.png" style="width: 14%">
+          <img src="landing_page/bbc.png" style="width: 14%">
+          <img src="landing_page/product_hunt.png" style="width: 14%">
+          <img src="landing_page/fader.png" style="width: 14%">
+          <img src="landing_page/vice.png" style="width: 14%">
+          <img src="landing_page/forbes.png" style="width: 14%">
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+  </div>
+</div>

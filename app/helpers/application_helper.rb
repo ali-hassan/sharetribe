@@ -324,8 +324,7 @@ module ApplicationHelper
         :text => t("admin.left_hand_navigation.help_center"),
         :icon_class => icon_class("help"),
         :path => "#{APP_CONFIG.knowledge_base_url}/?utm_source=marketplaceadminpanel&utm_medium=referral&utm_campaign=leftnavi",
-        :name => "help_center",
-        :target => "_blank"
+        :name => "help_center"
       },
       {
         :id => "admin-academy-link",
@@ -333,8 +332,7 @@ module ApplicationHelper
         :text => t("admin.left_hand_navigation.academy"),
         :icon_class => icon_class("academy"),
         :path => "https://www.sharetribe.com/academy/guide/?utm_source=marketplaceadminpanel&utm_medium=referral&utm_campaign=leftnavi",
-        :name => "academy",
-        :target => "_blank"
+        :name => "academy"
       }
     ]
 
@@ -350,20 +348,10 @@ module ApplicationHelper
 
     links << {
       :topic => :general,
-      :text => t("admin.left_hand_navigation.whats_new"),
-      :icon_class => icon_class("rocket"),
-      :path => "https://www.sharetribe.com/updates.html",
-      :name => "whats_new",
-      :target => "_blank"
-    }
-
-    links << {
-      :topic => :general,
       :text => t("admin.left_hand_navigation.preview"),
       :icon_class => icon_class("eye"),
       :path => homepage_without_locale_path(big_cover_photo: true, locale: nil),
-      :name => "preview",
-      :target => "_blank"
+      :name => "preview"
     }
 
     links += [
@@ -471,7 +459,7 @@ module ApplicationHelper
         :topic => :configure,
         :text => t("admin.landing_page.landing_page"),
         :icon_class => icon_class("home"),
-        :path => FeatureFlagHelper.feature_enabled?(:clp_editor) ? admin_landing_page_versions_path : admin_landing_page_path,
+        :path => admin_landing_page_path,
         :name => "landing_page"
       }
     end
@@ -511,7 +499,7 @@ module ApplicationHelper
       :name => "listing_shapes"
     }
 
-    if PaypalHelper.paypal_active?(@current_community.id) || StripeHelper.stripe_provisioned?(@current_community.id)
+    if true #PaypalHelper.paypal_active?(@current_community.id) || StripeHelper.stripe_provisioned?(@current_community.id)
       links << {
         :topic => :configure,
         :text => t("admin.communities.settings.payment_preferences"),
@@ -744,6 +732,63 @@ module ApplicationHelper
   def format_local_date(value)
     format = t("datepicker.format").gsub(/([md])[md]+/, '%\1').gsub(/yyyy/, '%Y')
     value.present? ? value.strftime(format) : nil
+  end
+
+  def us_states
+    [
+      ['Alabama', 'AL'],
+      ['Alaska', 'AK'],
+      ['Arizona', 'AZ'],
+      ['Arkansas', 'AR'],
+      ['California', 'CA'],
+      ['Colorado', 'CO'],
+      ['Connecticut', 'CT'],
+      ['Delaware', 'DE'],
+      ['District of Columbia', 'DC'],
+      ['Florida', 'FL'],
+      ['Georgia', 'GA'],
+      ['Hawaii', 'HI'],
+      ['Idaho', 'ID'],
+      ['Illinois', 'IL'],
+      ['Indiana', 'IN'],
+      ['Iowa', 'IA'],
+      ['Kansas', 'KS'],
+      ['Kentucky', 'KY'],
+      ['Louisiana', 'LA'],
+      ['Maine', 'ME'],
+      ['Maryland', 'MD'],
+      ['Massachusetts', 'MA'],
+      ['Michigan', 'MI'],
+      ['Minnesota', 'MN'],
+      ['Mississippi', 'MS'],
+      ['Missouri', 'MO'],
+      ['Montana', 'MT'],
+      ['Nebraska', 'NE'],
+      ['Nevada', 'NV'],
+      ['New Hampshire', 'NH'],
+      ['New Jersey', 'NJ'],
+      ['New Mexico', 'NM'],
+      ['New York', 'NY'],
+      ['North Carolina', 'NC'],
+      ['North Dakota', 'ND'],
+      ['Ohio', 'OH'],
+      ['Oklahoma', 'OK'],
+      ['Oregon', 'OR'],
+      ['Pennsylvania', 'PA'],
+      ['Puerto Rico', 'PR'],
+      ['Rhode Island', 'RI'],
+      ['South Carolina', 'SC'],
+      ['South Dakota', 'SD'],
+      ['Tennessee', 'TN'],
+      ['Texas', 'TX'],
+      ['Utah', 'UT'],
+      ['Vermont', 'VT'],
+      ['Virginia', 'VA'],
+      ['Washington', 'WA'],
+      ['West Virginia', 'WV'],
+      ['Wisconsin', 'WI'],
+      ['Wyoming', 'WY']
+    ]
   end
 
   def regex_definition_to_js(string)

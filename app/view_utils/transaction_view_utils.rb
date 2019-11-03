@@ -7,8 +7,7 @@ module TransactionViewUtils
     [:content, :string, :mandatory],
     [:sender, :mandatory],
     [:created_at, :time, :mandatory],
-    [:mood, one_of: [:positive, :negative, :neutral]],
-    [:admin, :to_bool, :optional]
+    [:mood, one_of: [:positive, :negative, :neutral]]
   )
 
   PriceBreakDownLocals = EntityUtils.define_builder(
@@ -51,8 +50,6 @@ module TransactionViewUtils
       "free",
       "pending", # Deprecated
       "initiated",
-      "payment_intent_requires_action",
-      "payment_intent_failed",
       "pending_ext",
       "errored"
     ] # Transitions that should not generate auto-message
@@ -134,14 +131,12 @@ module TransactionViewUtils
       }
     when "canceled"
       {
-        sender: transition_user(transition, starter),
-        admin: transition[:metadata] && transition[:metadata]['executed_by_admin'],
+        sender: starter,
         mood: :negative
       }
     when "confirmed"
       {
-        sender: transition_user(transition, starter),
-        admin: transition[:metadata] && transition[:metadata]['executed_by_admin'],
+        sender: starter,
         mood: :positive
       }
     else
@@ -227,8 +222,5 @@ module TransactionViewUtils
       .or_else(1)
   end
 
-  def transition_user(transition, starter)
-    transition[:metadata] && transition[:metadata]['user_id'] && Person.find_by_id(transition[:metadata]['user_id']) || starter
-  end
 
 end

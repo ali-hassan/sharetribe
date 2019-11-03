@@ -19,7 +19,6 @@ module Person::PaymentSettingsCommon
       address_postal_code
       address_state
       document
-      additional_document
       ssn_last_4
       token
       gender

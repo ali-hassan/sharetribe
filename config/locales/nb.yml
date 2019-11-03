@@ -95,8 +95,6 @@ nb:
         transaction_agreement_checkbox_label_description: "Denne teksten vil bli vist med en avkrysningsboks ved utsjekk. Brukeren må krysse av boksen for å gjennomføre transaksjonen. Eksempel på tekst er \"Ved å krysse av denne boksen aksepterer jeg vilkårene.\""
         transaction_agreement_text_header: "Avtale tekst"
         transaction_agreement_description: "Dette innholdet er vilkårene brukeren må akseptere. Vilkårne er vist når bruker trykker på \"%{read_more}\"-lenken ved siden av vilkårmerket."
-        terms_privacy_policy_and_static_content: ~
-        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "Redigere markedsplass \"%{community_name}\" uttrykk og følelse"
         community_logo: Skrivebordslogo
@@ -119,8 +117,6 @@ nb:
         logo_mobile_icon_instructions_text_with_dimensions: ~
         cover_photo_visibility: "Forsidebildet vises på forsiden for brukere som ikke er logget inn."
         cover_photo_instructions_text_with_dimensions: "Bildet vil bli endret i størrelse til %{width}x%{height} piksler og høyere bilder vil bli kuttet i midten. %{see_how_it_looks_like}"
-        we_have_you_covered: ~
-        cover_photo_ready_made: ~
         small_cover_photo_visibility: "Mindre forsidebilde vises på alle sider bortsett fra forsiden for brukere som ikke er logget inn."
         small_cover_photo_instructions_text_with_dimensions: "Bildet vil bli endret i størrelse til %{width}x%{height} piksler og høyere bilder vil bli kuttet i midten."
         main_content_width: "Vær obs på at hovedinnholdet på siden er %{main_width} piksler bred på det meste når du velger forsidebilde. Husk også å sjekke hvordan forsidebildet ser ut på mindre skjermer (for eksempel ved å endre størrelsen på nettleservinduet)."
@@ -224,7 +220,6 @@ nb:
         require_verification_to_post_listings: "Kun brukere som er godkjent av admin kan legge ut annonser"
         allow_free_conversations: ~
         search_preferences: Søkeinnstillinger
-        search_and_location_preferences: ~
         default_search_type: "Søketype: %{select_search_type}"
         keyword_search: Nøkkelord-søk
         keyword_and_location_search: "Steds- og nøkkelordsøk"
@@ -233,7 +228,6 @@ nb:
         km: km
         miles: miles
         show_only_nearby: "Vis kun annonser i nærområdet med stedssøk"
-        allow_users_to_add_location: ~
         listing_preferences: Annonseinnstillinger
         transaction_preferences: Transaksjonsinnstillinger
         show_listing_publishing_date: "Vis dato annonsen ble publisert"
@@ -262,7 +256,6 @@ nb:
         delete_this_marketplace: "Slett denne markedsplassen"
         payment_preferences: ~
         pre_approved_listings: ~
-        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: "Administrer brukere"
         email: E-post
@@ -324,7 +317,6 @@ nb:
         twitter_handle_placeholder: brukernavn
         invalid_twitter_handle: "Twitternavn inneholder maks 15 tegn (bokstaver A-Z og tall 0-9)."
         facebook_connect: Facebook
-        facebook_developers_dashboard: ~
         facebook_connect_info_text: "For å aktivere Facebook-innlogging må du opprette en applikasjon for din arkedsplass i <a href='https://developers.facebook.com/'>Facebook developers dashboard</a>. Legg inn generated id og secret key for applikasjonen her."
         facebook_connect_info_text_with_instructions: "For å aktivere Facebook-innlogging må du opprette en applikasjon for din markedsplass i <a href='https://developers.facebook.com/'>Facebook developers dashboard</a>. Legg inn generated id og secret key for applikasjonen her. %{instructions_link}"
         facebook_instructions_link_text: "Se instruksjoner for å konfigurere Facebook Connect."
@@ -337,7 +329,6 @@ nb:
         add_another_image: ~
         google_connect: ~
         google_instructions_link_text: ~
-        google_developers_console: ~
         google_connect_info_text_with_instructions: ~
         google_connect_info_text: ~
         enable_google_login: ~
@@ -345,7 +336,6 @@ nb:
         google_connect_secret: ~
         linkedin_connect: ~
         linkedin_instructions_link_text: ~
-        linkedin_developers_dashboard: ~
         linkedin_connect_info_text_with_instructions: ~
         linkedin_connect_info_text: ~
         enable_linkedin_login: ~
@@ -459,8 +449,6 @@ nb:
           canceled: ~
           preauthorized: ~
           rejected: ~
-          payment_intent_requires_action: ~
-          payment_intent_action_expired: ~
         headers:
           conversation: "Samtale tråd"
           listing: Annonse
@@ -506,9 +494,6 @@ nb:
             canceled: ~
             initiated: ~
             pending_ext: ~
-            payment_intent_requires_action: ~
-            payment_intent_action_expired: ~
-            payment_intent_failed: ~
         not_available: "Ikke tilgjengelig"
       conversations:
         conversations: ~
@@ -564,9 +549,6 @@ nb:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
-          unskip: ~
-          if_you_unskip_the_review: ~
-          they_will_not_be_notified_automatically: ~
       invitations:
         invitations: ~
         used:
@@ -647,159 +629,6 @@ nb:
         contact_us: ~
         you_can_now_use_a_custom_domain: ~
         would_you_like_to_change_domain: ~
-      landing_pages:
-        landing_pages: ~
-        info_1: ~
-        info_2: ~
-        info_2_preview_text: ~
-        info_2_details_text: ~
-        info_2_design_text: ~
-        info_3: ~
-        info_4: ~
-        editor_title: ~
-        editor_info: ~
-        preview: ~
-        set_live: ~
-        headers:
-          section_id: ~
-          section_type: ~
-          version: ~
-          released: ~
-        add_new_version: ~
-        new_version: ~
-        edit_version: ~
-        add_new_section: ~
-        select_section_type: ~
-        form:
-          version: ~
-          save: ~
-        sections:
-          identifier: ~
-          kind: ~
-          variation: ~
-          new: ~
-          edit: ~
-          remove_section_confirmation: ~
-          info_single_column: ~
-          info_multi_column_2: ~
-          info_multi_column_3: ~
-          listings: ~
-          categories: ~
-          hero: ~
-          locations: ~
-          video: ~
-          new_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-          edit_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-    landing_page_versions:
-      sections:
-        hero:
-          hero_title: ~
-          hero_description: ~
-        footer:
-          footer_title: ~
-          footer_style: ~
-          style_dark: ~
-          style_light: ~
-          style_marketplace_color: ~
-          style_logo: ~
-        cta_button:
-          cta_button: ~
-          cta_enabled: ~
-          cta_text: ~
-          cta_url: ~
-        background_image_overlay:
-          background_image: ~
-          background_image_info: ~
-          add_another_image: ~
-          current_image: ~
-          file_not_selected: ~
-          background_image_overlay: ~
-          background_image_overlay_info: ~
-          overlay_dark: ~
-          overlay_light: ~
-          overlay_transparent: ~
-        background_style:
-          background_style: ~
-          style_image: ~
-          style_color: ~
-          style_none: ~
-        background_color:
-          background_color: ~
-          background_color_info: ~
-        categories:
-          add: ~
-          category: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_categories: ~
-          need_at_most_7_categories: ~
-        category:
-          add_another_image: ~
-          category: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          select_category: ~
-        locations:
-          add: ~
-          location: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_locations: ~
-          need_at_most_7_locations: ~
-        location:
-          add_another_image: ~
-          location: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          title: ~
-          title_placeholder: ~
-          url: ~
-          url_placeholder: ~
-        multi_column:
-          main_title: ~
-          column_header: ~
-          column_title: ~
-          column_icon_info: ~
-          column_icon: ~
-          column_paragraph: ~
-          column_button: ~
-          column_button_text: ~
-          column_button_url: ~
-        listings:
-          you_need_to_add_the_listing_ids: ~
-        video:
-          text: ~
-          youtube_video_id: ~
-          autoplay: ~
-          autoplay_no: ~
-          autoplay_muted: ~
-          info: ~
     custom_fields:
       edit:
         edit_listing_field: "Rediger annonse felt'%{field_name}'"
@@ -812,7 +641,6 @@ nb:
       edit_location:
         edit_location_field: "Endre stedsfelt"
         this_field_is_required: "Dette feltet er påkrevd"
-        the_location_feature_can_be_enabled: ~
       edit_expiration:
         edit_expiration_field: "Endre feltet 'utløpsdato'"
         enable: "Slå på utløpsdato"
@@ -918,7 +746,6 @@ nb:
       emails_title: E-poster
       subscription: Påmelding
       preview: "Forhåndsvis mitt nettsted"
-      whats_new: ~
     listing_shapes:
       availability_title: Tilgjengelighet
       read_more: "Les mer om automatisert tilgjengelighets-administrasjon."
@@ -1117,31 +944,12 @@ nb:
       request: Forespør
       inquiry: Forespørsel
       share_for_free: "Deler gratis"
-      event_w_online_payment: ~
-      event_wo_online_payment: ~
       default_action_button_labels:
         sell: Kjøp
         rent: Lei
         request: Tilby
         offer: Forespør
         inquiry: Kontakt
-        book: ~
-    community_transactions:
-      show:
-        transaction_for: ~
-        status: ~
-        next_step: ~
-        waiting_for_provider_accept_or_reject: ~
-        waiting_for_fulfill_and_complete: ~
-        buyer: ~
-        provider: ~
-        buyer_pays: ~
-        marketplace_collects: ~
-        buyer_service_fee_label: ~
-        service_fee_label: ~
-        provider_receives: ~
-        admin_info_text: ~
-        manage_reviews: ~
   common:
     edit_page: "Rediger side"
     default_community_slogan: Markedsplass
@@ -1227,8 +1035,8 @@ nb:
       total_value: "%{seller_gets}*"
       total_value_paypal: ~
       total_value_stripe: ~
-      paypal_fee: ~
-      paypal_fee_info: "* ekskludert %{link}"
+      paypal_fee_info: "* ekskludert <a id='%{fee_info_link_id}' href='#'>PayPals transaksjonskostnad</a>"
+      payment_fee_info: ~
       shipping_price_label: "Frakt:"
       stripe-fee_label: ~
     confirm:
@@ -1429,7 +1237,6 @@ nb:
       give_feedback_to: "Gi vurdering av %{other_party_given_name}"
       stripe:
         has_marked_request_as_confirmed: ~
-      team_title: ~
     transaction_automatically_confirmed:
       subject: "Forespørsel er automatisk merket som gjennomført - husk å gi vurdering"
       we_have_marked_request_as_confirmed: "Vi har merket forespørselen vedrørende %{request} som fullført. Forespørselen ble automatisk fullført fordi %{days_passed} dager er passert siden forespørselen ble akseptert."
@@ -1576,7 +1383,7 @@ nb:
       text_version_text: "Har du kanskje noe andre kan ha bruk for? Eller trenger du kanskje noe som andre har? Legg ut et tilbud eller forespørsel, eller se hva andre tilbyr og forespør på %{url}"
     reset_password_instructions:
       change_my_password: "Endre mitt passord"
-      reset_password_instructions: "<p>Du har indikert at du har glemt ditt passord på %{service_name} </p><p>Dersom du må tilbakestille ditt passord kan du klikke på denne linken:  %{password_reset_link}</p><br/><p>Vennligst se bort fra dette dersom du ikke har etterspurt tilbakestilling av ditt passord. Ditt passord endres ikke før du bruker linken over og lager et nytt.</p>"
+      reset_password_instructions: "<p>Du har indikert at du har glemt ditt passord eller brukernavn på %{service_name} </p><p>Ditt brukernavn er : %{username}</p><p>Dersom du må tilbakestille ditt passord kan du klikke på denne linken:  %{password_reset_link}</p><br/><p>Vennligst se bort fra dette dersom du ikke har etterspurt tilbakestilling av ditt passord. Ditt passord endres ikke før du bruker linken over og lager et nytt.</p>"
     testimonial_reminder:
       remember_to_give_feedback_to: "Påminnelse: husk å gi tilbakemelding til %{name}"
       you_have_not_given_feedback_yet: "Du har ennå ikke gitt tilbakemelding til %{name} om '%{event}'. Husk å gi tilbakemelding på hvordan %{given_name} oppførte seg."
@@ -1605,7 +1412,6 @@ nb:
       you_are_receiving_this_because: "Du mottok denne varslingen fordi du følger %{author_name}"
       view_listing: "Se annonse"
     new_member_notification:
-      subject: ~
       new_member_has_joined: "Et nytt medlem har registrert seg på %{community}. Vedkommende må kanskje fremdeles bekrefte sin e-postadresse."
       this_is_automatic_message: "Dette er en automatisk melding sendt til administratorer av %{community}."
       person_name: "Navn:"
@@ -1628,14 +1434,6 @@ nb:
       subject: ~
       there_is_a_edited_listing_to_review: ~
       review_the_listing: ~
-    new_transaction:
-      subject: ~
-      there_is_a_new_transaction: ~
-      a_new_transaction: ~
-      listing: ~
-      sum: ~
-      starter: ~
-      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: "Reservasjonen feilet på grunn av en uventet feil. Vennligst prøv igjen senere. Du har ikke blitt belastet for noe beløp."
@@ -1706,9 +1504,6 @@ nb:
       on_or_after: "må være på eller etter %{restriction}"
       positive_number: "Skriv inn et tall."
       from_must_be_less_than_till: ~
-      section_with_this_id_already_exists: ~
-      listing_with_this_id_does_not_exist: ~
-      presence: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} aksepterte å låne ut %{listing_title} til %{requester_name} %{time_ago}."
@@ -1932,23 +1727,6 @@ nb:
       messages: Meldinger
     logged_in_notifications_icon:
       notifications: Varsler
-    markdown_help:
-      title: ~
-      description: ~
-      formatting: ~
-      result: ~
-      h1: ~
-      h2: ~
-      h3: ~
-      italic: ~
-      bold: ~
-      underline: ~
-      strikethrough: ~
-      inline_link: ~
-      list: ~
-      one: ~
-      two: ~
-      three: ~
     mobile_logged_in:
       admin: Administrator
       go_to_your_profile_page: Profil
@@ -2153,7 +1931,6 @@ nb:
       description:
         detailed_description: "Detaljert beskrivelse"
         youtube_info: "Hvis beskrivelsen din inneholder en eller flere linker til YouTube-videoer, vil videoene vises under beskrivelsen."
-        youtube_info_markdown: ~
       destination:
         destination: Destinasjon
       form_content:
@@ -2317,7 +2094,6 @@ nb:
       month: "Antall måneder:"
       unit: ~
       custom: "Antall:"
-      person: ~
     quantity_placeholder: Antall
     please_comment: Kommenter
     reply_link:
@@ -2369,7 +2145,6 @@ nb:
       week: uke
       month: måned
       unit: ~
-      person: ~
     verification_required:
       verification_required: "Verifisering påkrevd"
   listing_conversations:
@@ -2534,6 +2309,8 @@ nb:
       sign_up: "Opprett ny  %{service_name} brukerkonto"
       terms: "vilkår for bruk"
       privacy: ~
+      username_is_in_use: "Brukernavnet er allerede i bruk."
+      username_is_invalid: "Brukernavnet er ugyldig. Gyldige tegn er bokstaver, tall og understrek."
       visible_only_to_you: "synlig kun for deg og markedsplassens administrator"
       visible_to_everybody: "synlig for alle"
       create_account_with_provider: ~
@@ -2706,8 +2483,6 @@ nb:
       image_is_processing: "Ditt profilbilde er behandles nå. Vennligst last siden på nytt om et lite øyeblikk."
       shown_in_your_public_profile: ~
       editing_profile_of: ~
-      format_markdown_link: ~
-      format_markdown: ~
     save_information: "Lagre innstillinger"
   shipping_address:
     shipping_address: Leveringsadresse
@@ -3042,7 +2817,6 @@ nb:
       document: ~
       send_verification: ~
       need_verification: ~
-      additional_document: ~
     form_pin:
       social_insurance_number: ~
       social_security_number: ~
@@ -3073,40 +2847,3 @@ nb:
       category_description: ~
       profile_title: ~
       profile_description: ~
-  activemodel:
-    attributes:
-      landing_page_version/section/base:
-        id: ~
-        title: ~
-        paragraph: ~
-        button_color: ~
-        button_color_hover: ~
-        button_title: ~
-        button_path: ~
-        button_path_string: ~
-        background_image: ~
-        background_image_variation: ~
-        background_color: ~
-        background_color_string: ~
-        icon_color: ~
-      landing_page_version/section/listings:
-        listing_1_id: ~
-        listing_2_id: ~
-        listing_3_id: ~
-      landing_page_version/section/video:
-        text: ~
-        youtube_video_id: ~
-  canada_states:
-    AB: Alberta
-    BC: "British Columbia"
-    MB: Manitoba
-    NB: "New Brunswick"
-    NL: "Newfoundland and Labrador"
-    NS: "Nova Scotia"
-    NT: "Northwest Territories"
-    NU: Nunavut
-    "ON": Ontario
-    PE: "Prince Edward Island"
-    QC: Quebec
-    SK: Saskatchewan
-    YT: "Yukon Territory"

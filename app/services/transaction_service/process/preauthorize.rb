@@ -94,11 +94,7 @@ module TransactionService::Process
             end
 
           booking_res.on_success {
-            if tx.stripe_payments.last.try(:intent_requires_action?)
-              TransactionService::StateMachine.transition_to(tx.id, :payment_intent_requires_action)
-            else
-              TransactionService::StateMachine.transition_to(tx.id, :preauthorized)
-            end
+            TransactionService::StateMachine.transition_to(tx.id, :preauthorized)
           }
         end
 
@@ -135,8 +131,8 @@ module TransactionService::Process
       res
     end
 
-    def complete(tx:, message:, sender_id:, gateway_adapter:, metadata: {})
-      TransactionService::StateMachine.transition_to(tx.id, :confirmed, metadata)
+    def complete(tx:, message:, sender_id:, gateway_adapter:)
+      TransactionService::StateMachine.transition_to(tx.id, :confirmed)
       TxStore.mark_as_unseen_by_other(community_id: tx.community_id,
                                       transaction_id: tx.id,
                                       person_id: tx.listing_author_id)
@@ -148,8 +144,8 @@ module TransactionService::Process
       Result::Success.new({result: true})
     end
 
-    def cancel(tx:, message:, sender_id:, gateway_adapter:, metadata: {})
-      TransactionService::StateMachine.transition_to(tx.id, :canceled, metadata)
+    def cancel(tx:, message:, sender_id:, gateway_adapter:)
+      TransactionService::StateMachine.transition_to(tx.id, :canceled)
       TxStore.mark_as_unseen_by_other(community_id: tx.community_id,
                                       transaction_id: tx.id,
                                       person_id: tx.listing_author_id)

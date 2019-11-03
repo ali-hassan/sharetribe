@@ -168,8 +168,7 @@ ICON_MAP = {
       "domain" => "ss-globe",
       "pending" => "ss-clockwise",
       "minus" => "ss-hyphen",
-      "trash" => "ss-trash",
-      "rocket" => "ss-rocket"
+      "trash" => "ss-trash"
     },
     "font-awesome" => {
       "map" => "icon-map-marker",
@@ -289,7 +288,6 @@ ICON_MAP = {
       "seo" => "icon-external-link",
       "pending" => "icon-time",
       "minus" => "icon-minus",
-      "trash" => "icon-trash",
-      "rocket" => "icon-magic"
+      "trash" => "icon-trash"
     }
   }

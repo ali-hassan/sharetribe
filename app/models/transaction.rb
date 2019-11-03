@@ -97,7 +97,7 @@ class Transaction < ApplicationRecord
     .where("listings.author_id = ? OR starter_id = ?", person.id, person.id)
   }
   scope :availability_blocking, -> do
-    where(current_state: ['payment_intent_requires_action', 'preauthorized', 'paid', 'confirmed', 'canceled'])
+    where(current_state: ['preauthorized', 'paid', 'confirmed', 'canceled'])
   end
   scope :non_free, -> { where('current_state <> ?', ['free']) }
   scope :by_community, -> (community_id) { where(community_id: community_id) }
@@ -324,11 +324,6 @@ class Transaction < ApplicationRecord
     quantity         = self.listing_quantity || 1
     shipping_price   = self.shipping_price || 0
     (unit_price * quantity) + shipping_price + buyer_commission
-  end
-
-  def last_transition_by_admin?
-    transition = transaction_transitions.last
-    transition && transition[:metadata] && transition[:metadata]['executed_by_admin']
   end
 
 end

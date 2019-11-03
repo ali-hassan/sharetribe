@@ -24,19 +24,6 @@ window.ST = window.ST || {};
 
     var fieldCount = fieldMap.length;
 
-    var updateVisibilityByCount = function() {
-      var minValue = $("input[count-validation][data-min]").data("min");
-      var maxValue = $("input[count-validation][data-max]").data("max");
-      if (!minValue || !maxValue) return;
-      // toggle error message
-      $("input[count-validation]").valid();
-      if (fieldCount >= maxValue) {
-        $(".add-fields").addClass('disabled').css("pointer-events","none");
-      } else {
-        $(".add-fields").removeClass('disabled').css("pointer-events","auto");
-      }
-    };
-
     var updateTableVisibility = function() {
       var $menuLinksTable = $("#menu-links-table");
       var $menuLinksEmpty = $("#menu-links-empty");
@@ -48,14 +35,13 @@ window.ST = window.ST || {};
         $menuLinksTable.hide();
         $menuLinksEmpty.show();
       }
-      updateVisibilityByCount();
     };
 
     updateTableVisibility();
 
     var orderManager = window.ST.orderManager(fieldMap);
 
-    var form = $('#footer-menu-form, #edit_section_footer, form.section-categories-form, form.section-locations-form');
+    var form = $('#footer-menu-form');
     form.on('click', '.menu-link-remove', function(event) {
       var container = $(this).closest('.footer-menu-container'),
         isNew = container.data('new');
@@ -115,7 +101,7 @@ window.ST = window.ST || {};
 
     form.validate({
       submitHandler: submitHandler,
-      ignore: ":hidden:not(.custom-validation), .ignore-validation"
+      ignore: ":hidden, .ignore-validation"
     });
   };
 

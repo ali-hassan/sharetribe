@@ -101,8 +101,6 @@ hr:
         transaction_agreement_checkbox_label_description: "Tekst će biti prikazan do kućice na obrascu odjave. Korisnik mora označiti kućicu kako bi nastavio sa transakcijom. Primjer oznake bi bio nešto kao \"Klikom na ovu kućicu prihvaćam dogovor.\""
         transaction_agreement_text_header: "Tekst o dogovoru"
         transaction_agreement_description: "Ovo je sadržaj stvarnog dogovora koji korisnik mora prihvatiti. Sadržaj dogovora je prikazan kada korisnik klikne na \"%{read_more}\" link odmah do oznake o dogovoru."
-        terms_privacy_policy_and_static_content: ~
-        terms_privacy_policy_and_static_content_infotext: ~
       edit_look_and_feel:
         edit_community_look_and_feel: "Uredi %{community_name} izgled"
         community_logo: Logo
@@ -127,8 +125,6 @@ hr:
             Naslovna fotografija biti će prikazana na početnoj stranici korisnicima koji nisu 
             prijavljeni.
         cover_photo_instructions_text_with_dimensions: "Fotografija će biti smanjena na %{width}x%{height} piksel veličinu a veće slike će biti rezane u sredini. %{see_how_it_looks_like}."
-        we_have_you_covered: ~
-        cover_photo_ready_made: ~
         small_cover_photo_visibility: "Umanjena naslovna fotografija biti će prikazana na svim stranicama osim na početnoj stranici za korisnike koji nisu prijavljeni."
         small_cover_photo_instructions_text_with_dimensions: "Fotografija će biti smanjena na %{width}x%{height} piksel veličinu a veće slike će biti rezane u sredini."
         main_content_width: "Kada odabirete profilne fotografije molimo imajte na umu da glavni sadržaj stranice je najviše %{main_width} piksela širine. Zapamtite također provjeriti kako Vaša profilna fotografija izgleda na manjim zaslonima (npr. koristeći uži prozor preglednika)."
@@ -232,7 +228,6 @@ hr:
         require_verification_to_post_listings: ~
         allow_free_conversations: ~
         search_preferences: "Pretražite preference"
-        search_and_location_preferences: ~
         default_search_type: "Tip pretrage: %{select_search_type} "
         keyword_search: "Pretraga ključnih riječi"
         keyword_and_location_search: "Pretraga ključne riječi i lokacije"
@@ -241,7 +236,6 @@ hr:
         km: km
         miles: milje
         show_only_nearby: "Prikaži samo oglase u blizini sa pretragom lokacije"
-        allow_users_to_add_location: ~
         listing_preferences: "Preferencije oglasa"
         transaction_preferences: ~
         show_listing_publishing_date: "Prikaži datum objave oglasa na stranici oglasa"
@@ -270,7 +264,6 @@ hr:
         delete_this_marketplace: "Izbriši svoju platformu"
         payment_preferences: "Postavke plaćanja"
         pre_approved_listings: "Pregledaj sve oglase prije objave"
-        email_admins_about_new_transactions: ~
       manage_members:
         manage_members: "Uredite korisnike"
         email: Email
@@ -332,7 +325,6 @@ hr:
         twitter_handle_placeholder: "korisničko ime"
         invalid_twitter_handle: "Twitter ime bi trebalo sadržavati maksimum 15 znakova (slova A-Z i brojeve 0-9)."
         facebook_connect: Facebook
-        facebook_developers_dashboard: ~
         facebook_connect_info_text: "Kako bi omogućili Facebook ulogiravanje, morate kreirati aplikaciju za vaš marketplace na<a href='https://developers.facebook.com/'>Facebook developers dashboard</a>. Dodajte generirani id i tajni kod aplikacije ovdje."
         facebook_connect_info_text_with_instructions: "Kako bi omogućili Facebook ulogiravanje, morate kreirati aplikaciju za vaš marketplace na<a href='https://developers.facebook.com/'>Facebook developers dashboard</a>. Dodajte generirani id i tajni kod aplikacije ovdje.%{instructions_link}"
         facebook_instructions_link_text: "Pogledajte upute za podešavanje Facebook Connecta"
@@ -345,7 +337,6 @@ hr:
         add_another_image: "Dodaj drugu sliku"
         google_connect: "Google Prijava"
         google_instructions_link_text: "Vidi upute za konfiguriranje Google Prijave"
-        google_developers_console: ~
         google_connect_info_text_with_instructions: "Kako biste omogućili Google Prijavu, kreirajte projekt za vašu tržnicu na <a href='https://developers.google.com/identity/sign-in/web/sign-in'>Google Developers Console</a>. Ovdje dodajte generirani ID i tajni ključ projekta. %{instructions_link}"
         google_connect_info_text: "Kako biste omogućili Google Prijavu, kreirajte projekt za vašu tržnicu na <a href='https://developers.google.com/identity/sign-in/web/sign-in'>Google Developers Console</a>. Ovdje dodajte generirani ID i tajni ključ projekta."
         enable_google_login: "Dozvoli korisnicima prijavu s njihovim Google računom"
@@ -353,7 +344,6 @@ hr:
         google_connect_secret: "tajna Google Klijenta"
         linkedin_connect: "Prijava na LinkedIn"
         linkedin_instructions_link_text: "Vidi upute za konfiguriranje LinkedIn prijave"
-        linkedin_developers_dashboard: ~
         linkedin_connect_info_text_with_instructions: "Kako biste omogućili LinkedIn prijavu, kreirajte aplikaciju za vašu tržnicu na <a href='https://www.linkedin.com/developers/'>LinkedIn Developers Dashboard</a>. Ovdje dodajte generirani ID i tajni ključ projekta. %{instructions_link}"
         linkedin_connect_info_text: "Kako biste omogućili LinkedIn prijavu, kreirajte aplikaciju za vašu tržnicu na  <a href='https://www.linkedin.com/developers/'>LinkedIn Developers Dashboard</a>. Ovdje dodajte generirani ID i tajni ključ projekta."
         enable_linkedin_login: "Dozvoli korisnicima prijavu s njihovim LinkedIn računom"
@@ -467,8 +457,6 @@ hr:
           canceled: Poništeno
           preauthorized: Predautorizirano
           rejected: Odbijeno
-          payment_intent_requires_action: ~
-          payment_intent_action_expired: ~
         headers:
           conversation: "Tema razgovora"
           listing: Oglas
@@ -514,9 +502,6 @@ hr:
             canceled: Poništeno
             initiated: "Čekanje Stripe plaćanja"
             pending_ext: "Čekanje Stripe plaćanja"
-            payment_intent_requires_action: ~
-            payment_intent_action_expired: ~
-            payment_intent_failed: ~
         not_available: "Nije dostupno"
       conversations:
         conversations: Razgovor
@@ -572,9 +557,6 @@ hr:
           confirm_modify: "Jeste li sigurni da želite promijeniti/obrisati ovu ocjenu? Jednom kada promijenite/pobrišete ocjenu, povrat starih podataka više nije moguć."
           deleting_info: "Brisanje ocjene omogućava autoru ponovno ocjenjivanje iste transakcije."
           blocking_info: "Blokiranje ocjene nakon brisanja sprečava autoru ponovno ocjenjivanje iste transakcije."
-          unskip: ~
-          if_you_unskip_the_review: ~
-          they_will_not_be_notified_automatically: ~
       invitations:
         invitations: Pozivnice
         used:
@@ -655,159 +637,6 @@ hr:
         contact_us: "Kontaktirajte nas"
         you_can_now_use_a_custom_domain: "S vašim trenutnim planom, možete omogućiti prilagođenu domenu. Krenimo dalje sa postavljanjem. %{contact_us}!"
         would_you_like_to_change_domain: "Biste li željeli promijeniti prilagođenu domenu vaše tržnice? %{contact_us}!"
-      landing_pages:
-        landing_pages: ~
-        info_1: ~
-        info_2: ~
-        info_2_preview_text: ~
-        info_2_details_text: ~
-        info_2_design_text: ~
-        info_3: ~
-        info_4: ~
-        editor_title: ~
-        editor_info: ~
-        preview: ~
-        set_live: ~
-        headers:
-          section_id: ~
-          section_type: ~
-          version: ~
-          released: ~
-        add_new_version: ~
-        new_version: ~
-        edit_version: ~
-        add_new_section: ~
-        select_section_type: ~
-        form:
-          version: ~
-          save: ~
-        sections:
-          identifier: ~
-          kind: ~
-          variation: ~
-          new: ~
-          edit: ~
-          remove_section_confirmation: ~
-          info_single_column: ~
-          info_multi_column_2: ~
-          info_multi_column_3: ~
-          listings: ~
-          categories: ~
-          hero: ~
-          locations: ~
-          video: ~
-          new_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-          edit_section:
-            categories: ~
-            footer: ~
-            hero: ~
-            info_single_column: ~
-            info_multi_column_2: ~
-            info_multi_column_3: ~
-            listings: ~
-            locations: ~
-            video: ~
-    landing_page_versions:
-      sections:
-        hero:
-          hero_title: ~
-          hero_description: ~
-        footer:
-          footer_title: ~
-          footer_style: ~
-          style_dark: ~
-          style_light: ~
-          style_marketplace_color: ~
-          style_logo: ~
-        cta_button:
-          cta_button: ~
-          cta_enabled: ~
-          cta_text: ~
-          cta_url: ~
-        background_image_overlay:
-          background_image: ~
-          background_image_info: ~
-          add_another_image: ~
-          current_image: ~
-          file_not_selected: ~
-          background_image_overlay: ~
-          background_image_overlay_info: ~
-          overlay_dark: ~
-          overlay_light: ~
-          overlay_transparent: ~
-        background_style:
-          background_style: ~
-          style_image: ~
-          style_color: ~
-          style_none: ~
-        background_color:
-          background_color: ~
-          background_color_info: ~
-        categories:
-          add: ~
-          category: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_categories: ~
-          need_at_most_7_categories: ~
-        category:
-          add_another_image: ~
-          category: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          select_category: ~
-        locations:
-          add: ~
-          location: ~
-          empty: ~
-          image: ~
-          include_title: ~
-          info_text: ~
-          need_at_least_3_locations: ~
-          need_at_most_7_locations: ~
-        location:
-          add_another_image: ~
-          location: ~
-          current_image: ~
-          file_not_selected: ~
-          image: ~
-          image_required: ~
-          title: ~
-          title_placeholder: ~
-          url: ~
-          url_placeholder: ~
-        multi_column:
-          main_title: ~
-          column_header: ~
-          column_title: ~
-          column_icon_info: ~
-          column_icon: ~
-          column_paragraph: ~
-          column_button: ~
-          column_button_text: ~
-          column_button_url: ~
-        listings:
-          you_need_to_add_the_listing_ids: ~
-        video:
-          text: ~
-          youtube_video_id: ~
-          autoplay: ~
-          autoplay_no: ~
-          autoplay_muted: ~
-          info: ~
     custom_fields:
       edit:
         edit_listing_field: "Izmijeni oglasno polje '%{field_name}'"
@@ -820,7 +649,6 @@ hr:
       edit_location:
         edit_location_field: ~
         this_field_is_required: "Ovo polje je obavezno"
-        the_location_feature_can_be_enabled: ~
       edit_expiration:
         edit_expiration_field: "Uredite polje oglasa 'Rok uporabe'"
         enable: "omogući datum isteka"
@@ -926,7 +754,6 @@ hr:
       emails_title: Emailovi
       subscription: Pretplata
       preview: "Prikaz stranice"
-      whats_new: ~
     listing_shapes:
       availability_title: Dostupnost
       read_more: "Pročitaj više o automatskoj  usluzi  dostupnosti "
@@ -1132,31 +959,12 @@ hr:
       request: Potražnja
       inquiry: ~
       share_for_free: "Besplatno dijeljenje"
-      event_w_online_payment: ~
-      event_wo_online_payment: ~
       default_action_button_labels:
         sell: Kupiti
         rent: Iznajmite
         request: Ponudite
         offer: Zatražite
         inquiry: Kontaktirajte
-        book: ~
-    community_transactions:
-      show:
-        transaction_for: ~
-        status: ~
-        next_step: ~
-        waiting_for_provider_accept_or_reject: ~
-        waiting_for_fulfill_and_complete: ~
-        buyer: ~
-        provider: ~
-        buyer_pays: ~
-        marketplace_collects: ~
-        buyer_service_fee_label: ~
-        service_fee_label: ~
-        provider_receives: ~
-        admin_info_text: ~
-        manage_reviews: ~
   common:
     edit_page: "Izmijeni stranicu"
     default_community_slogan: "Marketplace zajednica"
@@ -1244,8 +1052,8 @@ hr:
       total_value: "%{seller_gets}*"
       total_value_paypal: "%{seller_gets} "
       total_value_stripe: "%{seller_gets} "
-      paypal_fee: ~
-      paypal_fee_info: "* Ne uključuje %{link}"
+      paypal_fee_info: "* Ne uključuje <a id='%{fee_info_link_id}' href='#'>PayPal naknadu obrade plaćanja</a>"
+      payment_fee_info: "%{fee_info_link_id} nije uključeno u naknadu za transakciju."
       shipping_price_label: "Dostava:"
       stripe-fee_label: "Naknada za transakciju"
     confirm:
@@ -1444,7 +1252,6 @@ hr:
       give_feedback_to: "Pružite povratnu informaciju %{other_party_given_name}"
       stripe:
         has_marked_request_as_confirmed: "%{other_party_full_name} je označio/la narudžbu kao '%{request}' djelomično izvršenu. Uplata za ovu transakciju je sada prebačena na vaš bankovni račun. Sada možete ostaviti komentar na %{other_party_given_name}."
-      team_title: ~
     transaction_automatically_confirmed:
       subject: ~
       we_have_marked_request_as_confirmed: ~
@@ -1591,7 +1398,7 @@ hr:
       text_version_text: "Da li možete podijeliti nešto što bi drugi možda trebali? Ili  trebate nešto što možda drugi imaju? Dodajte ponudu ili zahtjev ili pretražite sve što drugi nude ili traže na %{url}"
     reset_password_instructions:
       change_my_password: "Promijeniti moju lozinku"
-      reset_password_instructions: "<p>Naznačili ste da ste zaboravili ili Vašu lozinku ili korisničko ime u %{service_name} usluzi.</p><p>Ako trebate ponovno složiti Vašu lozinku, kliknite na ovaj link: %{password_reset_link}</p><br/><p>Ako niste ovo zatražili, molimo ignorirajte ovaj email. Vaša lozinka se neće promijeniti dok ne pristupite linku iznad i kreirate novu lozinku</p>"
+      reset_password_instructions: "<p>Naznačili ste da ste zaboravili ili Vašu lozinku ili korisničko ime u %{service_name} usluzi.</p><p>Vaše korisničko ime je: %{username}</p><p>Ako trebate ponovno složiti Vašu lozinku, kliknite na ovaj link: %{password_reset_link}</p><br/><p>Ako niste ovo zatražili, molimo ignorirajte ovaj email. Vaša lozinka se neće promijeniti dok ne pristupite linku iznad i kreirate novu lozinku</p>"
     testimonial_reminder:
       remember_to_give_feedback_to: "Podsjetnik: molimo dajte povratnu informaciju %{name}"
       you_have_not_given_feedback_yet: "Još uvijek niste dali povratnu informaciju %{name} o '%{event}'. Podsjećamo vas da date povratnu informaciju kako je %{given_name} izveo događaj."
@@ -1620,7 +1427,6 @@ hr:
       you_are_receiving_this_because: "Dobili ste obavijest jer pratite %{author_name}."
       view_listing: "Pogledajte oglas"
     new_member_notification:
-      subject: ~
       new_member_has_joined: "Novi član se uključio u %{community}. Mora još potvrditi svoju email adresu."
       this_is_automatic_message: "Ovo je automatska poruka poslana administratorima %{community}."
       person_name: "Ime:"
@@ -1643,14 +1449,6 @@ hr:
       subject: "Promijenjeni oglas za pregled: \"%{listing_title}\" od %{author_name} u %{community}"
       there_is_a_edited_listing_to_review: "Imate uređivani oglas za pregled: \"%{listing_title}\" by %{author_name}. Sada trebate ili odobriti ili odbiti taj oglas."
       review_the_listing: "Pregledaj uređeni oglas"
-    new_transaction:
-      subject: ~
-      there_is_a_new_transaction: ~
-      a_new_transaction: ~
-      listing: ~
-      sum: ~
-      starter: ~
-      provider: ~
   error_messages:
     booking:
       booking_failed_payment_voided: "Rezervacija nije uspjela zbog neočekivane greške.Molimo probajte ponovo kasnije.Nije Vam ništa naplaćeno"
@@ -1721,9 +1519,6 @@ hr:
       on_or_after: "mora biti na ili poslije %{restriction}"
       positive_number: "Unesite broj."
       from_must_be_less_than_till: "\"Vrijeme početka\" mora biti ranije od \"Vremena kraja\""
-      section_with_this_id_already_exists: ~
-      listing_with_this_id_does_not_exist: ~
-      presence: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} je pristao na posudbu %{listing_title} prema %{requester_name} %{time_ago}."
@@ -1947,23 +1742,6 @@ hr:
       messages: Poruke
     logged_in_notifications_icon:
       notifications: Obavijesti
-    markdown_help:
-      title: ~
-      description: ~
-      formatting: ~
-      result: ~
-      h1: ~
-      h2: ~
-      h3: ~
-      italic: ~
-      bold: ~
-      underline: ~
-      strikethrough: ~
-      inline_link: ~
-      list: ~
-      one: ~
-      two: ~
-      three: ~
     mobile_logged_in:
       admin: Administrator
       go_to_your_profile_page: Profil
@@ -2170,7 +1948,6 @@ hr:
       description:
         detailed_description: "Detaljni opis"
         youtube_info: "Ako vaš opis sadrži i linkove sa Youtubea, videi će biti prikazani ispod opisa."
-        youtube_info_markdown: ~
       destination:
         destination: Odredište
       form_content:
@@ -2334,7 +2111,6 @@ hr:
       month: "Broj mjeseci:"
       unit: "Broj jedinica:"
       custom: "Količina:"
-      person: ~
     quantity_placeholder: Količina
     please_comment: Komentar
     reply_link:
@@ -2386,7 +2162,6 @@ hr:
       week: tjedan
       month: mjesec
       unit: jedinica
-      person: ~
     verification_required:
       verification_required: "Potrebna verifikacija"
   listing_conversations:
@@ -2551,6 +2326,8 @@ hr:
       sign_up: "Kreirajte novi %{service_name} korisnički račun"
       terms: "Uvjeti korištenja"
       privacy: "Polica privatnosti"
+      username_is_in_use: "Korisničko ime je već u upotrebi."
+      username_is_invalid: "Korisničko ime je neispravno. Dozvoljeni znakovi su slova, brojevi i donja crta."
       visible_only_to_you: "Vidljivo isključivo Vama i %{service_name} timu!"
       visible_to_everybody: "Vidljivo svima"
       create_account_with_provider: "Registrirajte se na %{provider}"
@@ -2723,8 +2500,6 @@ hr:
       image_is_processing: "Molimo za strpljenje. Obrađujemo vašu profilnu sliku. Biti će spremna za minutu ili dvije."
       shown_in_your_public_profile: "(prikaži u svom javnom profilu)"
       editing_profile_of: "Trenutno uređujete profil %{name}"
-      format_markdown_link: ~
-      format_markdown: ~
     save_information: "Spremite informacije"
   shipping_address:
     shipping_address: "Adresa isporuke"
@@ -3093,7 +2868,6 @@ hr:
       document: "Dokaz identiteta (putovnica, osobna iskaznica izdana od strane nadležnog tijela vlasti)"
       send_verification: "Pošalji Verifikaciju"
       need_verification: "Potrebna je dodatna verifikacija"
-      additional_document: ~
     form_pin:
       social_insurance_number: "Broj socijalnog osiguranja (SIN)"
       social_security_number: "Broj socijalnog osiguranja (SIN)"
@@ -3124,40 +2898,3 @@ hr:
       category_description: "%{category} na %{marketplace}"
       profile_title: "Profil od %{user} - %{marketplace}"
       profile_description: "Naučite više o %{user} na %{marketplace}"
-  activemodel:
-    attributes:
-      landing_page_version/section/base:
-        id: ~
-        title: ~
-        paragraph: ~
-        button_color: ~
-        button_color_hover: ~
-        button_title: ~
-        button_path: ~
-        button_path_string: ~
-        background_image: ~
-        background_image_variation: ~
-        background_color: ~
-        background_color_string: ~
-        icon_color: ~
-      landing_page_version/section/listings:
-        listing_1_id: ~
-        listing_2_id: ~
-        listing_3_id: ~
-      landing_page_version/section/video:
-        text: ~
-        youtube_video_id: ~
-  canada_states:
-    AB: Alberta
-    BC: "British Columbia"
-    MB: Manitoba
-    NB: "New Brunswick"
-    NL: "Newfoundland and Labrador"
-    NS: "Nova Scotia"
-    NT: "Northwest Territories"
-    NU: Nunavut
-    "ON": Ontario
-    PE: "Prince Edward Island"
-    QC: Quebec
-    SK: Saskatchewan
-    YT: "Yukon Territory"

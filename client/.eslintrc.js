@@ -137,8 +137,7 @@ module.exports = {
     'func-style': [1, 'expression', {
       allowArrowFunctions: true
     }],
-    'indent': 0,
-    'indent-legacy': [2, 2, {
+    indent: [2, 2, {
       SwitchCase: 1,
       VariableDeclarator: {
         var: 2,

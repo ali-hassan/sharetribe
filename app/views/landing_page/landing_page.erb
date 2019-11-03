@@ -16,16 +16,10 @@
     <% case s["kind"] %>
     <% when "hero" %>
       <%= render partial: "hero", locals: {section_id: section_id, s: s} %>
-    <% when "footer" %>
-      <%= render partial: "footer", locals: {section_id: section_id, s: s} %>
-    <% when "categories" %>
-      <%= render partial: "categories", locals: {section_id: section_id, s: s, second_wo_background: second_wo_background} %>
     <% when "locations" %>
       <%= render partial: "locations", locals: {section_id: section_id, s: s, second_wo_background: second_wo_background} %>
     <% when "listings" %>
       <%= render partial: "listings", locals: {section_id: section_id, s: s, second_wo_background: second_wo_background} %>
-    <% when "video" %>
-      <%= render partial: "video", locals: {section_id: section_id, s: s} %>
     <% end %>
 
   <% end # sections#each %>
@@ -74,6 +68,7 @@
 <body onload="BrowserDetectVideoAutoplay()">
 
   <% if topbar[:enabled] %>
+<!--  <div id="topbar-placeholder" class="topbar-placeholder"> </div>-->
   <% end %>
 
   <%= yield :sections %>

@@ -32,9 +32,9 @@ class SeoService
 
   def placeholder(section, locale = I18n.locale)
     case section
-    when :homepage_title, :meta_title
+    when :homepage_title
       '{{marketplace_name}} - {{marketplace_slogan}}'
-    when :homepage_description, :meta_description
+    when :homepage_description
       '{{marketplace_description}} - {{marketplace_slogan}}'
     when :search_meta_title
       I18n.t("seo_sections.placeholder.search_results", variable: '{{marketplace_name}}', locale: locale)
@@ -60,13 +60,15 @@ class SeoService
   end
 
   def title(default_value, extra_mode = nil, locale = I18n.locale)
+    return @title if defined?(@title)
+
     @locale = locale
     custom_value =
       if mode == 'default' && extra_mode == :social
         # social media title is passed here from layout
         default_value
       elsif customization.present?
-        customization_title(mode, extra_mode)
+        customization_title(mode)
       else
         default_value
       end
@@ -74,13 +76,15 @@ class SeoService
   end
 
   def description(default_value, extra_mode = nil, locale = I18n.locale)
+    return @description if defined?(@description)
+
     @locale = locale
     custom_value =
       if mode == 'default' && extra_mode == :social
         # social media description is passed here from layout
         default_value
       elsif customization.present?
-        customization_description(mode, extra_mode)
+        customization_description(mode)
       else
         default_value
       end
@@ -194,14 +198,10 @@ class SeoService
     end
   end
 
-  def customization_title(mode, extra_mode = nil)
+  def customization_title(mode)
     case mode
     when 'homepage'
-      if extra_mode == :social
-        customization.social_media_title.presence || placeholder(:meta_title, locale)
-      else
-        customization_value_or_default(:meta_title)
-      end
+      customization.meta_title
     when 'listing'
       customization_value_or_default(:listing_meta_title)
     when 'profile'
@@ -213,14 +213,10 @@ class SeoService
     end
   end
 
-  def customization_description(mode, extra_mode = nil)
+  def customization_description(mode)
     case mode
     when 'homepage'
-      if extra_mode == :social
-        customization.social_media_description.presence || placeholder(:meta_description, locale)
-      else
-        customization_value_or_default(:meta_description)
-      end
+      customization.meta_description
     when 'listing'
       customization_value_or_default(:listing_meta_description)
     when 'profile'

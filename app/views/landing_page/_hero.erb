@@ -1,18 +1,18 @@
 <%
-hero_style_variations = {
-  "light" => "hero__section--light",
-  "dark" => "hero__section--dark",
-  "transparent" => "hero__section"
-}
+  hero_style_variations = {
+      "light" => "hero__section--light",
+      "dark" => "hero__section--dark",
+      "transparent" => "hero__section"
+  }
 
-hero_style_variations.default = "hero__section--dark"
+  hero_style_variations.default = "hero__section--dark"
 
-section_style_class = hero_style_variations[s["background_image_variation"]]
+  section_style_class = hero_style_variations[s["background_image_variation"]]
 %>
 
 <% content_for :hero_css do %>
   .<%= section_style_class %> {
-    background-image: url('<%= s["background_image"]["src"] %>');
+  background-image: url('<%= s["background_image"]["src"] %>');
   }
 
   .hero__search-button,
@@ -20,14 +20,14 @@ section_style_class = hero_style_variations[s["background_image_variation"]]
   .hero__signup-button,
   .hero__signup-button:active
   {
-    background-color: rgb(<%= s["search_button_color"]["value"].join(",") %>);
+  background-color: rgb(<%= s["search_button_color"]["value"].join(",") %>);
   }
 
   .hero__search-button:hover,
   .hero__search-button:focus,
   .hero__signup-button:hover,
   .hero__signup-button:focus {
-    background-color: rgb(<%= s["search_button_color_hover"]["value"].join(",") %>);
+  background-color: rgb(<%= s["search_button_color_hover"]["value"].join(",") %>);
   }
 <% end %>
 <div>
@@ -48,9 +48,9 @@ section_style_class = hero_style_variations[s["background_image_variation"]]
               <input id="search" type="text" placeholder="Try 'Los Angeles'" value="" />
             </div>
             <div class="top_navbar_text">
-              <div class="vertical_align_text">+ Add your studio</div>
-              <div class="vertical_align_text">Sign up</div>
-              <div class="vertical_align_text">Log in</div>
+              <div class="vertical_align_text"><a href="/listings/new" style="color: black">+ Add your studio</a></div>
+              <div class="vertical_align_text"><a href="/signup" style="color: black">Sign up</a></div>
+              <div class="vertical_align_text"><a href="/login" style="color: black">Log in</a></div>
             </div>
           </div>
         </fieldset>
@@ -58,18 +58,33 @@ section_style_class = hero_style_variations[s["background_image_variation"]]
     </div>
   </div>
 </div>
-<div class="font-family-champagne-limosine">
-  <div class="hero_second-section">
-    <h1 class="hero__title"><%= s["title"]["value"] %></h1>
-    <div class="get_started">
-      <div class="get_started-image">
-        <img src="landing_page/get_started.jpg" />
-      </div>
-      <div class="subtitle">
-        <h2 class="hero__subtitle"><span><%= s["subtitle"]["value"] %></span></h2>
-        <a class="get_started_button"><span>Get started</span></a>
-      </div>
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-6 loctaion-headings" style="padding-left: 300px;"><h1 style="font-size:38px; font-weight: bold;">Discover & Book Music Studio</h1></div>
+  <div class="col-3"></div>
+</div>
+<section id="<%= section_id %>" class="<%= section_style_class %>" style=" margin-top: 20px;   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62%;">
+  <div class="hero__content">
+    <div class="hero__content-container" style="float: left;
+        width: 500px;">
+      <h1 class="hero__title" style="color: white"><%= "The largest & most trusted online community to rent music studios." %></h1>
+      <button class="" href="/s">
+        <a class="info__button--ghost info__contacts_us__4__info__button--ghost" href="/s">Get Started</a>
+      </button>
+      <% search_mode = s["variation"]["value"] %>
+      <% case search_mode %>
+      <% when "keyword_search", "location_search", "keyword_and_location_search" %>
+
+
+      <% when "private" %>
+
+        <a class="hero__signup-button" href="<%= s["signup_path"]["value"] %>"><%= s["signup_button"]["value"] %></a>
+
+      <% end %>
     </div>
   </div>
-</div>
+</section>
 

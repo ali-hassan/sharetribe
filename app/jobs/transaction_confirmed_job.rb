@@ -13,10 +13,7 @@ class TransactionConfirmedJob < Struct.new(:conversation_id, :community_id)
   def perform
     transaction = Transaction.find(conversation_id)
     community = Community.find(community_id)
-    MailCarrier.deliver_now(PersonMailer.transaction_confirmed(transaction, community, :seller))
-    if transaction.last_transition_by_admin?
-      MailCarrier.deliver_now(PersonMailer.transaction_confirmed(transaction, community, :buyer))
-    end
+    MailCarrier.deliver_now(PersonMailer.transaction_confirmed(transaction, community))
 
     if transaction.payment_gateway == :stripe
       payment = StripeService::Store::StripePayment.get(community_id, transaction.id)

@@ -1,10 +1,17 @@
-FROM ruby:2.6.2-stretch
+FROM ruby:2.6.2
 
 MAINTAINER Sharetribe Team <team@sharetribe.com>
 
-ENV REFRESHED_AT 2019-09-20
+ENV REFRESHED_AT 2019-04-12
 
-RUN apt-get update && apt-get dist-upgrade -y
+# NOTE: we will migrate soon to newer ruby version and away from Debian
+# Jessie-based image. For now, enable only package repositories that are still
+# maintained for jessie for LTS.
+
+RUN echo 'deb http://deb.debian.org/debian jessie main' > /etc/apt/sources.list \
+    && echo 'deb http://security.debian.org jessie/updates main' >> /etc/apt/sources.list \
+    && apt-get update \
+    && apt-get dist-upgrade -y
 
 # Prevent GPG from trying to bind on IPv6 address even if there are none
 RUN mkdir ~/.gnupg \

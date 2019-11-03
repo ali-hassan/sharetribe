@@ -66,8 +66,6 @@ module CustomLandingPage
 
         if asset.nil?
           raise LinkResolvingError.new("Unable to find an asset with id '#{id}'.")
-        elsif asset['absolute_path']
-          asset
         else
           append_asset_path(asset)
         end

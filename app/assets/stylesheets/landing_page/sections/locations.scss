@@ -22,8 +22,6 @@ $locations__mobile-gutter: 12px;
 
 .locations__section {
   color: $typography__main-color;
-  background-size: cover;
-  background-position: center;
 
   width: 100%;
   @include prefix-val(display, flex);
@@ -34,8 +32,10 @@ $locations__mobile-gutter: 12px;
 
 .locations__content {
   margin-left: 5%;
-  color: black;
+  text-align: center;	  color: black;
+
   font-family: 'Champagne & Limosine' !important;
+
   // mobile
   width: 100%;
 
@@ -43,7 +43,14 @@ $locations__mobile-gutter: 12px;
     max-width: 1114px + $locations__desktop-gutter;
   }
 }
-
+.location-settings {
+  margin-left: auto;
+  margin-right: auto;
+}
+.loctaion-headings {
+  text-align: -webkit-left;
+  padding-left: 55px;
+}
 .locations__title {
   @include typography__section-title;
   @include dimensions__section-title--limited-width;
@@ -327,50 +334,4 @@ $locations__mobile-gutter: 12px;
   }
 
 }
-.locations__section--background, .locations__section--background-image--light, .locations__section--background-image--dark {
-  .locations__paragraph--markdown {
-    & > p {
-      color: #ffffff;
-    }
-  }
-  .locations__title {
-      color: #ffffff;
-  }
-}
-.locations__section--background {
-  @extend .locations__section;
 
-  color: #FFFFFF;
-  @include viewport-unit(min-height, 80vh);
-}
-
-.locations__section--background-image--light {
-  @extend .locations__section--background;
-  box-shadow: inset 0 0 0 999999px rgba(0, 0, 0, 0.3); /* is there any cleaner way? */
-}
-
-.locations__section--background-image--dark {
-  @extend .locations__section--background;
-  box-shadow: inset 0 0 0 999999px rgba(0, 0, 0, 0.5); /* is there any cleaner way? */
-}
-
-.locations__section--background-color {
-  @extend .locations__section;
-  color: #FFFFFF;
-}
-
-.locations__section--blank {
-  @extend .locations__section;
-  color: $typography__main-color;
-}
-
-.locations__section--zebra {
-  @extend .locations__section--blank;
-}
-
-.locations__section--background-color, .locations__section--background-image--light, .locations__section--background-image--dark {
-  .locations__button--ghost {
-      color: #ffffff;
-      border-color: #ffffff;
-  }
-}

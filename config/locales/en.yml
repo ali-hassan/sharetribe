@@ -95,8 +95,6 @@ en:
         transaction_agreement_checkbox_label_description: "This text will be shown next to a checkbox in the checkout form. The user needs to check the box to proceed with the transaction. An example label would be something like \"By clicking this box I accept the agreement.\""
         transaction_agreement_text_header: "Agreement text"
         transaction_agreement_description: "This is the content of the actual agreement that the user needs to accept. The agreement content is displayed when the user clicks the \"%{read_more}\" link next to the agreement label."
-        terms_privacy_policy_and_static_content: "Terms, privacy policy and static content"
-        terms_privacy_policy_and_static_content_infotext: "You can edit up to four pages of static content. Users can find the pages by clicking the \"About\" link in the top bar."
       edit_look_and_feel:
         edit_community_look_and_feel: "Edit marketplace \"%{community_name}\" look and feel"
         community_logo: Logo
@@ -119,12 +117,10 @@ en:
         logo_mobile_icon_instructions_text_with_dimensions: "This square logo will be shown when people bookmark your site to the home screen of their mobile device. The dimensions should be (at least) %{width}x%{height} pixels."
         cover_photo_visibility: "Cover photo is shown in the homepage for users who are not logged in."
         cover_photo_instructions_text_with_dimensions: "The photo will be resized to %{width}x%{height} pixels size and taller images will be cut in the middle. %{see_how_it_looks_like}."
-        we_have_you_covered: "We have you covered"
-        cover_photo_ready_made: "Are you looking for some ready-made and optimized cover pictures? Or would you like some inspiration and websites where to find great cover pictures? %{link}!"
         small_cover_photo_visibility: "Small cover photo is shown in all pages except in the homepage for users who are not logged in."
         small_cover_photo_instructions_text_with_dimensions: "The photo will be resized to %{width}x%{height} pixels size and taller images will be cut in the middle."
         main_content_width: "When choosing cover photos please note that the page main content is %{main_width} pixels wide at most. Remember to also check how your cover photo looks on the smaller screens (e.g. by using a more narrow browser window)."
-        custom_color1_instructions_text: "You can change the main color of the user interface by entering a hex color value. %{link} can help you choose the color and give you the hex color code. You can then copy the code here."
+        custom_color1_instructions_text: "You can change the main color of the user interface by entering a hex color value. <a href=\"https://www.webfx.com/web-design/color-picker/d96e21\" target=\"_blank\" rel=\"noreferrer\">WebFX.com</a> can help you choose the color and give you the hex color code. You can then copy the code here."
         new_listing_button_instructions_text: "You can change the color of the Post a new listing button by entering a hex color value. %{link_to_colorpicker} can help you choose the color and give you the hex color code. You can then copy the code here."
         default_browse_view: "Default browse view"
         default_browse_view_instructions_text: "Default browse view is used on the homepage to set how the listings are displayed by default."
@@ -222,9 +218,8 @@ en:
         users_can_invite_new_users: "Allow all registered users, and not only admins, to invite new users"
         private: "Allow only registered users to see listings and user profiles (make marketplace private)"
         require_verification_to_post_listings: "Allow only users verified by admins to post new listings"
-        allow_free_conversations: "Allow users to message each other freely"
+        allow_free_conversations: "Allow users to message each others freely"
         search_preferences: "Search preferences"
-        search_and_location_preferences: "Search and location preferences"
         default_search_type: "Search type: %{select_search_type}"
         keyword_search: "Keyword search"
         keyword_and_location_search: "Keyword and location search"
@@ -233,7 +228,6 @@ en:
         km: km
         miles: miles
         show_only_nearby: "Show only nearby listings with location search"
-        allow_users_to_add_location: "Allow users to add location to their profile and listings, and show a map view on the search page"
         listing_preferences: "Listing preferences"
         transaction_preferences: "Order preferences"
         show_listing_publishing_date: "Display publishing date of the listing on the listing page"
@@ -262,7 +256,6 @@ en:
         delete_this_marketplace: "Delete this marketplace"
         payment_preferences: "Payment system"
         pre_approved_listings: "Review all listings before they are published"
-        email_admins_about_new_transactions: "Send admins an email whenever a new transaction starts"
       manage_members:
         manage_members: Users
         email: Email
@@ -324,9 +317,8 @@ en:
         twitter_handle_placeholder: username
         invalid_twitter_handle: "Twitter handle should contain only at maximum 15 alphanumeric (letters A-Z and numbers 0-9) characters."
         facebook_connect: "Facebook Login"
-        facebook_developers_dashboard: "Facebook Developers Dashboard"
-        facebook_connect_info_text: "In order to enable Facebook Login, create an application for your marketplace in the %{dashboard_link}. Add the generated ID and secret key of the application here."
-        facebook_connect_info_text_with_instructions: "In order to enable Facebook Login, create an application for your marketplace in the %{dashboard_link}. Add the generated ID and secret key of the application here. %{instructions_link}"
+        facebook_connect_info_text: "In order to enable Facebook Login, create an application for your marketplace in the <a href='https://developers.facebook.com/'>Facebook Developers Dashboard</a>. Add the generated ID and secret key of the application here."
+        facebook_connect_info_text_with_instructions: "In order to enable Facebook Login, create an application for your marketplace in the <a href='https://developers.facebook.com/'>Facebook Developers Dashboard</a>. Add the generated ID and secret key of the application here. %{instructions_link}"
         facebook_instructions_link_text: "See instructions for configuring Facebook Login."
         facebook_connect_id: "Facebook App ID"
         invalid_facebook_connect_id: "App ID should contain only numbers."
@@ -337,17 +329,15 @@ en:
         add_another_image: "Add another image"
         google_connect: "Google Sign-In"
         google_instructions_link_text: "See instructions for configuring Google Sign-In."
-        google_developers_console: "Google Developers Console"
-        google_connect_info_text_with_instructions: "In order to enable Google Sign-In, create a project for your marketplace in the %{dashboard_link}. Add the generated ID and secret key of the project here. %{instructions_link}"
-        google_connect_info_text: "In order to enable Google Sign-In, create a project for your marketplace in the %{dashboard_link}. Add the generated ID and secret key of the project here."
+        google_connect_info_text_with_instructions: "In order to enable Google Sign-In, create a project for your marketplace in the <a href='https://developers.google.com/identity/sign-in/web/sign-in'>Google Developers Console</a>. Add the generated ID and secret key of the project here. %{instructions_link}"
+        google_connect_info_text: "In order to enable Google Sign-In, create a project for your marketplace in the <a href='https://developers.google.com/identity/sign-in/web/sign-in'>Google Developers Console</a>. Add the generated ID and secret key of the project here."
         enable_google_login: "Allow users to log in with their Google account"
         google_connect_id: "Google Client ID"
         google_connect_secret: "Google Client secret"
         linkedin_connect: "LinkedIn Sign In"
         linkedin_instructions_link_text: "See instructions for configuring LinkedIn Sign In."
-        linkedin_developers_dashboard: "LinkedIn Developers Dashboard"
-        linkedin_connect_info_text_with_instructions: "In order to enable LinkedIn Sign In, create an app for your marketplace in the %{dashboard_link}. Add the generated ID and secret key of the app here. %{instructions_link}"
-        linkedin_connect_info_text: "In order to enable LinkedIn Sign In, create an app for your marketplace in the %{dashboard_link}. Add the generated ID and secret key of the application here."
+        linkedin_connect_info_text_with_instructions: "In order to enable LinkedIn Sign In, create an app for your marketplace in the <a href='https://www.linkedin.com/developers/'>LinkedIn Developers Dashboard</a>. Add the generated ID and secret key of the app here. %{instructions_link}"
+        linkedin_connect_info_text: "In order to enable LinkedIn Sign In, create an app for your marketplace in the <a href='https://www.linkedin.com/developers/'>LinkedIn Developers Dashboard</a>. Add the generated ID and secret key of the application here."
         enable_linkedin_login: "Allow users to log in with their LinkedIn account"
         linkedin_connect_id: "LinkedIn Client ID"
         linkedin_connect_secret: "LinkedIn Client Secret"
@@ -459,8 +449,6 @@ en:
           canceled: Canceled
           preauthorized: Preauthorized
           rejected: Rejected
-          payment_intent_requires_action: Pending
-          payment_intent_action_expired: Expired
         headers:
           conversation: "Conversation thread"
           listing: Listing
@@ -469,7 +457,7 @@ en:
           started: Started
           last_activity: "Latest activity"
           initiated_by: Starter
-          other_party: Seller
+          other_party: "Provider"
         status:
           conversation: Conversation
           free: "Free transaction"
@@ -506,9 +494,6 @@ en:
             canceled: Canceled
             initiated: "Waiting Stripe payment"
             pending_ext: "Waiting Stripe payment"
-            payment_intent_requires_action: Pending
-            payment_intent_action_expired: Expired
-            payment_intent_failed: "Stripe payment failed"
         not_available: "Not available"
       conversations:
         conversations: Conversations
@@ -518,7 +503,7 @@ en:
           started: Started
           last_activity: "Latest Activity"
           initiated_by: Starter
-          other_party: Seller
+          other_party: "Provider"
         participants: "Conversation: %{starter} with %{author}"
         profile: "%{author}'s Profile"
         search_by_keyword: "Search for a name, email or keyword"
@@ -564,9 +549,6 @@ en:
           confirm_modify: "Are you sure you want to modify/delete this review? Once you edit/delete a review it is not possible to recover any of the old data."
           deleting_info: "Deleting a review allows its author to leave another one for the same transaction."
           blocking_info: "Blocking the review after deletion prevents its author from leaving another one for the same transaction."
-          unskip: Unskip
-          if_you_unskip_the_review: "If you unskip the review, the user will be able to post one."
-          they_will_not_be_notified_automatically: "They will not be notified automatically."
       invitations:
         invitations: Invitations
         used:
@@ -647,159 +629,6 @@ en:
         contact_us: "Contact us"
         you_can_now_use_a_custom_domain: "With your current plan, you can now enable a custom domain. Let's move forward with the setup. %{contact_us}!"
         would_you_like_to_change_domain: "Would you like to change your marketplace custom domain? %{contact_us}!"
-      landing_pages:
-        landing_pages: "Landing Page"
-        info_1: "The landing page is perhaps the most important page of your marketplace. It is the first page that visitors see - sort of like the front door of your house. You have only a few seconds to convince new vistiors that they should explore your site. The page needs to be appealing and your value proposition should be clear and enticing."
-        info_2: "%{preview_link} your current landing page and make changes from the %{details_link} and %{design_link} sections"
-        info_2_preview_text: Preview
-        info_2_details_text: "basic details"
-        info_2_design_text: design
-        info_3: "If you want to have a completely customized landing page for your marketplace, you can purchase it as add-on for $99 per month."
-        info_4: "Read more about custom landing pages"
-        editor_title: "Landing Page Editor"
-        editor_info: "Here you can edit the sections that your Landing Page will include. Please note that some sections are predefined and cannot be edited within the Landing Page editor."
-        preview: "Preview landing page"
-        set_live: "Set live"
-        headers:
-          section_id: "Section ID"
-          section_type: "Section type"
-          version: Version
-          released: Released
-        add_new_version: "Add new version"
-        new_version: "New version"
-        edit_version: "Edit version"
-        add_new_section: "Add new section"
-        select_section_type: "Select section type..."
-        form:
-          version: Version
-          save: Save
-        sections:
-          identifier: "Section ID"
-          kind: "Section Type"
-          variation: Variation
-          new: "New section"
-          edit: "Edit section %{section_id}"
-          remove_section_confirmation: "Are you sure you want to remove the section '%{section_id}' and all its data? This cannot be undone."
-          info_single_column: "Info 1 Column"
-          info_multi_column_2: "Info 2 Columns"
-          info_multi_column_3: "Info 3 Columns"
-          listings: Listings
-          categories: Categories
-          hero: Hero
-          locations: Locations
-          video: Video
-          new_section:
-            categories: "New categories section"
-            footer: "New footer section"
-            hero: "New hero section"
-            info_single_column: "New single column section"
-            info_multi_column_2: "New 2 column section"
-            info_multi_column_3: "New 3 column section"
-            listings: "New listings section"
-            locations: "New locations section"
-            video: "New video section"
-          edit_section:
-            categories: "Edit categories section"
-            footer: "Edit footer section"
-            hero: "Edit hero section"
-            info_single_column: "Edit single column section"
-            info_multi_column_2: "Edit 2 column section"
-            info_multi_column_3: "Edit 3 column section"
-            listings: "Edit listings section"
-            locations: "Edit locations section"
-            video: "Edit video section"
-    landing_page_versions:
-      sections:
-        hero:
-          hero_title: Hero
-          hero_description: "Set the Background image for the hero section. The Slogan and Description are set from the basic details section."
-        footer:
-          footer_title: Footer
-          footer_style: "Footer style"
-          style_dark: Dark
-          style_light: Light
-          style_marketplace_color: "Marketplace color"
-          style_logo: Logo
-        cta_button:
-          cta_button: "CTA Button"
-          cta_enabled: Enabled
-          cta_text: Text
-          cta_url: URL
-        background_image_overlay:
-          background_image: "Background image"
-          background_image_info: "This image will be shown as the background image for the section. For the best results, it should have a minimum size of 1600x1200 pixels."
-          add_another_image: "Add another image"
-          current_image: "Current image: %{filename}"
-          file_not_selected: "Not selected"
-          background_image_overlay: "Background image overlay"
-          background_image_overlay_info: "This allows you to determine how dark or light your background image is going to be displayed. \"Transparent\" means no overlay at all."
-          overlay_dark: Dark
-          overlay_light: Light
-          overlay_transparent: Transparent
-        background_style:
-          background_style: "Background style"
-          style_image: Image
-          style_color: Color
-          style_none: None
-        background_color:
-          background_color: "Background color"
-          background_color_info: "You can choose the background color of this section by entering a hex color value. <a href=\"https://www.webfx.com/web-design/color-picker/\" target=\"_blank\">WebFx</a> can help you choose the color andgive you the hex color code. You can then copy the code here."
-        categories:
-          add: "Add a new category to this section"
-          category: Category
-          empty: "You don't have any included categories"
-          image: Image
-          include_title: "Categories to include"
-          info_text: "You can feature 3 to 7 categories in each section. Please add an image to each category and select one of the categories from your marketplace. The recommended image size is 1000 x 667 px."
-          need_at_least_3_categories: "You should have at least 3 categories in this section"
-          need_at_most_7_categories: "You should have at most 7 categories in this section"
-        category:
-          add_another_image: "Add another image"
-          category: Category
-          current_image: "Current image: %{filename}"
-          file_not_selected: "Not selected"
-          image: Image
-          image_required: "You should add an image to this category"
-          select_category: "Select category"
-        locations:
-          add: "Add a new location to this section"
-          location: Location
-          empty: "You don't have any included locations"
-          image: Image
-          include_title: "Locations to include"
-          info_text: "You can feature 3 to 7 locations in each section. Please add an image to each location and provide location search url for your marketplace. The recommended image size is 1000 x 667 px."
-          need_at_least_3_locations: "You should have at least 3 locations in this section"
-          need_at_most_7_locations: "You should have at most 7 locations in this section"
-        location:
-          add_another_image: "Add another image"
-          location: Location
-          current_image: "Current image: %{filename}"
-          file_not_selected: "Not selected"
-          image: Image
-          image_required: "You should add an image to this location"
-          title: Title
-          title_placeholder: "Location text"
-          url: URL
-          url_placeholder: "Location link URL"
-        multi_column:
-          main_title: "Main title"
-          column_header: "Column %{index}"
-          column_title: "Column %{index} title"
-          column_icon_info: "You can choose the icon for this column it's name from <a href=\"/info-icons.html\" target=\"_blank\">full list of supported icons</a>"
-          column_icon: "Column %{index} icon"
-          column_paragraph: "Column %{index} paragraph"
-          column_button: "Column %{index} button"
-          column_button_text: "Button text"
-          column_button_url: "https://www.sharetribe.com"
-        listings:
-          you_need_to_add_the_listing_ids: "You need to add the listing ids of the listings that you want to include in this section. To find the listing id, simply go to the listing page and look at the listing URL. The listing id is the number that comes right after the main URL. In the example https://www.example.com/en/listings/123456-listing-title, the listing is would be 123456"
-        video:
-          text: Text
-          youtube_video_id: "Youtube video ID"
-          autoplay: "Playing options"
-          autoplay_no: "No autoplay"
-          autoplay_muted: "Muted autoplay"
-          info: "This text will show when you select the \"No Autoplay\" playing option or the video is paused"
     custom_fields:
       edit:
         edit_listing_field: "Edit listing field '%{field_name}'"
@@ -812,7 +641,6 @@ en:
       edit_location:
         edit_location_field: "Edit listing field 'Location'"
         this_field_is_required: "This field is required"
-        the_location_feature_can_be_enabled: "The location feature can be enabled from the %{link} section in your marketplace settings."
       edit_expiration:
         edit_expiration_field: "Edit listing field 'Expiration date'"
         enable: "Enable expiration date"
@@ -918,7 +746,6 @@ en:
       emails_title: Emails
       subscription: Subscription
       preview: "Preview site"
-      whats_new: "What's new?"
     listing_shapes:
       availability_title: Availability
       read_more: "Read more about automatic availability management."
@@ -1121,33 +948,12 @@ en:
       request: Requesting
       inquiry: Announcement
       share_for_free: "Sharing for free"
-      event_w_online_payment: "Event with online payment"
-      event_wo_online_payment: "Event without online payment"
       default_action_button_labels:
         sell: Buy
         rent: Rent
         request: Offer
         offer: Request
         inquiry: Contact
-        book: Book
-    community_transactions:
-      show:
-        transaction_for: "Transaction #%{transaction_id} for %{link}"
-        status: 'Status:'
-        next_step: 'Next step:'
-        waiting_for_provider_accept_or_reject: 'Waiting for %{provider} to accept or reject the request.'
-        waiting_for_fulfill_and_complete: 'Waiting for %{provider} to fulfill the order for %{listing_title} and for %{buyer} to mark the order as completed.'
-        buyer: 'Buyer:'
-        provider: 'Seller:'
-        delivery: 'Delivery method:'
-        shipping_to: 'Shipping to %{address}'
-        buyer_pays: 'Buyer pays:'
-        marketplace_collects: '%{service_name} collects:'
-        buyer_service_fee_label: 'Commision from buyer:'
-        service_fee_label: 'Commision from seller:'
-        provider_receives: 'Seller receives:'
-        admin_info_text: 'As an administrator of %{service_name}, you can do some actions to move this transaction forward:'
-        manage_reviews: "Manage reviews"
   common:
     edit_page: "Edit page"
     default_community_slogan: "Community marketplace"
@@ -1193,7 +999,7 @@ en:
       travel: Travel
       other: Other
     username: Username
-    username_or_email: Email
+    username_or_email: "Email or username"
     what_is_this: "What's this?"
     removed_user: "Removed user"
     payment_fee_info:
@@ -1237,17 +1043,17 @@ en:
       total_value: "%{seller_gets}*"
       total_value_paypal: "%{seller_gets}*"
       total_value_stripe: "%{seller_gets}"
-      paypal_fee: "PayPal's payment processing fee"
-      paypal_fee_info: "* Excludes %{link}"
+      paypal_fee_info: "* Excludes <a id='%{fee_info_link_id}' href='#'>PayPal's payment processing fee</a>"
+      payment_fee_info: "* Excludes <a id='%{fee_info_link_id}' href='#'>payment processing fee</a>"
       shipping_price_label: "Shipping:"
       stripe-fee_label: "Payment processing fee"
     confirm:
       confirm_description: "If your order has been fulfilled you should confirm it as done. Then you can give feedback to the other party."
-      cancel_description: "If your order was not fulfilled, you can mark it as 'canceled'. You can still give feedback to the other party and describe what happened."
+      cancel_description: "If your order was not fulfilled, you can mark it as 'disputed'. You can still give feedback to the other party and describe what happened."
       cancel_payed_description: "If your request was accepted but you're having second thoughts, you can still cancel the request before the payment."
       canceling_payed_transaction: "Cancel transaction"
       confirm: "Mark completed"
-      cancel: Cancel
+      cancel: Dispute
       continue: Continue
       give_feedback_to: "Give feedback to %{person_link}"
       do_not_give_feedback: "Skip feedback"
@@ -1376,7 +1182,7 @@ en:
       reject_preauthorized_offer: "Not this time"
       reject_preauthorized_request: "Not this time"
       confirm: "Mark completed"
-      cancel: Cancel
+      cancel: Dispute
   feedback:
     feedback_subject: "New feedback from %{service_name}"
     feedback_body: "%{author_name_and_email} has sent the following feedback from %{service_name}"
@@ -1437,7 +1243,6 @@ en:
       give_feedback_to: "Give feedback to %{other_party_given_name}"
       stripe:
         has_marked_request_as_confirmed: "%{other_party_full_name} has marked the order about '%{request}' completed. The payment for this transaction has now been released to your bank account. You can now give feedback to %{other_party_given_name}."
-      team_title: 'the %{service_name} team'
     transaction_automatically_confirmed:
       subject: "Order automatically completed - remember to give feedback"
       we_have_marked_request_as_confirmed: "We have marked the order about '%{request}' completed. The order was automatically completed because %{days_passed} days have passed since the request was accepted."
@@ -1582,7 +1387,7 @@ en:
       text_version_text: "Could you share something that others might need? Or do you need something that others might have? Add an offer or a request or check everything that the others are offering or requesting at %{url}"
     reset_password_instructions:
       change_my_password: "Change my password"
-      reset_password_instructions: "<p>You have indicated that you have forgotten your password in the %{service_name} service.</p><p>If you need to reset your password, click the following link: %{password_reset_link}</p><br/><p>If you didn't request this, please ignore this email. Your password won't change until you access the link above and create a new one.</p>"
+      reset_password_instructions: "<p>You have indicated that you have forgotten either your password or username in the %{service_name} service.</p><p>Your username is: %{username}</p><p>If you need to reset your password, click the following link: %{password_reset_link}</p><br/><p>If you didn't request this, please ignore this email. Your password won't change until you access the link above and create a new one.</p>"
     testimonial_reminder:
       remember_to_give_feedback_to: "Reminder: remember to give feedback to %{name}"
       you_have_not_given_feedback_yet: "You have not yet given feedback to %{name} about event '%{event}'. Remember to give feedback on how %{given_name} performed in the event."
@@ -1592,7 +1397,7 @@ en:
       you_have_time_to_accept: "You need to accept or reject the request within %{payment_expires_in}."
       if_you_do_accept: "If you accept the request within this timeframe, you will receive the money immediately to your account."
       if_you_do_accept_stripe: "If you accept the request within this timeframe, the payment will go through. You will receive the money directly to your bank account after you have delivered %{listing_title} to %{requester}."
-      if_you_do_not_accept: "If you reject the request or don't accept it within this timeframe, the transaction will be automatically canceled, %{requester} will not be charged and you will not get paid."
+      if_you_do_not_accept: "If you reject the request or don't accept it within this timeframe, the transaction will be automatically cancelled, %{requester} will not be charged and you will not get paid."
       click_here_to_reply: "Click here to respond to the request"
     transaction_preauthorized_reminder:
       subject: "Remember to accept the request from %{requester} about listing %{listing_title}"
@@ -1611,7 +1416,6 @@ en:
       you_are_receiving_this_because: "You received this notification because you follow %{author_name}."
       view_listing: "View listing"
     new_member_notification:
-      subject: "New member in %{community}"
       new_member_has_joined: "A new member has joined %{community}. They may still have to confirm their email address."
       this_is_automatic_message: "This is an automatic message sent to administrators of %{community}."
       person_name: "Name:"
@@ -1634,14 +1438,6 @@ en:
       subject: "Edited listing to review: \"%{listing_title}\" by %{author_name} in %{community}"
       there_is_a_edited_listing_to_review: "There is an edited listing to review: \"%{listing_title}\" by %{author_name}. You now have to approve or reject that listing."
       review_the_listing: "Review the edited listing"
-    new_transaction:
-      subject: "New transaction in %{service_name}"
-      there_is_a_new_transaction: "There is %{link} in %{service_name}."
-      a_new_transaction: "a new transaction"
-      listing: "Listing: %{title}"
-      sum: "Sum: %{amount}"
-      starter: "Starter: %{name}"
-      provider: "Seller: %{name}"
   error_messages:
     booking:
       booking_failed_payment_voided: "Booking failed due to an unexpected error. Please try again later. You haven't been charged."
@@ -1712,9 +1508,6 @@ en:
       on_or_after: "must be on or after %{restriction}"
       positive_number: "Insert a number."
       from_must_be_less_than_till: "\"Start time\" must be less than \"End time\""
-      section_with_this_id_already_exists: "This identifier is in use. Please choose another one."
-      listing_with_this_id_does_not_exist: "This listing id is not one of yours. Maybe you made a typo? Please verify and try again"
-      presence: "Can't be blank"
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} agreed to lend %{listing_title} to %{requester_name} %{time_ago}."
@@ -1922,7 +1715,7 @@ en:
       how_to_use: "How it works"
       info_about_kassi: "Information about %{service_name}"
       news: News
-      register_details: "Privacy policy"
+      register_details: "Privacy Policy"
       terms: "Terms of use"
     logged_in:
       admin: Admin
@@ -1939,7 +1732,7 @@ en:
     logged_in_notifications_icon:
       notifications: Notifications
     markdown_help:
-      title: "Formatting help using Markdown"
+      title: Formatting help using Markdown
       description: "Markdown is a simple way to format text that looks great on any device. It doesn’t do anything fancy like change the font size, color, or type — just the essentials, using keyboard symbols you already know."
       formatting: Formatting
       result: Result
@@ -2021,9 +1814,9 @@ en:
       only_listing_author_can_close_a_listing: "Only listing author can close a listing"
       only_listing_author_can_edit_a_listing: "Only listing author can edit a listing"
       payment_successful: "Payment successful"
-      payment_canceled: "Payment canceled"
+      payment_canceled: "Payment cancelled"
       error_in_payment: "Error in payment. If you didn't complete the payment yet, try again. If you did, please send us feedback."
-      cannot_receive_payment: "The seller can't receive the payment due some error. Please contact the %{service_name} team to clarify the situation"
+      cannot_receive_payment: "The provider can't receive the payment due some error. Please contact the %{service_name} team to clarify the situation"
       payment_waiting_for_later_accomplishment: "When you have paid, we'll notify the seller and you will get a receipt in email"
       password_recovery_sent: "Instructions to change your password were sent to your email."
       person_activated: "User activated"
@@ -2323,7 +2116,6 @@ en:
       month: "Number of months:"
       unit: "Number of units:"
       custom: "Quantity:"
-      person: "Number of people:"
     quantity_placeholder: Quantity
     please_comment: Comment
     reply_link:
@@ -2375,7 +2167,6 @@ en:
       week: week
       month: month
       unit: unit
-      person: person
     verification_required:
       verification_required: "Verification required"
   listing_conversations:
@@ -2401,7 +2192,7 @@ en:
       address_country: "Country *"
       address_name: "First and last names *"
       address_city: "City *"
-      address_state: State
+      address_state: "State *"
       address_street1: "Street address line 1 *"
       address_street2: "Street address line 2"
       address_postal_code: "ZIP / Postal code *"
@@ -2498,7 +2289,7 @@ en:
     checkout_with: "Checkout with"
     or_pay_with_paypal: or
     checkout_with_paypal: "Checkout with PayPal"
-    cancel_succesful: "PayPal payment successfully canceled"
+    cancel_succesful: "PayPal payment succesfully canceled"
     transaction:
       commission_payment_name: "Commission payment for %{listing_title}"
       commission_payment_description: "Marketplace %{service_name} took this commission from transaction regarding %{listing_title}"
@@ -2523,7 +2314,7 @@ en:
       email_is_in_use: "The email you gave is already in use."
       email_is_in_use_or_not_allowed: "This email is not allowed or it is already in use. If you can't get in, contact us."
       email_not_allowed: "This email is not allowed in %{service_name}. Please use an email address that is allowed. If you still cannot get in, contact us."
-      invalid_username_or_email: "Email is invalid or already in use"
+      invalid_username_or_email: "The username or email are invalid or already in use"
       email_restriction_instructions:
         one: "The access to %{service_name} is restricted. To join you need a '%{allowed_emails}' email address."
         other: "The access to %{service_name} is restricted. You need an email address that proves that you are entitled to join."
@@ -2539,7 +2330,9 @@ en:
       show_my_name_to_others: "Show my real name to other %{service_name} users"
       sign_up: "Create a new %{service_name} account"
       terms: "Terms of Use"
-      privacy: "Privacy policy"
+      privacy: "Privacy Policy"
+      username_is_in_use: "This username is already in use."
+      username_is_invalid: "Username is invalid. Allowed characters are letters, numbers and underscore."
       visible_only_to_you: "visible only to you and the %{service_name} team"
       visible_to_everybody: "visible to everybody"
       create_account_with_provider: "Sign up with %{provider}"
@@ -2600,7 +2393,7 @@ en:
   sessions:
     new:
       create_new_account: "Create a new account"
-      i_forgot_my_password: "Forgot password"
+      i_forgot_my_password: "Forgot username or password"
       login: "Log in"
       login_to_kassi: "Log in to %{service_name}"
       connect_your_facebook_to_kassi: "Connect your Facebook account to %{service_name}"
@@ -2611,11 +2404,11 @@ en:
       cancle_facebook_connect: "If you don't want to link this account, you can %{cancel_link}."
       facebook_cancel_link_text: cancel
       log_in_with_your_provider_account: "Log in with %{provider}"
-      or_sign_up_with_your_username: "...or with your email:"
+      or_sign_up_with_your_username: "...or with your username or email:"
       we_will_not_post_without_asking_you: "We will never post to Facebook without asking you."
     password_forgotten:
       email: Email
-      password_recovery_instructions: "Enter your email address to reset your password."
+      password_recovery_instructions: "Enter your email address to receive your username and reset your password."
       request_new_password: "Request new password"
       change_your_password: "Change your password"
     confirmation_pending:
@@ -2641,7 +2434,7 @@ en:
       delete_account_confirmation_popup: "Are you sure you really want to delete your user account and permanently lose all data related to it? Account deletion cannot be reversed."
       email_addresses: "Email addresses"
       new_email: "New email address"
-      delete_personal_information: "If you delete your account, your personal information (name, phone number, address, email, profile picture, etc.) will be deleted permanently and can't be recovered. All the listings you have created will be removed. You won't be able to reactivate your account."
+      delete_personal_information: "If you delete your account, your personal information (name, phone number, address, email, profile picture, etc.) will be deleted permanently and can't be recovered. All the listings you have created will be removed. You won't be able to reactivate your account. Your username will become available for others to register on %{service_name}."
       delete_information_others_involved: "Information where other members are involved (conversations with other people, transactions you've made, reviews you've given to others, etc) is not removed when you delete your account. However, your name will no longer be displayed next to this information."
       unfinished_transactions: "Your account can't be deleted because you have ongoing transactions. Please complete all transactions before deleting your account."
       only_admin: "Your account can't be deleted because you are the only administrator of the marketplace."
@@ -2713,7 +2506,7 @@ en:
       shown_in_your_public_profile: "(shown in your public profile)"
       editing_profile_of: "You are now editing the profile of %{name}"
       format_markdown_link: "format your description using Markdown"
-      format_markdown: "You can %{link}."
+      format_markdown: "You can %{link}"
     save_information: "Save information"
   shipping_address:
     shipping_address: "Shipping address"
@@ -3068,7 +2861,6 @@ en:
       document: "Proof of identity (passport, government-issued ID)"
       send_verification: "Send Verification"
       need_verification: "Need additional verification"
-      additional_document: "A document showing address, either a passport, local ID card, or utility bill from a well-known utility company"
     form_pin:
       social_insurance_number: "Social Insurance Number (SIN)"
       social_security_number: "Social Security Number (SSN)"
@@ -3099,41 +2891,3 @@ en:
       category_description: "%{category} on %{marketplace}"
       profile_title: "Profile of %{user} - %{marketplace}"
       profile_description: "Learn more about %{user} on %{marketplace}"
-  activemodel:
-    attributes:
-      landing_page_version/section/base:
-        id: "Section unique name"
-        title: Title
-        paragraph: Paragraph
-        button_color: "Button color"
-        button_color_hover: "Button color hover"
-        button_title: Text
-        button_path: URL
-        button_path_string: URL
-        background_image: "Background image"
-        background_image_variation: "Background image variation"
-        background_color: "Background color"
-        background_color_string: "Background color"
-        icon_color: "Icon color"
-      landing_page_version/section/listings:
-        listing_1_id: "Listing 1 ID"
-        listing_2_id: "Listing 2 ID"
-        listing_3_id: "Listing 3 ID"
-      landing_page_version/section/video:
-        text: Text
-        youtube_video_id: "Youtube video ID"
-  canada_states:
-    AB: Alberta
-    BC: British Columbia
-    MB: Manitoba
-    NB: New Brunswick
-    NL: Newfoundland and Labrador
-    NS: Nova Scotia
-    NT: Northwest Territories
-    NU: Nunavut
-    'ON': Ontario
-    PE: Prince Edward Island
-    QC: Quebec
-    SK: Saskatchewan
-    YT: Yukon Territory
-

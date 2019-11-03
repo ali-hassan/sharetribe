@@ -160,8 +160,4 @@ class Conversation < ApplicationRecord
       .where({ person_id: person_id })
       .update_all({is_read: true}) # rubocop:disable Rails/SkipsModelValidations
   end
-
-  def payment?
-    starting_page == PAYMENT
-  end
 end

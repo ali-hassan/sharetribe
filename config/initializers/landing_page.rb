@@ -9,7 +9,7 @@ module CustomLandingPage
   "settings": {
     "marketplace_id": 99999,
     "locale": "en",
-    "sitename": "FindMyEcommB2B"
+    "sitename": "MyStudio"
   },
 
   "page": {
@@ -47,7 +47,8 @@ module CustomLandingPage
     {
         "id": "listings",
         "kind": "listings",
-        "title": "Featured Agencies",
+        "title": "Studiotime Premium Verified Studios",
+        "small_title": "Browse our neweset selection of premium verified studios",
         "button_color": {"type": "marketplace_data", "id": "primary_color"},
         "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
         "button_title": "Browse all",
@@ -73,6 +74,7 @@ module CustomLandingPage
         "id": "locations",
         "kind": "locations",
         "title": "Explore Studios",
+        "small_title": "Find studios nearby, or explore new ones around the world",
         "location_color_hover": {"type": "marketplace_data", "id": "primary_color"},
         "button_color": {"type": "marketplace_data", "id": "primary_color"},
         "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
@@ -80,26 +82,20 @@ module CustomLandingPage
         "button_path": {"type": "path", "id": "search"},
         "locations": [
             {
-                "title": "Gibraltar",
+                "title": "Los Angles",
                 "location": "/s",
                 "background_image": {"type": "assets", "id": "1.jpg"}
             },
             {
-                "title": "America",
+                "title": "New York",
                 "location": "/s",
                 "background_image": {"type": "assets", "id": "2.jpg"}
             },
             {
-                "title":"East Asia",
+                "title":"London",
                 "location": "/s",
                 "background_image": {"type": "assets", "id": "3.jpg"}
-            },
-            {
-                "title": "Europe",
-                "location": "/s",
-                "background_image": {"type": "assets", "id": "4.jpg"}
             }
-
         ]
     },
     {
@@ -121,13 +117,13 @@ module CustomLandingPage
         {"service": "instagram", "url": "https://www.instagram.com/findmyecomm"},
         {"service": "linkedin", "url": "https://www.linkedin.com/company/findmyecommb2b"}
   	],
-      "copyright": "Copyright FindMyECommB2B Ltd 2019"
+      "copyright": "Copyright MyStudio Ltd 2019"
     },
 {
       "id": "infos_cols",
       "kind": "info",
       "variation": "multi_column",
-      "title": "The largest & most trusted online community to rent music studious.",
+      "title": "Become a MyStudio Member. Be visible by thousands of potential customers searching for an agency each day. List your agency today!",
       "button_color": {"type": "marketplace_data", "id": "primary_color"},
       "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
       "icon_color": {"type": "marketplace_data", "id": "primary_color"},
@@ -148,7 +144,7 @@ module CustomLandingPage
           "paragraph": "Our agencies will ensure that you have a constructive, personalized and seamless experience. You will receive a one on one service where we aim to sure our agencies put your business needs first and guide you to improving and stepping up your game. Find your agency today!"
         }
       ],
-      "button_title": "Join FindMyEcommB2B Today",
+      "button_title": "Join MyStudio Today",
       "button_path": {"value": "/en/signup"}
 },
     {

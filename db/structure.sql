@@ -25,38 +25,6 @@ CREATE TABLE `active_sessions` (
   KEY `index_active_sessions_on_refreshed_at` (`refreshed_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-DROP TABLE IF EXISTS `active_storage_attachments`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `active_storage_attachments` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `record_type` varchar(255) NOT NULL,
-  `record_id` bigint(20) NOT NULL,
-  `blob_id` bigint(20) NOT NULL,
-  `created_at` datetime NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `index_active_storage_attachments_uniqueness` (`record_type`,`record_id`,`name`,`blob_id`),
-  KEY `index_active_storage_attachments_on_blob_id` (`blob_id`),
-  CONSTRAINT `fk_rails_c3b3935057` FOREIGN KEY (`blob_id`) REFERENCES `active_storage_blobs` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-DROP TABLE IF EXISTS `active_storage_blobs`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `active_storage_blobs` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `key` varchar(255) NOT NULL,
-  `filename` varchar(255) NOT NULL,
-  `content_type` varchar(255) DEFAULT NULL,
-  `metadata` text,
-  `byte_size` bigint(20) NOT NULL,
-  `checksum` varchar(255) NOT NULL,
-  `created_at` datetime NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `index_active_storage_blobs_on_key` (`key`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `ar_internal_metadata`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -315,8 +283,6 @@ CREATE TABLE `communities` (
   `linkedin_connect_secret` varchar(255) DEFAULT NULL,
   `pre_approved_listings` tinyint(1) DEFAULT '0',
   `allow_free_conversations` tinyint(1) DEFAULT '1',
-  `email_admins_about_new_transactions` tinyint(1) DEFAULT '0',
-  `show_location` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `index_communities_on_uuid` (`uuid`),
   KEY `index_communities_on_domain` (`domain`) USING BTREE,
@@ -1392,9 +1358,6 @@ CREATE TABLE `stripe_payments` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
   `buyer_commission_cents` int(11) DEFAULT '0',
-  `stripe_payment_intent_id` varchar(255) DEFAULT NULL,
-  `stripe_payment_intent_status` varchar(255) DEFAULT NULL,
-  `stripe_payment_intent_client_secret` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -2414,11 +2377,6 @@ INSERT INTO `schema_migrations` (version) VALUES
 ('20190305112030'),
 ('20190319114719'),
 ('20190319122745'),
-('20190717105844'),
-('20190718081745'),
-('20190904115045'),
-('20190627055931'),
-('20190705083608'),
-('20190705100256'),
-('20190920113245');
+('20190717105844');
+
 

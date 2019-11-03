@@ -5,7 +5,6 @@ class TransactionProcessStateMachine
   state :free
   state :initiated
   state :pending  # Deprecated
-  state :payment_intent_requires_action
   state :preauthorized
   state :pending_ext
   state :accepted # Deprecated
@@ -14,15 +13,12 @@ class TransactionProcessStateMachine
   state :paid
   state :confirmed
   state :canceled
-  state :payment_intent_action_expired
-  state :payment_intent_failed
 
-  transition from: :not_started,                    to: [:free, :initiated]
-  transition from: :initiated,                      to: [:payment_intent_requires_action, :preauthorized]
-  transition from: :payment_intent_requires_action, to: [:preauthorized, :payment_intent_action_expired, :payment_intent_failed]
-  transition from: :preauthorized,                  to: [:paid, :rejected, :pending_ext, :errored]
-  transition from: :pending_ext,                    to: [:paid, :rejected]
-  transition from: :paid,                           to: [:confirmed, :canceled]
+  transition from: :not_started,               to: [:free, :initiated]
+  transition from: :initiated,                 to: [:preauthorized]
+  transition from: :preauthorized,             to: [:paid, :rejected, :pending_ext, :errored]
+  transition from: :pending_ext,               to: [:paid, :rejected]
+  transition from: :paid,                      to: [:confirmed, :canceled]
 
   after_transition(to: :paid, after_commit: true) do |transaction|
     payer = transaction.starter
@@ -56,27 +52,4 @@ class TransactionProcessStateMachine
     confirmation.cancel!
   end
 
-  after_transition(to: :payment_intent_requires_action, after_commit: true) do |conversation|
-    Delayed::Job.enqueue(TransactionPaymentIntentCancelJob.new(conversation.id), :run_at => TransactionPaymentIntentCancelJob::DELAY.from_now)
-  end
-
-  after_transition(to: :payment_intent_failed, after_commit: true) do |transaction|
-    transaction.update_column(:deleted, true) # rubocop:disable Rails/SkipsModelValidations
-  end
-
-  after_transition(to: :free, after_commit: true) do |transaction|
-    send_new_transaction_email(transaction) if transaction.conversation.payment?
-  end
-
-  after_transition(to: :preauthorized, after_commit: true) do |transaction|
-    send_new_transaction_email(transaction)
-  end
-
-  class << self
-    def send_new_transaction_email(transaction)
-      if transaction.community.email_admins_about_new_transactions
-        Delayed::Job.enqueue(SendNewTransactionEmail.new(transaction.id))
-      end
-    end
-  end
 end

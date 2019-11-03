@@ -15,7 +15,7 @@ class ExportTransactionsJob < Struct.new(:current_user_id, :community_id, :expor
     export_task = ExportTaskResult.find(export_task_id)
     export_task.update(status: 'started')
 
-    conversations = Transaction.for_community_sorted_by_activity(community.id, 'desc', true)
+    conversations = Transaction.for_community_sorted_by_activity(community.id, 'desc', nil, nil, true)
     csv_rows = []
     ExportTransactionsJob.generate_csv_for(csv_rows, conversations)
     csv_content = csv_rows.join("")
@@ -36,12 +36,10 @@ class ExportTransactionsJob < Struct.new(:current_user_id, :community_id, :expor
        status
        currency
        sum
-       commission_from_provider
-       commission_from_buyer
        started_at
        last_activity_at
-       buyer_user_id
-       provider_user_id
+       starter_username
+       other_party_username
      }.to_csv(force_quotes: true)
      transactions.each do |transaction|
        yielder << [
@@ -51,12 +49,10 @@ class ExportTransactionsJob < Struct.new(:current_user_id, :community_id, :expor
          transaction.status,
          transaction.payment_total.is_a?(Money) ? transaction.payment_total.currency : "N/A",
          transaction.payment_total,
-         transaction.commission,
-         transaction.buyer_commission,
-         transaction.created_at && I18n.l(transaction.created_at, format: '%Y-%m-%d %H:%M:%S'),
-         transaction.last_activity && I18n.l(transaction.last_activity, format: '%Y-%m-%d %H:%M:%S'),
-         transaction.starter ? transaction.starter.id : "DELETED",
-         transaction.author ? transaction.author.id : "DELETED"
+         transaction.created_at,
+         transaction.last_activity,
+         transaction.starter ? transaction.starter.username : "DELETED",
+         transaction.author ? transaction.author.username : "DELETED"
        ].to_csv(force_quotes: true)
      end
     end
