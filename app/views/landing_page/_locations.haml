@@ -22,8 +22,8 @@
     color: rgb(#{s["paragraph_link_color_hover"]["value"].join(",")});
     }
 
-%section.locations__section{:id => section_id}
-  .locations__content{style: 'margin-right: 15%; margin-left: 15%;'}
+%section.locations__section{:id => section_id, style: 'padding: 56px 0px 0px 0px !important;'}
+  .locations__content{class: 'landing_margins'}
     %h1.loctaion-headings{:style => "font-size: 36px; font-weight: 600; margin-bottom: 10px;"}= s["title"]
     %h3.loctaion-headings{:style => "font-size: 20px; margin-bottom: 30px;"}= s["small_title"]
     .locations__paragraph--markdown

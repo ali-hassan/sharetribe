@@ -108,6 +108,28 @@ module CustomLandingPage
         ]
     },
     {
+      "id": "how_works",
+      "kind": "how_studiotime_works",
+      "title": "How Studiotime Works",
+      "paragraphs": [
+        {
+          "number": "1",
+          "title": "Discover Studios",
+          "text": "Discover studios nearby or in 35+ countries. From the most unique home studios to top-line studios exclusive to Studiotime, we have the right studio for every budget."
+        },
+        {
+          "number": "2",
+          "title": "Request Studiotime",
+          "text": "Have questions about a studio, equipment, or need an engineer for your session? Use our site messaging to communicate directly with studios."
+        },
+        {
+          "number": "3",
+          "title": "Book & Pay",
+          "text": "Schedule the time and date for your session using our calendar scheduling in minutes. Submit your booking request, payment, and receive confirmation in a few clicks."
+        }
+      ]
+    },
+    {
       "id": "footer",
       "kind": "footer",
       "theme": "light",

@@ -4,8 +4,7 @@
   <%= render 'landing_page/inline_css', s: s, section_id: section_id %>
 <% end %>
 
-<section id="<%= section_id %>" class="listings__section listings__section--<%= bg_styles[:section_style_modifier] %>" style="<%= bg_styles[:background_image_style] %> <%= bg_styles[:background_color_style] %>">
-
+<section id="<%= section_id %>" class="landing_margins listings__section listings__section--<%= bg_styles[:section_style_modifier] %>" style="<%= bg_styles[:background_image_style] %> <%= bg_styles[:background_color_style] %>">
   <div class="listings__content">
     <h1 class="listing-headings" style="font-size: 36px;font-weight: 600; margin-bottom: 10px;"><%= s["title"] %></h1>
     <h3 class="listing-headings" style="font-size: 20px;margin-bottom: 30px;"><%= s["small_title"] %></h3>
@@ -14,84 +13,49 @@
       <%= render_markdown_array(s["paragraph"]) %>
     </div>
 
-    <div class="grid">
+    <div class="mobile_listings">
+      <% s["listings"].in_groups_of(1) do |group| %>
+        <div class="listings_flex">
+          <% group.each do |listing| %>
+            <%= render partial: 'landing_page/listing', locals: { listing: listing, section_id: section_id } %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+    <div class="ipad_listings">
+      <% s["listings"].in_groups_of(2) do |group| %>
+        <div class="listings_flex">
+          <% group.each do |listing| %>
+            <%= render partial: 'landing_page/listing', locals: { listing: listing, section_id: section_id } %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+    <div class="desktop_listings">
       <% s["listings"].in_groups_of(3) do |group| %>
         <div class="listings_flex">
           <% group.each do |listing| %>
-            <% l = listing["listing"] %>
-            <div class="listings__listing" style="margin: 0px;">
-              <a href="<%= l["listing_path"] %>">
-                <% if l["listing_image"].present? %>
-                  <img src="<%= l["listing_image"] %>" class="listing_image">
-                <% else %>
-                  <div class="<%= section_id %>__listings__listing-image--empty listings__listing-image--empty">
-                    <div class="listings__no-listing-image-svg-container">
-                      <svg class="listings__no-listing-image-svg" width="60" height="59" viewBox="269 433 60 59" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path id="a" d="M0 59h60V0H0z"/><g transform="translate(269 433)" fill="none" fill-rule="evenodd"><path stroke-width="2" stroke-linejoin="round" d="M17 12L30 1l13 11z"/><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path fill="none" stroke-width="2" mask="url(#b)" d="M1 58h58V12H1z"/><path fill="none" stroke-width="2" mask="url(#b)" d="M7 52h46V18H7z"/><path d="M24.997 39.545L26.04 38.5c.947-.945 2.23-1.477 3.567-1.477h.867c1.337 0 2.62.532 3.566 1.478l1.044 1.045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#b)"/><path class="listings__no-listing-image-svg--eyes" d="M26.998 29.98c-.696 0-1.26.563-1.26 1.26 0 .696.564 1.26 1.26 1.26.696 0 1.26-.564 1.26-1.26 0-.697-.564-1.26-1.26-1.26M33.002 29.98c-.696 0-1.26.563-1.26 1.26 0 .696.564 1.26 1.26 1.26.696 0 1.26-.564 1.26-1.26 0-.697-.564-1.26-1.26-1.26" mask="url(#b)"/></g></svg>
-                      <span class="listings__no-listing-image-text"><%= s["no_listing_image_text"]["value"] %></span>
-                    </div>
-                  </div>
-                <% end %>
-                <div class="row" style="height:35px;"><span class="listing_verified">VERIFIED</span></div>
-                <div class="listing_text row" style="float:left;">
-                  <span style="display:block;text-align:left;"><%= l['price'] %></span>
-                  <span style="font-size: 17px;">per hour</span>
-                </div>
-                <h3 class="listings__listing-title"><%= l["title"] %></h3>
-              </a>
-              <div class="listings__listing-info">
-                <div class="<%= section_id%>__listings__price-container listings__price-container">
-                  <% if l["price"].present? %>
-                    <span class="listings__price-amount"><%= l["price"] %></span>
-
-                    <% if l["price_unit"] %>
-                      <span class="listings__price-unit">/ <%= l["price_unit"] %></span>
-                    <% end %>
-                  <% else %>
-                    <span class="listings__price-shape-name"><%= l["shape_name"] %></span>
-                  <% end %>
-                </div>
-                <a class="<%= section_id%>__listings__author-link listings__author-link" href="<%= l["author_path"] %>">
-                  <div class="listings__author-container">
-                    <div class="listings__author-avatar-container">
-                      <% if l["author_avatar"] %>
-                        <div class="listings__author-avatar" style="background-image: url(<%= l["author_avatar"] %>)"></div>
-                      <% else %>
-                        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M3.445 5.212c0-.096.007-.19.012-.284.397.118.836.19 1.25.19 1.008 0 2.11-.46 2.785-1.108.602.796 1.31 1.174 2.202 1.174.193 0 .397-.022.61-.057l.002.085c0 2.336-1.538 4.236-3.43 4.236-1.892 0-3.43-1.9-3.43-4.236zM6.877.977c1.595 0 2.936 1.354 3.317 3.18-1.02.186-1.632-.148-2.244-1.223l-.44-.774-.412.79c-.324.624-1.464 1.192-2.39 1.192-.363 0-.772-.07-1.11-.186.436-1.724 1.74-2.98 3.28-2.98zm2.627 10.298v-1.89c1.074-.952 1.774-2.466 1.774-4.173C11.278 2.338 9.304 0 6.878 0c-2.43 0-4.404 2.338-4.404 5.212 0 1.66.66 3.14 1.686 4.094v1.974L0 13.046l.378.9 4.754-2.018V9.996c.535.275 1.125.43 1.745.43.585 0 1.144-.14 1.655-.387v1.894L13.637 14l.363-.906-4.496-1.82z" fill="#919599" fill-rule="evenodd"/></svg>
-                      <% end %>
-                    </div>
-                    <span class="listings__author-name"><%= l["author_name"] %></span>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <%= render partial: 'landing_page/listing', locals: { listing: listing, section_id: section_id } %>
           <% end %>
         </div>
       <% end %>
     </div>
 
     <a style="float: left;
-        margin-left: 57px;
         font-size: 21px;
         text-decoration: underline;
+        text-align: left;
         color: black;" href="/s">See all of the premium verified studios</a>
   </div>
 </section>
-<div class="row" style="color: black; font-size: 30px; padding-left: 165px;">As Seen On</div>
-<div class="topbar-placeholder">
-  <div class="s006">
-    <div>
-      <div class="row" style="padding-left: 165px;">
-        <div class="col-2"></div>
-        <div class="col-8">
-          <img src="landing_page/hyperbeast.png" style="width: 14%">
-          <img src="landing_page/bbc.png" style="width: 14%">
-          <img src="landing_page/product_hunt.png" style="width: 14%">
-          <img src="landing_page/fader.png" style="width: 14%">
-          <img src="landing_page/vice.png" style="width: 14%">
-          <img src="landing_page/forbes.png" style="width: 14%">
-        </div>
-        <div class="col-2"></div>
-      </div>
-    </div>
+<%= render partial: 'landing_page/how_works' %>
+<div style="color: black; font-size: 30px;" class="landing_margins">As Seen On</div>
+  <div class="landing_margins company_logos">
+    <img src="landing_page/hyperbeast.png">
+    <img src="landing_page/bbc.png">
+    <img src="landing_page/product_hunt.png">
+    <img src="landing_page/fader.png">
+    <img src="landing_page/vice.png" class="vice">
+    <img src="landing_page/forbes.png">
   </div>
 </div>

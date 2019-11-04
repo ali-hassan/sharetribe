@@ -92,11 +92,83 @@ $tablet--hero: "(min-width: 480px) and (max-width: 767px)";
   @include viewport-unit(margin-top, -4.44vh); /* -50px, when content height is 900px, 80vh */
 }
 
+@media (min-width: 768px) {
+  .desktop_navbar {
+    display: unset !important;
+  }
+
+  .mobile_navbar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop_navbar {
+    display: none !important;
+  }
+
+  .mobile_navbar {
+    display: flex !important;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #4a4a4a;
+  display: block;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #000;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.mobile_navbar {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  margin-bottom: 50px;
+}
+
+.mobile_navbar > div:first-child {
+  padding: 20px 20px;
+}
+
 .hero__content-container {
   text-align: center;
 
   @media #{$mobile-landscape}, #{$tablet} {
-    max-width: 561px;
+    max-width: 300px;
   }
 
   @media #{$desktop} {
