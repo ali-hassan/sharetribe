@@ -15,23 +15,7 @@
       $(this).next('.toogleContainer').toggle();
 
     });
-
-    // nice Scroll
-    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-
-    $(document).ready(function ($) {
-      if (!isMobile) {
-        $(".do-nicescrol").niceScroll({
-          cursorwidth: 12,
-          cursoropacitymin: 1,
-          cursorcolor: '#000000',
-          background: "#dddddd",
-          cursorborder: 'none',
-          cursorborderradius: 0,
-          autohidemode: 'leave'
-        }); // a world full of color!
-      }
-    });
+    
 - maps_key = MarketplaceHelper.google_maps_key(@current_community.id)
 - key_param = maps_key ? "&key=#{maps_key}" : ""
 - # Topbar adds its own maps script, otherwise add it if location search enabled or map is visible
