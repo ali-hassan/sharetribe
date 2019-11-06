@@ -1,0 +1,29 @@
+<% l = listing %>
+<div class="listings__listing" style="margin: 0px;">
+  <%= link_to listing_path(listing.url) do %>
+    <% with_first_listing_image(listing) do |first_image_url| %>
+      <img src="https://natruras-storage.s3.amazonaws.com/images/listing_images/images/1/big/header_img.png?1570694110(6 kB)" class="listing_image">
+    <% end %>
+    <div class="row" style="height:35px;margin-left:10px;"><span class="listing_verified">VERIFIED</span></div>
+    <div class="listing_info_row">
+      <div class="listing_text row" style="float:left;">
+        <span style="display:block;text-align:left;"><%= l.price %></span>
+        <span style="font-size: 14px;color: #4a4a4a;">per hour</span>
+      </div>
+      <div>
+        <h3 class="listings__listing-title"><%= l.title.titleize %></h3>
+        <div class="stars">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+          <span style="color:#999;padding-left:2px;">10 opinions •</span>
+          <div><span style="float:left;color:#999;margin-top:5px;margin-bottom:10px;">15 bookings</span></div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  <% end %>
+</div>
+

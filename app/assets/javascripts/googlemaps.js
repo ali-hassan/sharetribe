@@ -145,6 +145,7 @@ function googlemapMarkerInit(canvas,n_prefix,n_textfield,draggable,community_loc
       }
     );
   }
+  marker.setVisible(true);
 
   if(!visible)
     marker.setVisible(false);
@@ -465,25 +466,7 @@ function addCommunityMarkers() {
 
 function initialize_listing_map(listings, community_location_lat, community_location_lon, viewport, locale_to_use, use_community_location_as_default) {
   locale = locale_to_use;
-  // infowindow = new google.maps.InfoWindow();
-  infowindow = new InfoBubble({
-    shadowStyle: 0,
-    borderRadius: 5,
-    borderWidth: 1,
-    arrowPosition: 30,
-    arrowStyle: 0,
-    padding: 0,
-    maxHeight: 150, // 150 for single, 180 for multi
-    maxWidth: 200,
-    hideCloseButton: true
-  });
-  if ($(window).width() >= 768) {
-    infowindow.setMinHeight(235);
-    infowindow.setMinWidth(425);
-  } else {
-    infowindow.setMinHeight(150);
-    infowindow.setMinWidth(225);
-  }
+  infowindow = new google.maps.InfoWindow();
   directionsService = new google.maps.DirectionsService();
   directionsDisplay = new google.maps.DirectionsRenderer();
   directionsDisplay.setOptions( { suppressMarkers: true } );
@@ -527,7 +510,6 @@ function setMapCenter(communityLat, communityLng, preferCommunityLocation) {
 function addListingMarkers(listings, viewport) {
   // Test requesting location data
   // Now the request_path needs to also have a query string with the wanted parameters
-
   markerContents = [];
   markers = [];
 
@@ -538,7 +520,6 @@ function addListingMarkers(listings, viewport) {
 
         var location;
         location = new google.maps.LatLng(entry["latitude"], entry["longitude"]);
-
         var marker = new google.maps.Marker({
           position: location,
           title: entry["title"]
@@ -556,7 +537,7 @@ function addListingMarkers(listings, viewport) {
 
         markers.push(marker);
         markerContents.push(entry["id"]);
-        markersArr.push(marker);
+        // markersArr.push(marker);
         var ind = i;
 
         google.maps.event.addListener(map, 'mousedown', function() {
@@ -573,8 +554,6 @@ function addListingMarkers(listings, viewport) {
           } else {
             showingMarker = marker.getTitle();
             infowindow.setContent("<div id='map_bubble'><img class='bubble-loader-gif' src='https://s3.amazonaws.com/sharetribe/assets/ajax-loader-grey.gif'></div>");
-            infowindow.setMaxHeight(150);
-            infowindow.setMinHeight(150);
             infowindow.open(map,marker);
             $.ajax({
               url: '/' + locale + '/listing_bubble/' + entry.id,
@@ -589,9 +568,8 @@ function addListingMarkers(listings, viewport) {
     })();
   }
 
-  var latitudes = _(listings).pluck("latitude").filter().map(Number).value();
-  var longitudes = _(listings).pluck("longitude").filter().map(Number).value();
-
+  var latitudes = _.map(_(listings)['__wrapped__'], "latitude");
+  var longitudes = _.map(_(listings)['__wrapped__'], "longitude");
 
   if (viewport && viewport.boundingbox) {
     var boundingbox = viewport.boundingbox;

@@ -26,8 +26,6 @@
       - if(@view_type.eql?("map"))
         = javascript_include_tag "markerclusterer.js"
       - props = topbar_props
-      - cache props do
-        = react_component("TopbarApp", props: props, prerender: true, id: 'topbar-container')
     - else
       = render partial: 'layouts/global_header', locals: header_props()
 
@@ -43,21 +41,6 @@
           .banner--title-wrapper
             .banner--title
               = yield :banner_warning
-      %section.marketplace-lander
-        - if @big_cover_photo
-          .coverimage
-            %figure.marketplace-cover.fluidratio
-              .lander-content.marketplace-lander-content
-                = yield :title_header
-        - elsif !(is_homepage && FeatureFlagHelper.feature_enabled?(:topbar_v1))
-          .coverimage
-            %figure.marketplace-cover-small.fluidratio
-            .coverimage-fade{:class => yield(:coverfade_class)}
-              %figure.marketplace-cover-small-fade.fluidratio
-          .title-container
-            .title-header-wrapper
-              .marketplace-title-header
-                = yield :title_header
 
       %article.page-content{class: is_homepage && !@big_cover_photo ? 'no-cover-photo' : ''}
         .wrapper
@@ -82,9 +65,6 @@
         = content_for(:page_content)
     - else
       = content_for(:page_content)
-
-    - if @custom_footer.try(:display?)
-      = render 'layouts/footer'
 
     -# Most of the JavaScript should be for performance reasons at the end of the body
 
