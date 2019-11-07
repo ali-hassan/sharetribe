@@ -17,27 +17,27 @@
 - images = @listing.listing_images
 = render partial: 'landing_page/main_header'
 - if images.present?
-  %section.gallery_section{:style => "margin-top: 70px;"}
-    .col-sm-6.no_padding
+  %section{:style => "margin-top: 70px;"}
+    .col-12
       .gallery_img_box
         %a.html5lightbox{"data-autoslide" => "true", "data-fullscreenmode" => "true", "data-group" => "mygroup", "data-thumbnail" => "#{images.first.image.url(:grid)}", "data-transition" => "crossfade", :href => "#{images.first.image.url(:grid)}", :title => "image1"}
           %img{:alt => "gallery", :src => "https://natruras-storage.s3.amazonaws.com/images/listing_images/images/1/big/header_img.png?1570694110(6 kB)", class: 'gallery'}/
     .col-sm-6.no_padding.main_img_section
       - images.each_with_index do |img, idx|
         - next if idx == 0
-        .col-sm-6.no_padding.width-25
-          .gallery_img_box
-            %a.html5lightbox{"data-autoslide" => "true", "data-fullscreenmode" => "true", "data-group" => "mygroup", "data-thumbnail" => "#{img.image.url(:grid)}", "data-transition" => "crossfade", :href => "#{img.image.url(:grid)}", :title => "image1"}
-              - if images.count > 5 && idx == 4
-                .galle_total_counter
-                  %span.counter_text
-                    = "+#{images.count}"
-                    %span View All
-              %img{:alt => "gallery", :src => "#{img.image.url(:grid)}"}/
-      - if images.count < 5
-        - (0...(5 - images.count)).each do |i|
-          .gallery_img_box
-            %img{src: '/no_image.png', class: 'no_image'}
+      -#  .col-sm-6.no_padding.width-25
+      -#    .gallery_img_box
+      -#      %a.html5lightbox{"data-autoslide" => "true", "data-fullscreenmode" => "true", "data-group" => "mygroup", "data-thumbnail" => "#{img.image.url(:grid)}", "data-transition" => "crossfade", :href => "#{img.image.url(:grid)}", :title => "image1"}
+      -#        - if images.count > 5 && idx == 4
+      -#          .galle_total_counter
+      -#            %span.counter_text
+      -#              = "+#{images.count}"
+      -#              %span View All
+      -#        %img{:alt => "gallery", :src => "#{img.image.url(:grid)}"}/
+      -#- if images.count < 5
+      -#  - (0...(5 - images.count)).each do |i|
+      -#    .gallery_img_box
+      -#      %img{src: '/no_image.png', class: 'no_image'}
 .clearfix
 %section.explore_section
   .container
