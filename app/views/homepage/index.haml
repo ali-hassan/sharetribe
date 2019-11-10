@@ -55,13 +55,15 @@
 - else
   = render partial: 'landing_page/main_header'
 
-  %section.explore_section.paddingTB90
+  %section.explore_section.paddingTB90#section
     .container.listings_flex_container
-      .row.width-50
+      .row.width-50.main_content
         .do-nicescrol
-          .row.panelmrgRt0
+          .row.panelmrgRt0{id: 'main_div'}
+            %div{style: 'margin-right:50px;float:right;', id: 'div_map_icon'}
+              %img{src: '/map_icon.jpg', onclick: 'openFullScreenMap();', style: 'width: 80px;' }
             - if @listings.total_entries > 0
-              .search-listings
+              .search-listings{style: 'float:left;'}
                 = render partial: "custom_item", collection: @listings, as: :listing, locals: { show_distance: location_search_in_use }
               .home-loading-more
                 = will_paginate(@listings)
@@ -73,7 +75,26 @@
                     = t(".no_listings_with_your_search_criteria")
                 - else
                   = t(".no_listings_notification", add_listing_link: link_to(t(".add_listing_link_text"), new_listing_path(ref: "add_listing_link"))).html_safe
-      - if @listings.total_entries > 0
-        .col-md-5.col-xs-12.map-container.paddingLeft0
-          .home-map
-            = render :partial => "map", locals: { viewport: viewport }
+        #map_div
+          - if @listings.total_entries > 0
+            .col-md-5.col-xs-12.map-container.paddingLeft0
+              .home-map
+                = render :partial => "map", locals: { viewport: viewport }
+
+:javascript
+  function openFullScreenMap() {
+    $('#homepage-filters').css('background', '#D3D3D3');
+    $('#main_div').prepend($('#map_div'));
+    $('#section').css({"position": "fixed","width": "100vw","height": "100vh","overflow": "hidden"});
+    $('.search-listings').css('background', '#D3D3D3');
+    $('.listings__listing').css('visibility', 'hidden');
+    $('svg').css('visibility', 'hidden');
+    $('img').css('visibility', 'hidden');
+    $('#div_map_icon').css('display', 'none');
+    $('.mobile_navbar').css('background', '#D3D3D3').css('box-shadow', 'none');
+    $('.mobile_navbar').addClass('navbar_mobile_with_map');
+    $('body').css('background', '#D3D3D3');
+    $('.close').css('display', 'block');
+    $('#map_div').css('display', 'block').css('width', '100%');
+  }
+
