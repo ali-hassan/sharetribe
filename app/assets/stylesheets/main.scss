@@ -2287,7 +2287,7 @@ fieldset {
   float: left;
 }
 .explore_section {
-  padding: 30px;
+  padding: 0px;
 }
 .do-nicescrol {
   height: calc(100vh - 90px);
@@ -2395,7 +2395,7 @@ fieldset {
 }
 @media (min-width: 1025px) {
   .explore_section {
-    padding: 30px 50px;
+    padding: 0 50px !important;
   }
 }
 @media (min-width: 1024px) {

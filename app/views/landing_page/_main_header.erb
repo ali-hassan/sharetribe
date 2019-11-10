@@ -5,7 +5,7 @@
         <fieldset>
           <div class="inner-form">
             <div class="studiotime_logo">
-              <img src="/landing_page/studiotime_logo.png" />
+              <a href="/"><img src="/landing_page/studiotime_logo.png" /></a>
             </div>
             <div class="input-field">
               <button class="btn-search" type="button">
@@ -13,7 +13,22 @@
                   <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
                 </svg>
               </button>
-              <input id="search" type="text" placeholder="Try 'Los Angeles'" value="" />
+              <div class="search-form-input">
+                <input id="q" type="text" name="q" value="" placeholder="Try 'Los Angeles'" style="border: 0;
+                    background: #fff;
+                    display: block;
+                    width: 100%;
+                    padding: 10px 32px 10px 70px;
+                    font-size: 18px;
+                    color: #666;
+                    border-radius: 3px;
+                    height: 70px;
+                    color: #555;">
+              </div>
+              <div class="search-form-input" style="display: none">
+                <button class="action-button" id="search-button" type="submit"></button>
+              </div>
+
             </div>
             <div class="top_navbar_text">
               <div class="vertical_align_text"><a href="/listings/new" style="color: black">+ Add your studio</a></div>
