@@ -32,7 +32,7 @@
             </div>
             <div class="top_navbar_text">
               <div class="vertical_align_text"><a href="/listings/new" style="color: black">+ Add your studio</a></div>
-              <% if logged_in? %>
+              <% if logged_in %>
                 <div class="vertical_align_text">
                   <%= link_to 'Messages', person_inbox_path(current_person), style: 'color: black'%>
                 </div>
@@ -63,7 +63,7 @@
     <a href="javascript:void(0)" class="closebtn" id="closeNav" onclick="closeMenu();">&times;</a>
     <div class="overlay-content">
       <a href="/listings/new">+ Add your studio</a>
-      <% if logged_in? %>
+      <% if logged_in %>
         <%= link_to 'Messages', person_inbox_path(current_person) %>
         <%= link_to 'Profile', person_path(current_person) %>
       <% else %>
@@ -72,7 +72,7 @@
       <% end %>
     </div>
   </div>
-  <div style="padding-top:5px;"><img src="/landing_page/studiotime_logo.png" /></div>
+  <div style="padding-top:5px;"><a href="/"><img src="/landing_page/studiotime_logo.png" /></a></div>
   <button class="btn-search" type="button" style="padding-right:20px;padding-top: 10px;">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
