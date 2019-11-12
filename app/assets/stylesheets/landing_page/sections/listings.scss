@@ -589,3 +589,19 @@ $listings__tablet-gutter: 16px;
   margin-right: 10px;
   flex-grow: 1;
 }
+.verified_div {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  float: left;
+}
+.listing_info_row {
+  float: left;
+  margin-top: 5px;
+  margin-left: -10px;
+  width: calc(100% - 100px);
+}
+.listing_text {
+  margin-left: 10px !important;
+  margin-top: 3px;
+}

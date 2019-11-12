@@ -11,12 +11,14 @@
         </div>
       </div>
     <% end %>
-    <div class="row" style="height:35px;margin-left:10px;"><span class="listing_verified">VERIFIED</span></div>
-    <div class="listing_info_row">
+    <div class="verified_div">
+      <div><span class="listing_verified">VERIFIED</span></div>
       <div class="listing_text row" style="float:left;">
-        <span style="display:block;text-align:left;"><%= l['price'] %></span>
+        <span style="display:block;text-align:left;"><%= "€#{l.price}" %></span>
         <span style="font-size: 14px;color: #4a4a4a;">per hour</span>
       </div>
+    </div>
+    <div class="listing_info_row">
       <div>
         <h3 class="listings__listing-title"><%= l["title"] %></h3>
         <div class="stars">
