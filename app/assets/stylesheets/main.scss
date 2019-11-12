@@ -2395,18 +2395,24 @@ fieldset {
   }
 }
 @media (min-width: 500px) and (max-width: 768px) {
-  .search-listings > .listings__listing {
+  .panelmrgRt0 > .search-listings > .listings__listing {
+    width: 360px !important;
+  }
+  .do-nicescrol {
+    width: 50% !important;
+  }
+  #map_div {
     width: 50% !important;
   }
 }
 @media (min-width: 1025px) {
   .explore_section {
-    padding: 0 50px !important;
+    // padding: 0 50px !important;
   }
 }
 @media (min-width: 1024px) {
-  .search-listings > .listings__listing:first-child {
-    margin-top: 50px !important;
+  .search-listings {
+    margin-top: 50px;
   }
   .no_image {
     width: 250px !important;
@@ -2542,6 +2548,12 @@ a.enabled-book-button {
   .do-nicescrol {
     width: 100% !important;
   }
+  .search-listings {
+    margin-bottom: 50px;
+  }
+  .panelmrgRt0 > .search-listings > .listings__listing {
+    width: 360px !important;
+  }
 }
 @media (min-width: 500px) {
   #div_map_icon {
@@ -2569,7 +2581,7 @@ a.enabled-book-button {
 }
 @media (min-width: 700px) and (max-width: 770px) {
   .search-listings {
-    padding-left: 50px;
+    padding-left: 30px;
     margin-bottom: 50px;
   }
 }
@@ -2578,13 +2590,41 @@ a.enabled-book-button {
   display: flex;
 }
 .do-nicescrol {
-  width: 50%;
+  width: 60%;
   padding-left: 50px;
 }
 #map_div {
-  width: 50%;
+  width: 40%;
 }
 .map-container  {
   width: 100%;
 }
-
+.verified_div {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  float: left;
+}
+.listing_info_row {
+  float: left;
+  margin-top: 5px;
+  margin-left: -10px;
+  width: calc(100% - 100px);
+}
+.listing_text {
+  margin-left: 10px !important;
+  margin-top: 3px;
+}
+.page-content {
+  margin-bottom: 0px !important;
+}
+.listing_image {
+  height: 200px;
+  width: auto !important;
+}
+.search-listings > .listings__listing {
+  width: calc(100%/2 - 30px) !important;
+}
+button:hover {
+  background: white;
+}

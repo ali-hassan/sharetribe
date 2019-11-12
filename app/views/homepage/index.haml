@@ -82,7 +82,17 @@
                 = render :partial => "map", locals: { viewport: viewport }
 
 :javascript
+  $(document).ready(function() {
+    $('.map-container').css('height', '100%');
+    $('.home-map').css('height', '100%');
+    $('html').css('overflow', 'hidden');
+    $('body').css('overflow', 'hidden');
+  });
   function openFullScreenMap() {
+    $('.map-container').css('height', 'unset');
+    $('.home-map').css('height', 'unset');
+    $('#map-canvas.map').css('height', '745px')
+    $('#map_div').css('display', 'block').css('width', '100%');
     $('#homepage-filters').css('background', '#D3D3D3');
     $('#main_div').prepend($('#map_div'));
     $('#section').css({"position": "fixed","width": "100vw","height": "100vh","overflow": "hidden"});
@@ -95,6 +105,5 @@
     $('.mobile_navbar').addClass('navbar_mobile_with_map');
     $('body').css('background', '#D3D3D3');
     $('.close').css('display', 'block');
-    $('#map_div').css('display', 'block').css('width', '100%');
   }
 

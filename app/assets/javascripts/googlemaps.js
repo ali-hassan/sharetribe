@@ -475,7 +475,10 @@ function initialize_listing_map(listings, community_location_lat, community_loca
   var myOptions = {
     zoom: 16,
     maxZoom: 17,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    fullscreenControl: false,
+    disableDefaultUI: true,
+    zoomControl: true
   };
   map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
   var prefer_param_loc = (use_community_location_as_default === 'true');
@@ -521,19 +524,17 @@ function addListingMarkers(listings, viewport) {
         var location;
         location = new google.maps.LatLng(entry["latitude"], entry["longitude"]);
         var marker = new google.maps.Marker({
-          position: location,
-          title: entry["title"]
+          position: location
         });
-
         // Marker icon based on category
-        var label = new Label({
-                       map: map
-                  });
-                  label.set('zIndex', 1234);
-                  label.bindTo('position', marker, 'position');
-                  label.set('text', "");
-                  label.set('color', "#FFF");
-        marker.set("label", label);
+        // var label = new Label({
+        //                map: map
+        //           });
+        //           label.set('zIndex', 1234);
+        //           label.bindTo('position', marker, 'position');
+        //           label.set('text', "");
+        //           label.set('color', "#FFF");
+        // marker.set("label", label);
 
         markers.push(marker);
         markerContents.push(entry["id"]);
@@ -564,6 +565,7 @@ function addListingMarkers(listings, viewport) {
             });
           }
         });
+        marker.setMap(map);
       }
     })();
   }

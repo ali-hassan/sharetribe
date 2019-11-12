@@ -32,8 +32,21 @@
             </div>
             <div class="top_navbar_text">
               <div class="vertical_align_text"><a href="/listings/new" style="color: black">+ Add your studio</a></div>
-              <div class="vertical_align_text"><a href="/signup" style="color: black">Sign up</a></div>
-              <div class="vertical_align_text"><a href="/login" style="color: black">Log in</a></div>
+              <% if logged_in? %>
+                <div class="vertical_align_text">
+                  <%= link_to 'Messages', person_inbox_path(current_person), style: 'color: black'%>
+                </div>
+                <div class="header-left header-logo-container">
+                  <%= link_to person_path(current_person), :class => "header-logo", :id => "header-logo" do %>
+                    <% u = current_person %>
+                    <% avatar_url = u.image.present? && !u.image_processing ? u.image.url(:thumb) : "profile_image/thumb/missing.png" %>
+                     <%= image_tag avatar_url, alt: '', class: 'header-user-avatar' %>
+                  <% end %>
+                </div>
+              <% else %>
+                <div class="vertical_align_text"><a href="/signup" style="color: black">Sign up</a></div>
+                <div class="vertical_align_text"><a href="/login" style="color: black">Log in</a></div>
+              <% end %>
             </div>
           </div>
         </fieldset>
@@ -50,8 +63,13 @@
     <a href="javascript:void(0)" class="closebtn" id="closeNav" onclick="closeMenu();">&times;</a>
     <div class="overlay-content">
       <a href="/listings/new">+ Add your studio</a>
-      <a href="/signup">Sign up</a>
-      <a href="/login">Log in</a>
+      <% if logged_in? %>
+        <%= link_to 'Messages', person_inbox_path(current_person) %>
+        <%= link_to 'Profile', person_path(current_person) %>
+      <% else %>
+        <a href="/signup">Sign up</a>
+        <a href="/login">Log in</a>
+      <% end %>
     </div>
   </div>
   <div style="padding-top:5px;"><img src="/landing_page/studiotime_logo.png" /></div>

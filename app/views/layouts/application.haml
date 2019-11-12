@@ -26,8 +26,8 @@
       - if(@view_type.eql?("map"))
         = javascript_include_tag "markerclusterer.js"
       - props = topbar_props
-    - else
-      = render partial: 'layouts/global_header', locals: header_props()
+    -# - else
+    -#   = render partial: 'layouts/global_header', locals: header_props()
 
     - if logged_in? && @display_expiration_notice
       - if @current_user.has_admin_rights?(@current_community)
